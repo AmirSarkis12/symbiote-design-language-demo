@@ -1,1 +1,1 @@
-# symbiote-design-language
+# Symbiote Design Language
