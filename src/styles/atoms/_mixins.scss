@@ -102,6 +102,14 @@
 	border: 0;
 }
 
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: #{alpha(opacity=$opacity-ie)};
+}
+
 // Grid specific mixins below
     // Iterates through all 12 columns to calculate the correct amount of left and right padding for each of the classes.
     @mixin make-grid-columns( $i: 1, $list: ".col-xs-#{ $i }, .col-sm-#{ $i }, .col-md-#{ $i }, .col-lg-#{ $i }" ) {

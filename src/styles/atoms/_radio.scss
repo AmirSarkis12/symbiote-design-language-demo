@@ -1,0 +1,37 @@
+.radio {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px 0;
+
+	&__label {
+		margin: 0 5px;
+		cursor: pointer;
+	}
+
+	&__group {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 20px;
+        height: 20px;
+		background: transparent;
+		border: 2px solid $radio-color;
+		border-radius: 50px;
+	}
+
+	&__input:checked + &__checked {
+		opacity: 1;
+	}
+
+	&__checked {
+		content: "";
+        width: 10px;
+        height: 10px;
+		background-color: $radio-color;
+		border-radius: 50px;
+		opacity: 0;
+		transition: .2s;
+	}
+}
