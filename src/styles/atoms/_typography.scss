@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, p {
 
 // Heading
 h1, h2, h3, h4, h5 {
-    font-family: 'Replica Standard Bold';
+    font-family: 'Heading';
     color: $black-night;
 }
 
@@ -72,7 +72,7 @@ h5 {
 // Body
 .typography {
     p {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Body', sans-serif;
         color: $black-night;
     }
 
@@ -112,8 +112,7 @@ h5 {
     }
 }
 
-.inverted  {
-    
+.inverted {
     a, h3, h4, p {
         color: $white !important;
 
@@ -176,9 +175,4 @@ h5 {
     @include media-breakpoint-only(xl) {
         white-space: nowrap;
     }
-}
-
-.fz-50 {
-    @extend .h1 ;
-    margin-bottom: 20px;
 }

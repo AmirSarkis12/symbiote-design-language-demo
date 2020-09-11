@@ -1,4 +1,4 @@
-// Media breakpoints
+// Media query breakpoints
 @mixin media-breakpoint-up($breakpoint) {
 	@if($breakpoint == "xs") {
 		@media (min-width: $xs-breakpoint) {
