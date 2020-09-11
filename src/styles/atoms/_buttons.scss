@@ -1,0 +1,49 @@
+.button {
+    display: inline-block;
+    border-radius: 32px;
+    min-width: 164px;
+    height: 40px;
+    padding: 0 15px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    font-family: 'Replica Standard Bold';
+    text-transform: uppercase;
+
+    &.primary {
+        background: $primary-background;
+        color: $primary-foreground;
+        border: none;
+    }
+
+    &.secondary {
+        background: $secondary-background;
+        color: $secondary-foreground;
+        border: none;
+    }
+
+    &.tertiary {
+        background: $tertiary-background;
+        color: $tertiary-foreground;
+        border: none;
+    }
+
+    &.outline-light {
+        background: $transparent;
+        color: $white;
+        border: 1px solid $white;
+        line-height: 36px;
+        height: 100%;
+    }
+
+    &.outline-dark {
+        background: $transparent;
+        color: $black-night;
+        border: 1px solid $black-night;
+        line-height: 36px;
+        height: 100%;
+    }
+}

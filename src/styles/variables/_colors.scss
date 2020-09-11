@@ -1,0 +1,43 @@
+
+// Default color palette - Modify or replace these colors to match your branding. These values are referenced by _settings.scss, so if the below palette is modified, ensure that respective references are updated.
+
+// Purples
+$lilac: #b4b4db; // Lilac
+$purple: #7547d0; // Purple
+$grape: #5d3895; // Grape
+$galaxy: #2a2432; // Galaxy
+
+// Reds
+$salmon: #ffb2ab; // Salmon
+$red: #ff6979; // Red
+$burgundy: #962f44; // Burgundy
+$rosso: #3a101a; // Rosso
+
+// Greens
+$mint: #beedd5; // Mint
+$green: #60ed90; // Green
+$green-alpha: rgba(#60ed90, 0.8); // Green Semi-transparent
+$grass: #108454; // Grass
+$forest: #093320; // Forest
+$grey: #444444;
+
+// Yellows
+$cream: #f4e4ad; // Cream
+$yellow: #f4d879; // Yellow
+$mustard: #90720e; // Mustard
+$seaweed: #302e1b; // Seaweed
+
+// Body Text Color
+$black-night: #1b1b1c; // Black Night/Main Text
+
+// White
+$white: #ffffff; // Included for consistency
+
+// Transparent
+$transparent: rgba(0,0,0,0);
+
+// system message colors
+$error:   #d60000 !default;
+$success: #0b996c !default;
+$warning: #f69900 !default;
+$info:    #00bfe9 !default;

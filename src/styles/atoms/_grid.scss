@@ -1,0 +1,59 @@
+
+//create container that snaps to breakpoints
+.container {
+    box-sizing: border-box;
+
+    @include media-breakpoint-up(sm) {
+        width: ( $sm-breakpoint - $grid-gutter-width );
+    }
+
+    @include media-breakpoint-up(md) {
+        width: ( $md-breakpoint - $grid-gutter-width );
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: ( $lg-breakpoint - $grid-gutter-width );
+    }
+}
+
+//create both containers
+.container,
+.container-fluid {
+    box-sizing: border-box;
+
+    @include clearfix;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: floor( ( $grid-gutter-width / 2 ) );
+    padding-right: ceil( ( $grid-gutter-width / 2 ) );
+}
+
+//create row and clear floats inside
+.row {
+    @include clearfix;
+
+    margin-left: ceil( ( $grid-gutter-width / -2 ) );
+    margin-right: floor( ( $grid-gutter-width / -2 ) );
+}
+
+//create all classes
+@include make-grid-columns;
+
+//create xs classes
+@include make-grid( xs );
+
+//create sm classes
+@include media-breakpoint-up( sm ) {
+    @include make-grid( sm );
+}
+
+//create md classes
+@include media-breakpoint-up( md ) {
+    @include make-grid( md );
+}
+
+//create lg classes
+@include media-breakpoint-up( lg ) {
+    @include make-grid( lg );
+}

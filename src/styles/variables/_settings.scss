@@ -1,0 +1,20 @@
+// Layout settings
+    // Gutter sise
+    $grid-gutter-width: 24px !default;
+
+    // media query breakpoints
+    $xs-breakpoint: 576px !default;
+    $sm-breakpoint: 768px !default;
+    $md-breakpoint: 992px !default;
+    $lg-breakpoint: 1366px !default;
+
+// Button settings
+$primary-background: $green;
+$primary-foreground: $grape;
+
+$secondary-background: $purple;
+$secondary-foreground: $white;
+
+$tertiary-background: $grape;
+$tertiary-foreground: $white;
+
