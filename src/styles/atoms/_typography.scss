@@ -4,13 +4,13 @@ h1, h2, h3, h4, h5, p {
     -moz-osx-font-smoothing: grayscale;
 }
 
-// Heading
+// Headings
 h1, h2, h3, h4, h5 {
     font-family: 'Heading';
     color: $black-night;
 }
 
-.h1 {
+h1 {
     font-size: 25px;
     line-height: 30px;
 
@@ -23,10 +23,6 @@ h1, h2, h3, h4, h5 {
         font-size: 50px;
         line-height: 60px;
     }
-}
-
-h1 {
-    @extend .h1 ;
 }
 
 h2 {
@@ -122,57 +118,7 @@ h5 {
     }
 }
 
-// Non-breaking copy
-// Propagating
+// Non-breaking copy, useful for preventing widows
 .text-nowrap {
     white-space: nowrap;
-}
-
-.text-nowrap-sm-up {
-    @include media-breakpoint-up(sm) {
-        white-space: nowrap;
-    }
-}
-
-.text-nowrap-md-up {
-    @include media-breakpoint-up(md) {
-        white-space: nowrap;
-    }
-}
-
-.text-nowrap-lg-up {
-    @include media-breakpoint-up(lg) {
-        white-space: nowrap;
-    }
-}
-
-.text-nowrap-lg-xl {
-    @include media-breakpoint-up(xl) {
-        white-space: nowrap;
-    }
-}
-
-// Non-propagating
-.text-nowrap-sm-only {
-    @include media-breakpoint-only(sm) {
-        white-space: nowrap;
-    }
-}
-
-.text-nowrap-md-only {
-    @include media-breakpoint-only(md) {
-        white-space: nowrap;
-    }
-}
-
-.text-nowrap-lg-only {
-    @include media-breakpoint-only(lg) {
-        white-space: nowrap;
-    }
-}
-
-.text-nowrap-lg-only {
-    @include media-breakpoint-only(xl) {
-        white-space: nowrap;
-    }
 }

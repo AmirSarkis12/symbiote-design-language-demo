@@ -1,4 +1,3 @@
-
 // Default color palette - Modify or replace these colors to match your branding. These values are referenced by _settings.scss, so if the below palette is modified, ensure that respective references are updated.
 
 // Purples
@@ -27,7 +26,7 @@ $yellow: #f4d879; // Yellow
 $mustard: #90720e; // Mustard
 $seaweed: #302e1b; // Seaweed
 
-// Greys
+// Grays
 $light-gray: #E3E3E3;
 $medium-gray: #DDDDDD;
 $dark-gray:#9A9A9A;
@@ -36,12 +35,12 @@ $dark-gray:#9A9A9A;
 $black-night: #1b1b1c; // Black Night/Main Text
 
 // White
-$white: #ffffff; // Included for consistency
+$white: #ffffff;
 
 // Transparent
 $transparent: rgba(0,0,0,0);
 
-// system message colors
+// System message colors
 $error:   #d60000 !default;
 $success: #0b996c !default;
 $warning: #f69900 !default;
