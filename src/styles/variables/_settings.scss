@@ -18,8 +18,12 @@ $secondary-foreground: $white;
 $tertiary-background: $grape;
 $tertiary-foreground: $white;
 
+// Text settings
+$default-text-color: $black-night;
+
 // Input settings
-$checkbox-color: $purple;
+$checkbox-border-color: $purple;
+$checkbox-check-color: $black-night;
 $radio-color: $grape;
 $toggle-color: $burgundy;
 

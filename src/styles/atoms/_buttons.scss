@@ -7,11 +7,10 @@
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 14px;
-    line-height: 40px;
+    font-size: 1rem;
+    line-height: 1.5;
     text-align: center;
-    font-family: 'Replica Standard Bold';
-    text-transform: uppercase;
+    font-family: $button-font;
 
     &.primary {
         background: $primary-background;

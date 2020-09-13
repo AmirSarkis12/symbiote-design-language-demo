@@ -12,7 +12,7 @@
             justify-content: space-between;
             padding: 1em;
             background: $accordion-heading-background;
-            font-weight: bold;
+            font-family: 'Body', sans-serif;
             cursor: pointer;
 
             /* Icon */
@@ -34,6 +34,7 @@
             color: $black-night;
             background: $accordion-heading-foreground;
             transition: all .35s;
+            font-family: 'Body', sans-serif;
         }
 
         &-close {

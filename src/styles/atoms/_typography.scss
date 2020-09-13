@@ -2,119 +2,57 @@
 h1, h2, h3, h4, h5, p {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: $default-text-color;
 }
 
 // Headings
 h1, h2, h3, h4, h5 {
-    font-family: 'Heading';
-    color: $black-night;
+    font-family: 'Heading', sans-serif;
 }
 
 h1 {
-    font-size: 25px;
-    line-height: 30px;
-
-    @include media-breakpoint-up(md) {
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    @include media-breakpoint-up(lg) {
-        font-size: 50px;
-        line-height: 60px;
-    }
+    font-size: 3rem;
+    line-height: 1.25;
 }
 
 h2 {
-    font-size: 22px;
-    line-height: 16px;
-
-    @include media-breakpoint-up(md) {
-        font-size: 32px;
-        line-height: 36px;
-    }
+    font-size: 2.5rem;
+    line-height: 1.30;
 }
 
 h3 {
-    font-size: 14px;
-    line-height: 16px;
-
-    @include media-breakpoint-up(md) {
-        font-size: 22px;
-        line-height: 25px;
-    }
+    font-size: 2rem;
+    line-height: 1.25;
 }
 
 h4 {
-    font-size: 14px;
-    line-height: 16px;
-
-    @include media-breakpoint-up(md) {
-        font-size: 18px;
-        line-height: 20px;
-    }
+    font-size: 1.5rem;
+    line-height: 1.25;
 }
 
 h5 {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 1.25rem;
+    line-height: 1.20;
+}
 
-    @include media-breakpoint-up(md) {
-        font-size: 14px;
-        line-height: 16px;
-    }
+h5 {
+    font-size: 1.22rem;
+    line-height: 1.20;
+    text-transform: uppercase;
 }
 
 // Body
-.typography {
-    p {
-        font-family: 'Body', sans-serif;
-        color: $black-night;
-    }
-
-    &.body-1 {
-        font-size: 14px;
-        line-height: 19px;
-
-        @include media-breakpoint-up(md) {
-            font-size: 18px;
-            line-height: 24px
-        }
-
-        @include media-breakpoint-up(lg) {
-            font-size: 22px;
-            line-height: 30px
-        }
-    }
-
-    &.body-2 {
-        font-size: 14px;
-        line-height: 19px;
-
-        @include media-breakpoint-up(md) {
-            font-size: 18px;
-            line-height: 24px
-        }
-    }
-
-    &.body-3 {
-        font-size: 14px;
-        line-height: 19px;
-    }
-
-    &.body-4 {
-        font-size: 20px;
-        line-height: 25px;
-    }
+p {
+    font-family: 'Body', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .inverted {
-    a, h3, h4, p {
-        color: $white !important;
+    color: $white !important;
 
-        :hover {
-            color: $white !important;
-        }
+    :hover {
+        color: $white !important;
     }
 }
 
