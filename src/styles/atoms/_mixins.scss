@@ -112,9 +112,9 @@
 
 // Grid specific mixins below
     // Iterates through all 12 columns to calculate the correct amount of left and right padding for each of the classes.
-    @mixin make-grid-columns( $i: 1, $list: ".col-xs-#{ $i }, .col-sm-#{ $i }, .col-md-#{ $i }, .col-lg-#{ $i }" ) {
+    @mixin make-grid-columns( $i: 1, $list: ".col-#{ $i }, .col-xs-#{ $i }, .col-sm-#{ $i }, .col-md-#{ $i }, .col-lg-#{ $i }" ) {
         @for $i from ( 1 + 1 ) through 12 {
-            $list: "#{ $list }, .col-xs-#{ $i }, .col-sm-#{ $i }, .col-md-#{ $i }, .col-lg-#{ $i }";
+            $list: "#{ $list }, .col-#{ $i }, .col-xs-#{ $i }, .col-sm-#{ $i }, .col-md-#{ $i }, .col-lg-#{ $i }";
         }
 
         #{ $list } {
@@ -141,6 +141,10 @@
     @mixin grid-calc-grid-column( $index, $class, $type ) {
         @if ( $type == width ) and ( $index > 0 ) {
             .col-#{ $class }-#{ $index } {
+                width: percentage( ( $index / 12 ) );
+			}
+
+			.col-#{ $index } {
                 width: percentage( ( $index / 12 ) );
             }
         }
