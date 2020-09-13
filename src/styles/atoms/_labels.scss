@@ -1,0 +1,31 @@
+span {
+    &.label {
+        padding: 1px 5px;
+        border-radius: 3px;
+        background-color: $white;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: bold;
+        margin: 0px 2px;
+
+        &.label-info {
+            border: 2px solid $info;
+            color: $info;
+        }
+
+        &.label-success {
+            border: 2px solid $success;
+            color: $success;
+        }
+
+        &.label-warning {
+            border: 2px solid $warning;
+            color: $warning;
+        }
+
+        &.label-error {
+            border: 2px solid $error;
+            color: $error;
+        }
+    }
+}

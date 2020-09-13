@@ -72,6 +72,7 @@ function App() {
                         </div>
                     </div>
                 </div>
+
                 <br></br>
                 <div className="row">
                     <div className="col-6">
@@ -94,6 +95,7 @@ function App() {
                         </div>
                     </div>
                 </div>
+
                 <br></br>
                 <div className="row">
                     <div className="col-12">
@@ -142,6 +144,7 @@ function App() {
                     </div>
                 </div>
 
+                <br></br>
                 <div className="row">
                     <div className="col-12">
                         <button className="primary rounded">Button Primary Rounded</button>
@@ -156,6 +159,14 @@ function App() {
                         <button className="primary small">Button sm</button>
                         <button className="primary extra-small">Button xs</button>
                     </div>
+                </div>
+
+                <br></br>
+                <div className="row">
+                    <span className="label label-info">Info</span>
+                    <span className="label label-success">Success</span>
+                    <span className="label label-warning">Warning</span>
+                    <span className="label label-error">Error</span>
                 </div>
             </div>
         </div>
