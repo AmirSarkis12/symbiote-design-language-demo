@@ -1,8 +1,3 @@
-$table-odd-background: $white;
-$table-odd-foreground: $black-night;
-$table-even-background: $light-gray;
-$table-even-foreground: $black-night;
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -13,8 +8,8 @@ table {
     }
 
     thead {
-        color: $table-heading-foreground;
-        background: $table-heading-background;
+        color: $table-heading-foreground-color;
+        background: $table-heading-background-color;
     }
 
     td, th {
@@ -25,13 +20,13 @@ table {
     tbody {
         tr {
             &:nth-child(even) {
-                background: $table-even-background;
-                color: $table-even-foreground;
+                background: $table-even-background-color;
+                color: $table-even-foreground-color;
             }
 
             &:nth-child(odd) {
-                background: $table-odd-background;
-                color: $table-odd-foreground;
+                background: $table-odd-background-color;
+                color: $table-odd-foreground-color;
             }
         }
     }

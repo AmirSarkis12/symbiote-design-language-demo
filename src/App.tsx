@@ -168,6 +168,23 @@ function App() {
                     <span className="label label-warning">Warning</span>
                     <span className="label label-error">Error</span>
                 </div>
+
+                <br></br>
+                <div className="row">
+                    <div className="col-6">
+                        <ol>
+                            <li> Make Design Langauge </li>
+                            <li> Create own web site:
+                                <ol>
+                                    <li> Find it to be super helpful </li>
+                                    <li> Learn all the stuff</li>
+                                    <li> Teach others </li>
+                                </ol>
+                            </li>
+                            <li> Retire </li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
     );
