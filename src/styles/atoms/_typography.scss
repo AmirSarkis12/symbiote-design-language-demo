@@ -42,10 +42,10 @@ h5 {
 }
 
 // Body
-p {
+p, a, span, table, label {
     font-family: 'Body', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.875rem;
+    line-height: 1.45;
 }
 
 .inverted {

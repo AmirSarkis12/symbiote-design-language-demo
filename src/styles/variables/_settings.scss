@@ -20,6 +20,7 @@ $tertiary-foreground: $white;
 
 // Text settings
 $default-text-color: $black-night;
+$button-font: 'Heading', sans-serif;
 
 // Input settings
 $checkbox-border-color: $purple;
@@ -27,7 +28,15 @@ $checkbox-check-color: $black-night;
 $radio-color: $grape;
 $toggle-color: $burgundy;
 
-// Accordion settingss
+// Accordion settings
 $accordion-heading-background: $purple;
 $accordion-heading-foreground: $white;
 
+// Table settings
+$table-heading-background: $green;
+$table-heading-foreground: $black-night;
+$table-odd-background: $white;
+$table-odd-foreground: $black-night;
+$table-seperator-color: $medium-gray;
+$table-even-background: $light-gray;
+$table-even-foreground: $black-night;
