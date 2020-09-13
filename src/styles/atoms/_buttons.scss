@@ -39,6 +39,12 @@ button {
         height: 100%;
     }
 
+    &.disabled {
+        border: none;
+        opacity: 0.6;
+        cursor: default;
+    }
+
     &.rounded {
         border-radius: 32px;
     }
@@ -56,5 +62,4 @@ button {
         min-width: 0px;
         padding: 1px 5px;
     }
-
 }

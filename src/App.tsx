@@ -153,11 +153,12 @@ function App() {
                         <button className="outline-light">Button Outline Light</button>
                         <button className="outline-dark">Button Outline Dark</button>
 
-
                         <button className="primary large">Button lg</button>
                         <button className="primary">Button md</button>
                         <button className="primary small">Button sm</button>
                         <button className="primary extra-small">Button xs</button>
+
+                        <button className="primary disabled">Button md</button>
                     </div>
                 </div>
 
