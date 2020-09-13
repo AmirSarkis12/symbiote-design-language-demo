@@ -1,16 +1,11 @@
-.button {
+button {
     display: inline-block;
-    border-radius: 32px;
     min-width: 164px;
-    height: 40px;
-    padding: 0 15px;
+    padding: 12px 15px;
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 1rem;
-    line-height: 1.5;
     text-align: center;
-    font-family: $button-font;
 
     &.primary {
         background: $primary-background;
@@ -34,7 +29,6 @@
         background: $transparent;
         color: $white;
         border: 1px solid $white;
-        line-height: 36px;
         height: 100%;
     }
 
@@ -42,7 +36,25 @@
         background: $transparent;
         color: $black-night;
         border: 1px solid $black-night;
-        line-height: 36px;
         height: 100%;
     }
+
+    &.rounded {
+        border-radius: 32px;
+    }
+
+    &.large {
+        padding: 15px 20px;
+    }
+
+    &.small {
+        min-width: 0px;
+        padding: 5px 10px;
+    }
+
+    &.extra-small {
+        min-width: 0px;
+        padding: 1px 5px;
+    }
+
 }

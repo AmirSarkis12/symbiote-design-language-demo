@@ -9,7 +9,7 @@ function App() {
             {/* Checkbox, Radio and toggle */}
             <div className="container">
                 <div className="row">
-                    <div className="col-xs-6">
+                    <div className="col-12">
                         {/* Checkbox */}
                         <div className="checkbox">
                             <p className="title">Custom checkbox</p>
@@ -74,7 +74,7 @@ function App() {
                 </div>
                 <br></br>
                 <div className="row">
-                    <div className="col-xs-6">
+                    <div className="col-6">
                         {/* Accordion */}
                         <div className="accordion">
                             <div className="tab">
@@ -96,7 +96,7 @@ function App() {
                 </div>
                 <br></br>
                 <div className="row">
-                    <div className="col-xs-12">
+                    <div className="col-12">
                         <table>
                             <thead>
                                 <tr>
@@ -139,6 +139,22 @@ function App() {
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-12">
+                        <button className="primary rounded">Button Primary Rounded</button>
+                        <button className="secondary">Button Secondary</button>
+                        <button className="tertiary">Button Tertiary</button>
+                        <button className="outline-light">Button Outline Light</button>
+                        <button className="outline-dark">Button Outline Dark</button>
+
+
+                        <button className="primary large">Button lg</button>
+                        <button className="primary">Button md</button>
+                        <button className="primary small">Button sm</button>
+                        <button className="primary extra-small">Button xs</button>
                     </div>
                 </div>
             </div>

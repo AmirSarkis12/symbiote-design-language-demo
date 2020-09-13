@@ -9,6 +9,7 @@
     $lg-breakpoint: 1366px !default;
 
 // Button settings
+$button-font: 'Heading', sans-serif;
 $primary-background: $green;
 $primary-foreground: $grape;
 
@@ -18,9 +19,8 @@ $secondary-foreground: $white;
 $tertiary-background: $grape;
 $tertiary-foreground: $white;
 
-// Text settings
+// Tyopgraphy settings
 $default-text-color: $black-night;
-$button-font: 'Heading', sans-serif;
 
 // Input settings
 $checkbox-border-color: $purple;

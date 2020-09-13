@@ -48,6 +48,13 @@ p, a, span, table, label {
     line-height: 1.45;
 }
 
+// Buttons
+button {
+    font-size: 0.875rem;
+    line-height: 1.45;
+    font-family: $button-font;
+}
+
 .inverted {
     color: $white !important;
 

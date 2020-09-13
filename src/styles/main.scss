@@ -3,22 +3,34 @@
 @import 'variables/settings';
 @import 'variables/fonts';
 
-
 // Import atoms
 @import 'atoms/normalize';
 @import 'atoms/mixins';
-@import 'atoms/typography';
+@import 'atoms/buttons';
+@import 'atoms/checkbox';
 @import 'atoms/grid';
 @import 'atoms/icons';
 @import 'atoms/inputs';
-@import 'atoms/checkbox';
+@import 'atoms/labels';
+@import 'atoms/lists';
 @import 'atoms/radio';
-@import 'atoms/toggle';
-@import 'atoms/buttons';
+@import 'atoms/select';
 @import 'atoms/table';
+@import 'atoms/toggle';
+@import 'atoms/tooltip';
+@import 'atoms/typography';
 
 // Import molecules
 @import 'molecules/accordion';
-
+@import 'molecules/cards';
+@import 'molecules/pagination';
+@import 'molecules/quote';
+@import 'molecules/slider';
 
 // Import organisms
+@import 'organisms/carousel';
+@import 'organisms/datepicker';
+@import 'organisms/footer';
+@import 'organisms/modal';
+@import 'organisms/navigation';
+@import 'organisms/notifications';
