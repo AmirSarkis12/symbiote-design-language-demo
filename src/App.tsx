@@ -232,7 +232,34 @@ function App() {
                 <br></br>
                 <div className="row">
                     <div className="col-6">
-                        <i className="las la-battery-three-quarters"></i>
+                        <ul className="pagination" role="menubar" aria-label="Pages">
+                            <li className="previous">
+                                <button>
+                                    <i className="las la-arrow-circle-left"></i>
+                                    <span className="sr-only">Previous page</span>
+                                </button>
+                            </li>
+                            <li><button>1</button></li>
+                            <li><button>2</button></li>
+                            <li><button>3</button></li>
+                            <li className="current">
+                                <button>4</button>
+                            </li>
+                            <li><button>5</button></li>
+                            <li><button>6</button></li>
+                            <li><button>7</button></li>
+                            <li><button>8</button></li>
+                            <li><button>9</button></li>
+                            <li><button>10</button></li>
+                            <li className="next">
+                                <button>
+                                    <i className="las la-arrow-circle-right"></i>
+                                    <span className="sr-only">Next page</span>
+                                </button>
+                            </li>
+                        </ul>
+
+
 
                     </div>
                 </div>
