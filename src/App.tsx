@@ -205,6 +205,16 @@ function App() {
                         </ul>
                     </div>
                 </div>
+
+                <br></br>
+                <div className="row">
+                    <div className="col-6">
+                        <div className="tooltip">
+                            <p>Hover over me</p>
+                            <span className="tooltip-text">Here is some tooltip text</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
