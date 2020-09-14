@@ -164,10 +164,12 @@ function App() {
 
                 <br></br>
                 <div className="row">
-                    <span className="label label-info">Info</span>
-                    <span className="label label-success">Success</span>
-                    <span className="label label-warning">Warning</span>
-                    <span className="label label-error">Error</span>
+                    <div className="col-6">
+                        <span className="label label-info">Info</span>
+                        <span className="label label-success">Success</span>
+                        <span className="label label-warning">Warning</span>
+                        <span className="label label-error">Error</span>
+                    </div>
                 </div>
 
                 <br></br>
@@ -184,6 +186,23 @@ function App() {
                             </li>
                             <li> Retire </li>
                         </ol>
+                    </div>
+                </div>
+
+                <br></br>
+                <div className="row">
+                    <div className="col-6">
+                        <ul>
+                            <li> Make Design Langauge </li>
+                            <li> Create own web site:
+                                <ul>
+                                    <li> Find it to be super helpful </li>
+                                    <li> Learn all the stuff</li>
+                                    <li> Teach others </li>
+                                </ul>
+                            </li>
+                            <li> Retire </li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -1,11 +1,10 @@
 ol {
     counter-reset:counter;
-    padding-left: 1.2em;
 
     li {
         position: relative;
         padding-left: 2.4em;
-        margin: 0.6em;
+        margin: 0.6em 0 0 0;
         list-style: none;
         line-height: 1.8em;
         -webkit-transition: all 0.2s ease-in-out;
@@ -26,7 +25,6 @@ ol {
         background: $list-point-background-color;
         text-align: center;
         border-radius: 1.2em;
-        box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
         z-index: 1;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
@@ -49,3 +47,45 @@ ol {
     }
 }
 
+ul {
+    li {
+        position: relative;
+        padding-left: 1.6em;
+        margin: 1.2em 0 0 0;
+        list-style: none;
+        line-height: 1em;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    li:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1em;
+        height: 1em;
+        padding: 0;
+        background: $list-point-background-color;
+        text-align: center;
+        border-radius: 100%;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    li:hover:before {
+        background-color: $list-point-active-background-color;
+    }
+
+    li:after {
+        position: absolute;
+        top: 2.1em;
+        left: 0.4em;
+        width: 2px;
+        height: calc(100% - 2em);
+        content: '';
+        background-color: $medium-gray;
+        z-index: 0;
+    }
+}
