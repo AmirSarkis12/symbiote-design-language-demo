@@ -215,6 +215,26 @@ function App() {
                         </div>
                     </div>
                 </div>
+
+                <br></br>
+                <div className="row">
+                    <div className="col-6">
+                        <form>
+                            <input className="error" type="text" id="firstName" placeholder="First Name" required/>
+                            <input type="text" id="lastName" placeholder="Last Name" required/>
+                            <input type="email" id="email" placeholder="Email" required/>
+                            <input type="password" id="password" placeholder="Password" required/>
+                            <input type="password" id="confirmPassword" placeholder="Confirm Password" required/>
+                        </form>
+                    </div>
+                </div>
+
+                <br></br>
+                <div className="row">
+                    <div className="col-6">
+
+                    </div>
+                </div>
             </div>
         </div>
     );

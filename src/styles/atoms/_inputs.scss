@@ -1,0 +1,21 @@
+form {
+    input {
+        outline: none;
+        display: block;
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid $dark-gray;
+        margin: 15px 0px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        transition: .3s ease;
+
+        &:focus {
+            border: 1px solid $purple;
+        }
+
+        &.error {
+            border: 1px solid $error;
+        }
+    }
+}
