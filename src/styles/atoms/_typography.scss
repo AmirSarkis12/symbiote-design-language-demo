@@ -48,6 +48,11 @@ p, a, span, table, label, ul, ol, li {
     line-height: 1.45;
 }
 
+// Links
+a {
+    color: $link-color;
+}
+
 // Buttons
 button {
     font-size: 0.875rem;
