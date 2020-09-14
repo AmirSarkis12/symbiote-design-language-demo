@@ -3,12 +3,12 @@
 	flex-wrap: wrap;
     justify-content: center;
 
-	&__label {
+	&-label {
 		margin: 0 5px;
 		cursor: pointer;
 	}
 
-	&__group {
+	&-group {
 		position: relative;
 		width: 50px;
         height: 25px;
@@ -17,15 +17,15 @@
         transition: .2s;
 	}
 
-	&__input:checked ~ &__group {
+	&-input:checked ~ &-group {
 		background-color: $toggle-color;
 
-		.toggle__checked {
+		.toggle-checked {
 			right: 5px;
 		}
 	}
 
-	&__checked {
+	&-checked {
         position: absolute;
         top: 50%;
         right: calc(100% - 20px);

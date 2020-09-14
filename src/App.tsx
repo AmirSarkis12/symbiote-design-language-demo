@@ -13,24 +13,24 @@ function App() {
                         {/* Checkbox */}
                         <div className="checkbox">
                             <p className="title">Custom checkbox</p>
-                            <label htmlFor="customCheckbox1" className="checkbox__label">
-                                <div className="checkbox__group">
-                                    <input type="checkbox" className="checkbox__input" id="customCheckbox1" hidden />
-                                    <span className="checkbox__checked"></span>
+                            <label htmlFor="customCheckbox1" className="checkbox-label">
+                                <div className="checkbox-group">
+                                    <input type="checkbox" className="checkbox-input" id="customCheckbox1" hidden />
+                                    <span className="checkbox-checked"></span>
                                 </div>
                             </label>
 
-                            <label htmlFor="customCheckbox2" className="checkbox__label">
-                                <div className="checkbox__group">
-                                    <input type="checkbox" className="checkbox__input" id="customCheckbox2" hidden />
-                                    <span className="checkbox__checked"></span>
+                            <label htmlFor="customCheckbox2" className="checkbox-label">
+                                <div className="checkbox-group">
+                                    <input type="checkbox" className="checkbox-input" id="customCheckbox2" hidden />
+                                    <span className="checkbox-checked"></span>
                                 </div>
                             </label>
 
-                            <label htmlFor="customCheckbox3" className="checkbox__label">
-                                <div className="checkbox__group">
-                                    <input type="checkbox" className="checkbox__input" id="customCheckbox3" hidden />
-                                    <span className="checkbox__checked"></span>
+                            <label htmlFor="customCheckbox3" className="checkbox-label">
+                                <div className="checkbox-group">
+                                    <input type="checkbox" className="checkbox-input" id="customCheckbox3" hidden />
+                                    <span className="checkbox-checked"></span>
                                 </div>
                             </label>
                         </div>
@@ -38,24 +38,24 @@ function App() {
                         {/* Radio Buttons */}
                         <div className="radio">
                             <p className="title">Custom radio</p>
-                            <label htmlFor="customRadio1" className="radio__label">
-                                <div className="radio__group">
-                                    <input type="radio" className="radio__input" id="customRadio1" name="customRadio" hidden />
-                                    <span className="radio__checked"></span>
+                            <label htmlFor="customRadio1" className="radio-label">
+                                <div className="radio-group">
+                                    <input type="radio" className="radio-input" id="customRadio1" name="customRadio" hidden />
+                                    <span className="radio-checked"></span>
                                 </div>
                             </label>
 
-                            <label htmlFor="customRadio2" className="radio__label">
-                                <div className="radio__group">
-                                    <input type="radio" className="radio__input" id="customRadio2" name="customRadio" hidden />
-                                    <span className="radio__checked"></span>
+                            <label htmlFor="customRadio2" className="radio-label">
+                                <div className="radio-group">
+                                    <input type="radio" className="radio-input" id="customRadio2" name="customRadio" hidden />
+                                    <span className="radio-checked"></span>
                                 </div>
                             </label>
 
-                            <label htmlFor="customRadio3" className="radio__label">
-                                <div className="radio__group">
-                                    <input type="radio" className="radio__input" id="customRadio3" name="customRadio" hidden />
-                                    <span className="radio__checked"></span>
+                            <label htmlFor="customRadio3" className="radio-label">
+                                <div className="radio-group">
+                                    <input type="radio" className="radio-input" id="customRadio3" name="customRadio" hidden />
+                                    <span className="radio-checked"></span>
                                 </div>
                             </label>
                         </div>
@@ -63,10 +63,10 @@ function App() {
                         {/* Toggle */}
                         <div className="toggle">
                             <p className="title">Custom toggle</p>
-                            <label htmlFor="customToggle" className="toggle__label">
-                                    <input type="checkbox" className="toggle__input" id="customToggle" hidden />
-                                    <div className="toggle__group">
-                                        <span className="toggle__checked"></span>
+                            <label htmlFor="customToggle" className="toggle-label">
+                                    <input type="checkbox" className="toggle-input" id="customToggle" hidden />
+                                    <div className="toggle-group">
+                                        <span className="toggle-checked"></span>
                                     </div>
                             </label>
                         </div>
@@ -261,15 +261,13 @@ function App() {
                     </div>
                 </div>
 
-
-
-                <div className="notification success">
+                {/* <div className="notification warning">
                     <i className="las la-exclamation-circle"></i>
                     <div className="text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
                     </div>
                     <button className="button outline-light sm">Stay Logged In</button>
-                </div>
+                </div> */}
 
             </div>
         </div>
