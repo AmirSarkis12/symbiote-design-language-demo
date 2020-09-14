@@ -232,6 +232,7 @@ function App() {
                 <br></br>
                 <div className="row">
                     <div className="col-6">
+                        <i className="las la-battery-three-quarters"></i>
 
                     </div>
                 </div>

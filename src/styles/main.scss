@@ -9,7 +9,6 @@
 @import 'atoms/buttons';
 @import 'atoms/checkbox';
 @import 'atoms/grid';
-@import 'atoms/icons';
 @import 'atoms/inputs';
 @import 'atoms/labels';
 @import 'atoms/lists';
@@ -34,3 +33,6 @@
 @import 'organisms/modal';
 @import 'organisms/navigation';
 @import 'organisms/notifications';
+
+// Import library styles
+@import '../libs/line-awesome/css/line-awesome.min.css';
