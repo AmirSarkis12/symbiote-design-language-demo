@@ -1,6 +1,6 @@
 button {
     display: inline-block;
-    min-width: 164px;
+    min-width: 120px;
     padding: 12px 15px;
     cursor: pointer;
     white-space: nowrap;
@@ -49,17 +49,15 @@ button {
         border-radius: 32px;
     }
 
-    &.large {
-        padding: 15px 20px;
+    &.xs {
+        padding: 1px 5px;
     }
 
-    &.small {
-        min-width: 0px;
+    &.sm {
         padding: 5px 10px;
     }
 
-    &.extra-small {
-        min-width: 0px;
-        padding: 1px 5px;
+    &.lg {
+        padding: 15px 20px;
     }
 }

@@ -153,10 +153,10 @@ function App() {
                         <button className="outline-light">Button Outline Light</button>
                         <button className="outline-dark">Button Outline Dark</button>
 
-                        <button className="primary large">Button lg</button>
+                        <button className="primary lg">Button lg</button>
                         <button className="primary">Button md</button>
-                        <button className="primary small">Button sm</button>
-                        <button className="primary extra-small">Button xs</button>
+                        <button className="primary sm">Button sm</button>
+                        <button className="primary xs">Button xs</button>
 
                         <button className="primary disabled">Button md</button>
                     </div>
@@ -258,11 +258,19 @@ function App() {
                                 </button>
                             </li>
                         </ul>
-
-
-
                     </div>
                 </div>
+
+
+
+                <div className="notification success">
+                    <i className="las la-exclamation-circle"></i>
+                    <div className="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
+                    </div>
+                    <button className="button outline-light sm">Stay Logged In</button>
+                </div>
+
             </div>
         </div>
     );
