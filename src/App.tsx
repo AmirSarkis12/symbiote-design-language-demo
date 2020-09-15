@@ -146,19 +146,37 @@ function App() {
 
                 <br></br>
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-2">
                         <button className="primary rounded">Button Primary Rounded</button>
+                    </div>
+                    <div className="col-2">
                         <button className="primary rounded cta">Button Primary Rounded<i className="las la-angle-right xs"></i></button>
+                    </div>
+                    <div className="col-2">
                         <button className="secondary">Button Secondary</button>
+                    </div>
+                    <div className="col-2">
                         <button className="tertiary">Button Tertiary</button>
+                    </div>
+                    <div className="col-2">
                         <button className="outline-light">Button Outline Light</button>
+                    </div>
+                    <div className="col-2">
                         <button className="outline-dark">Button Outline Dark</button>
-
+                    </div>
+                    <div className="col-2">
                         <button className="primary lg">Button lg</button>
+                    </div>
+                    <div className="col-2">
                         <button className="primary">Button md</button>
+                    </div>
+                    <div className="col-2">
                         <button className="primary sm">Button sm</button>
+                    </div>
+                    <div className="col-2">
                         <button className="primary xs">Button xs</button>
-
+                    </div>
+                    <div className="col-2">
                         <button className="disabled">Button md</button>
                     </div>
                 </div>
@@ -221,11 +239,20 @@ function App() {
                 <div className="row">
                     <div className="col-6">
                         <form>
-                            <input className="error" type="text" id="firstName" placeholder="First Name" required/>
-                            <input type="text" id="lastName" placeholder="Last Name" required/>
-                            <input type="email" id="email" placeholder="Email" required/>
-                            <input type="password" id="password" placeholder="Password" required/>
-                            <input type="password" id="confirmPassword" placeholder="Confirm Password" required/>
+                            <label htmlFor="firstName">First Name</label>
+                            <input className="error" type="text" id="firstName" required/>
+
+                            <label htmlFor="lastName">Last Name</label>
+                            <input type="text" id="lastName" required/>
+
+                            <label htmlFor="email">Email</label>
+                            <input type="email" id="email"required/>
+
+                            <label htmlFor="password">Password</label>
+                            <input type="password" id="password" required/>
+
+                            <label htmlFor="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword"  required/>
                         </form>
                     </div>
                 </div>
@@ -296,6 +323,16 @@ function App() {
                                 </li>
                             </ol>
                         </div>
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-8">
+                        <label htmlFor="selectField">Confirm Password</label>
+                        <select name="selectField">
+                            <option value="">Color!</option>
+                            <option value="">Lorem Ipsum dolar set amet consequler von mapelle</option>
+                        </select>
                     </div>
                 </div>
             </div>

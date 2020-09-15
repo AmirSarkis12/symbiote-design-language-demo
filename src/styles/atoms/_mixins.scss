@@ -140,9 +140,10 @@
     }
 
     // Iterates through the columns to create a new list and then sets the float.
-    @mixin float-grid-columns( $class, $i: 1, $list: ".col-#{ $class }-#{ $i }" ) {
+    @mixin float-grid-columns( $class, $i: 1, $list: ".col-#{ $i }, .col-#{ $class }-#{ $i }" ) {
         @for $i from ( 1 + 1 ) through 12 {
-            $list: "#{ $list }, .col-#{ $class }-#{ $i }";
+            $list: "#{ $list }, .col-#{ $i }, .col-#{ $class }-#{ $i }";
+
         }
 
         #{ $list } {

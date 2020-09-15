@@ -10,7 +10,7 @@
 
 // Button settings
 $button-font: 'Heading', sans-serif;
-$primary-background-color: $blue-aa-small;
+$primary-background-color: $cyan-aa-small;
 $primary-foreground-color: $white;
 
 $secondary-background-color: $red-aa-small;
@@ -24,51 +24,57 @@ $disabled-foreground-color: $white;
 
 // Tyopgraphy settings
 $default-text-color: $black;
-$link-color: $blue-aa-small;
+$link-color: $cyan-aa-small;
 
 // Input settings
-$checkbox-border-color: $blue-aa-small;
+$checkbox-border-color: $cyan-aa-small;
 $checkbox-check-color: $black;
-$radio-color: $blue-aa-small;
-$toggle-color: $blue-aa-small;
+$radio-color: $cyan-aa-small;
+$toggle-color: $cyan-aa-small;
 $input-field-border-color: $gray-aa-small;
-$input-field-focus-color: $blue-aa-small;
+$input-field-focus-color: $cyan-aa-small;
+
+// Select settings
+$select-field-border-color: $gray-aa-small;
+$select-field-focus-color: $cyan-aa-small;
+$select-field-arrow-color: $gray-aa-small;
+$select-field-arrow-focus-color: $cyan-aa-small;
 
 // Accordion settings
-$accordion-heading-background-color: $blue-aa-small;
+$accordion-heading-background-color: $cyan-aa-small;
 $accordion-heading-foreground-color: $white;
 
 // Table settings
-$table-heading-background-color: $blue-aa-small;
+$table-heading-background-color: $violet-aa-small;
 $table-heading-foreground-color: $white;
 $table-odd-background-color: $white;
 $table-odd-foreground-color: $black;
-$table-seperator-color: $gray-aa-large;
-$table-even-background-color: $gray-non-aa;
+$table-seperator-color: $gray-non-aa;
+$table-even-background-color: $gray-non-aa-lightest;
 $table-even-foreground-color: $black;
 
 // List settings
-$list-point-background-color: $blue-aa-small;
+$list-point-background-color: $red-aa-small;
 $list-point-foreground-color: $white;
 $list-association-color: $gray-non-aa;
 
 // Tooltip settings
 $tooltip-indicator-color: $gray-aa-small;
-$tooltip-background-color: $blue-aa-small;
+$tooltip-background-color: $cyan-aa-small;
 $tooltip-foreground-color: $white;
 
 // Pagination settings
-$active-page-background-color: $blue-aa-small;
+$active-page-background-color: $orange-aa-small;
 $active-page-foreground-color: $white;
 
 // Progress bar settings
-$progress-background-color: $blue-aa-small;
+$progress-background-color: $green-aa-small;
 $progress-foreground-color: $white;
 $remaining-steps-background-color: $gray-aa-small;
 $remaining-steps-foreground-color: $white;
 
 // Notification settings
-$info-color: $blue-aa-small;
+$info-color: $cyan-aa-small;
 $warning-color: $orange-aa-small;
 $success-color: $green-aa-small;
 $error-color: $red-aa-small;
