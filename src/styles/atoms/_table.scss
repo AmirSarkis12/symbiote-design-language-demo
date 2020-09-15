@@ -9,7 +9,7 @@ table {
 
     thead {
         color: $table-heading-foreground-color;
-        background: $table-heading-background-color;
+        background-color: $table-heading-background-color;
     }
 
     td, th {
@@ -20,12 +20,12 @@ table {
     tbody {
         tr {
             &:nth-child(even) {
-                background: $table-even-background-color;
+                background-color: $table-even-background-color;
                 color: $table-even-foreground-color;
             }
 
             &:nth-child(odd) {
-                background: $table-odd-background-color;
+                background-color: $table-odd-background-color;
                 color: $table-odd-foreground-color;
             }
         }

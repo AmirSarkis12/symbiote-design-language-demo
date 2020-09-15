@@ -148,6 +148,7 @@ function App() {
                 <div className="row">
                     <div className="col-12">
                         <button className="primary rounded">Button Primary Rounded</button>
+                        <button className="primary rounded cta">Button Primary Rounded<i className="las la-angle-right xs"></i></button>
                         <button className="secondary">Button Secondary</button>
                         <button className="tertiary">Button Tertiary</button>
                         <button className="outline-light">Button Outline Light</button>
@@ -261,14 +262,42 @@ function App() {
                     </div>
                 </div>
 
-                <div className="notification warning">
+                <div className="notification success">
                     <i className="las la-exclamation-circle"></i>
                     <div className="text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
                     </div>
-                    <button className="button outline-light sm">Stay Logged In</button>
+                    <button className="button outline-light cta sm">Stay Logged In <i className="las la-angle-right xs"></i></button>
                 </div>
 
+                <div className="row">
+                    <div className="col-12">
+                        <div className="progress-bar">
+                            <ol className="progress-steps">
+                                <li className="progress-step">
+                                    <span className="count highlight-index"></span>
+                                    <span className="description">Step one</span>
+                                </li>
+                                <li className="progress-step">
+                                    <span className="count highlight-index"></span>
+                                    <span className="description">Step two</span>
+                                </li>
+                                <li className="progress-step">
+                                    <span className="count highlight-index"></span>
+                                    <span className="description">Step three</span>
+                                </li>
+                                <li className="progress-step">
+                                    <span className="count"></span>
+                                    <span className="description">Step four</span>
+                                </li>
+                                <li className="progress-step">
+                                    <span className="count"></span>
+                                    <span className="description">Step five</span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

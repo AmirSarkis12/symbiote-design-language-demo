@@ -50,8 +50,6 @@ $table-even-foreground-color: $black;
 // List settings
 $list-point-background-color: $blue-aa-small;
 $list-point-foreground-color: $white;
-$list-point-active-background-color: $blue-aa-large;
-$list-point-active-foreground-color: $white;
 $list-association-color: $gray-non-aa;
 
 // Tooltip settings
@@ -62,6 +60,12 @@ $tooltip-foreground-color: $white;
 // Pagination settings
 $active-page-background-color: $blue-aa-small;
 $active-page-foreground-color: $white;
+
+// Progress bar settings
+$progress-background-color: $blue-aa-small;
+$progress-foreground-color: $white;
+$remaining-steps-background-color: $gray-aa-small;
+$remaining-steps-foreground-color: $white;
 
 // Notification settings
 $info-color: $blue-aa-small;

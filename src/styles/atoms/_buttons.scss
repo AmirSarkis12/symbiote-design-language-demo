@@ -1,5 +1,6 @@
 button {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     min-width: 120px;
     padding: 12px 15px;
     cursor: pointer;
@@ -8,48 +9,70 @@ button {
     text-align: center;
 
     &.primary {
-        background: $primary-background-color;
+        background-color: $primary-background-color;
         color: $primary-foreground-color;
         border: none;
         @include transition();
-        @include darken-on-hover($primary-background-color);
+
+        &:hover {
+            @include darken-on-hover($primary-background-color);
+        }
     }
 
     &.secondary {
-        background: $secondary-background-color;
+        background-color: $secondary-background-color;
         color: $secondary-foreground-color;
         border: none;
         @include transition();
-        @include darken-on-hover($secondary-background-color);
+
+        &:hover {
+            @include darken-on-hover($secondary-background-color);
+        }
     }
 
     &.tertiary {
-        background: $tertiary-background-color;
+        background-color: $tertiary-background-color;
         color: $tertiary-foreground-color;
         border: none;
         @include transition();
-        @include darken-on-hover($tertiary-background-color);
+
+        &:hover {
+            @include darken-on-hover($tertiary-background-color);
+        }
+    }
+
+    &.cta {
+        i {
+            position: relative;
+            left: 0px;
+            @include transition();
+        }
+
+        &:hover {
+            i {
+                left: 3px;
+            }
+        }
     }
 
     &.outline-light {
-        background: $transparent;
+        background-color: $transparent;
         color: $white;
         border: 1px solid $white;
         height: 100%;
     }
 
     &.outline-dark {
-        background: $transparent;
+        background-color: $transparent;
         color: $black;
         border: 1px solid $black;
         height: 100%;
     }
 
     &.disabled {
-        background: $disabled-background-color;
+        background-color: $disabled-background-color;
         color: $disabled-foreground-color;
         border: none;
-        opacity: 0.6;
         cursor: default;
     }
 

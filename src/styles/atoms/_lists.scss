@@ -21,7 +21,7 @@ ol {
         line-height: 1.8em;
         padding: 0;
         color: $list-point-foreground-color;
-        background: $list-point-background-color;
+        background-color: $list-point-background-color;
         text-align: center;
         border-radius: 1.2em;
         z-index: 1;
@@ -29,8 +29,7 @@ ol {
     }
 
     li:hover:before {
-        background-color: $list-point-active-background-color;
-        color: $list-point-active-foreground-color;
+        @include darken-on-hover($list-point-background-color);
     }
 
     li:after {
@@ -63,7 +62,7 @@ ul {
         width: 1em;
         height: 1em;
         padding: 0;
-        background: $list-point-background-color;
+        background-color: $list-point-background-color;
         text-align: center;
         border-radius: 100%;
         z-index: 1;
@@ -71,7 +70,7 @@ ul {
     }
 
     li:hover:before {
-        background-color: $list-point-active-background-color;
+        @include darken-on-hover($list-point-background-color);
     }
 
     li:after {

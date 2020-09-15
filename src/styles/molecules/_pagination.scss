@@ -20,7 +20,7 @@
             width: 1.8rem;
             height: 1.8rem;
             border: none;
-            background: none;
+            background-color: unset;
             cursor: pointer;
             @include transition();
         }
