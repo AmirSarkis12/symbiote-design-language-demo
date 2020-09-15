@@ -40,6 +40,8 @@ button {
     }
 
     &.disabled {
+        background: $disabled-background-color;
+        color: $disabled-foreground-color;
         border: none;
         opacity: 0.6;
         cursor: default;

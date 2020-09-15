@@ -9,23 +9,23 @@ span {
         margin: 0px 2px;
 
         &.label-info {
-            border: 2px solid $info;
-            color: $info;
+            border: 2px solid $info-color;
+            color: $info-color;
         }
 
         &.label-success {
-            border: 2px solid $success;
-            color: $success;
+            border: 2px solid $success-color;
+            color: $success-color;
         }
 
         &.label-warning {
-            border: 2px solid $warning;
-            color: $warning;
+            border: 2px solid $warning-color;
+            color: $warning-color;
         }
 
         &.label-error {
-            border: 2px solid $error;
-            color: $error;
+            border: 2px solid $error-color;
+            color: $error-color;
         }
     }
 }

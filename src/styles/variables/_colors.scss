@@ -1,38 +1,42 @@
-// Default color palette - Modify or replace these colors to match your branding. These values are referenced by _settings.scss, so if the below palette is modified, ensure that respective references are updated.
+// Default color palette - Designed to be WCAG 2.1 AA compliant achieving a contrast ratio of at least 4.5:1 when used with small text or a contrast ratio of 3:1 for large text or iconography.
+// e.g.: Use small white text on cyan-aa-small to achieve a contrast ratio of > 4.5:1 or use white large text or icon with cyan-aa-large to achieve a contrast ratio of > 3:1
 
-// Purples
-$lilac: #b4b4db; // Lilac
-$purple: #7547d0; // Purple
-$grape: #5d3895; // Grape
-$galaxy: #2a2432; // Galaxy
+// Modify or replace these colors to match your branding. These values are referenced by _settings.scss, so if the below palette is modified, ensure that respective references are updated.
 
-// Reds
-$salmon: #ffb2ab; // Salmon
-$red: #ff6979; // Red
-$burgundy: #962f44; // Burgundy
-$rosso: #3a101a; // Rosso
+//Red
+$red-aa-large: #FF5C5C;
+$red-aa-small: #D93A3A;
 
-// Greens
-$mint: #beedd5; // Mint
-$green: #60ed90; // Green
-$green-alpha: rgba(#60ed90, 0.8); // Green Semi-transparent
-$grass: #108454; // Grass
-$forest: #093320; // Forest
-$grey: #444444;
+//Orange
+$orange-aa-large: #EB7100;
+$orange-aa-small: #BB5506;
 
-// Yellows
-$cream: #f4e4ad; // Cream
-$yellow: #f4d879; // Yellow
-$mustard: #90720e; // Mustard
-$seaweed: #302e1b; // Seaweed
+//Green
+$green-aa-large: #19A96A;
+$green-aa-small: #2C815C;
 
-// Grays
-$light-gray: #F2F2F2;
-$medium-gray: #DDDDDD;
-$dark-gray:#9A9A9A;
-$extra-dark-gray:#777777;
+// Cyan
+$cyan-aa-large: #1A98FF;
+$cyan-aa-small: #307AB8;
 
-// Body Text Color
+// Blue
+$blue-aa-large: #6190FF;
+$blue-aa-small: #426BCD;
+
+// Purple
+$purple-aa-large: #C46BFF;
+$purple-aa-small: #A152CB;
+
+// Violet
+$violet-aa-large: #A97AFF;
+$violet-aa-small: #825FC3;
+
+// Gray
+$gray-aa-large: #949494;
+$gray-aa-small: #767676;
+$gray-non-aa: #F2F2F2; // Only used for non-essential items
+
+// Black
 $black: #000000;
 
 // White
@@ -40,9 +44,3 @@ $white: #ffffff;
 
 // Transparent
 $transparent: rgba(0,0,0,0);
-
-// System message colors
-$info:    #177eab !default;
-$success: #1d8665 !default;
-$warning: #ad6500 !default;
-$error:   #bc2424 !default;

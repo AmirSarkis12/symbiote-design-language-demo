@@ -9,19 +9,19 @@
     padding: 1em;
 
     &.info {
-        background-color: $info;
+        background-color: $info-color;
     }
 
     &.success {
-        background-color: $success;
+        background-color: $success-color
     }
 
     &.warning {
-        background-color: $warning;
+        background-color: $warning-color
     }
 
     &.error {
-        background-color: $error;
+        background-color: $error-color;
     }
 
     i, .text, button {

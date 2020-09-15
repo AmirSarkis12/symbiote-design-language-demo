@@ -10,48 +10,61 @@
 
 // Button settings
 $button-font: 'Heading', sans-serif;
-$primary-background-color: $green;
-$primary-foreground-color: $grape;
+$primary-background-color: $blue-aa-small;
+$primary-foreground-color: $white;
 
-$secondary-background-color: $purple;
+$secondary-background-color: $red-aa-small;
 $secondary-foreground-color: $white;
 
-$tertiary-background-color: $grape;
+$tertiary-background-color: $green-aa-small;
 $tertiary-foreground-color: $white;
+
+$disabled-background-color: $gray-aa-small;
+$disabled-foreground-color: $white;
 
 // Tyopgraphy settings
 $default-text-color: $black;
-$link-color: $purple;
+$link-color: $blue-aa-small;
 
 // Input settings
-$checkbox-border-color: $purple;
+$checkbox-border-color: $blue-aa-small;
 $checkbox-check-color: $black;
-$radio-color: $grape;
-$toggle-color: $burgundy;
+$radio-color: $blue-aa-small;
+$toggle-color: $blue-aa-small;
+$input-field-border-color: $gray-aa-small;
+$input-field-focus-color: $blue-aa-small;
 
 // Accordion settings
-$accordion-heading-background-color: $purple;
+$accordion-heading-background-color: $blue-aa-small;
 $accordion-heading-foreground-color: $white;
 
 // Table settings
-$table-heading-background-color: $green;
-$table-heading-foreground-color: $black;
+$table-heading-background-color: $blue-aa-small;
+$table-heading-foreground-color: $white;
 $table-odd-background-color: $white;
 $table-odd-foreground-color: $black;
-$table-seperator-color: $medium-gray;
-$table-even-background-color: $light-gray;
+$table-seperator-color: $gray-aa-large;
+$table-even-background-color: $gray-non-aa;
 $table-even-foreground-color: $black;
 
 // List settings
-$list-point-background-color: $purple;
+$list-point-background-color: $blue-aa-small;
 $list-point-foreground-color: $white;
-$list-point-active-background-color: $grass;
+$list-point-active-background-color: $blue-aa-large;
 $list-point-active-foreground-color: $white;
+$list-association-color: $gray-non-aa;
 
 // Tooltip settings
-$tooltip-background-color: $purple;
+$tooltip-indicator-color: $gray-aa-small;
+$tooltip-background-color: $blue-aa-small;
 $tooltip-foreground-color: $white;
 
 // Pagination settings
-$active-page-background-color: $purple;
+$active-page-background-color: $blue-aa-small;
 $active-page-foreground-color: $white;
+
+// Notification settings
+$info-color: $blue-aa-small;
+$warning-color: $orange-aa-small;
+$success-color: $green-aa-small;
+$error-color: $red-aa-small;

@@ -158,7 +158,7 @@ function App() {
                         <button className="primary sm">Button sm</button>
                         <button className="primary xs">Button xs</button>
 
-                        <button className="primary disabled">Button md</button>
+                        <button className="disabled">Button md</button>
                     </div>
                 </div>
 
@@ -261,13 +261,13 @@ function App() {
                     </div>
                 </div>
 
-                {/* <div className="notification warning">
+                <div className="notification warning">
                     <i className="las la-exclamation-circle"></i>
                     <div className="text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
                     </div>
                     <button className="button outline-light sm">Stay Logged In</button>
-                </div> */}
+                </div>
 
             </div>
         </div>

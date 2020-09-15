@@ -42,7 +42,7 @@ ol {
         width: 2px;
         height: calc(100% - 2em);
         content: '';
-        background-color: $medium-gray;
+        background-color: $list-association-color;
         z-index: 0;
     }
 }
@@ -85,7 +85,7 @@ ul {
         width: 2px;
         height: calc(100% - 2em);
         content: '';
-        background-color: $medium-gray;
+        background-color: $list-association-color;
         z-index: 0;
     }
 }
