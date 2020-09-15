@@ -16,14 +16,15 @@
 
             /* Icon */
             &:hover {
-                background: darken($accordion-heading-background-color, 10%);
+                @include transition();
+                @include darken-on-hover($accordion-heading-background-color);
             }
             &::after {
                 content: "\276F";
                 width: 1em;
                 height: 1em;
                 text-align: center;
-                transition: all .35s;
+                @include transition();
             }
         }
 
@@ -31,7 +32,7 @@
             max-height: 0;
             padding: 0 1em;
             background: $accordion-heading-foreground-color;
-            transition: all .35s;
+            @include transition();
             font-family: 'Body', sans-serif;
         }
 

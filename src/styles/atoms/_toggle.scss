@@ -14,7 +14,7 @@
         height: 25px;
 		background: #ccc;
 		border-radius: 50px;
-        transition: .2s;
+        @include transition();
 	}
 
 	&-input:checked ~ &-group {
@@ -35,7 +35,7 @@
         background-color: white;
         border-radius: 50px;
         transform: translateY(-50%);
-        transition: .2s;
+        @include transition();
 	}
 }
 

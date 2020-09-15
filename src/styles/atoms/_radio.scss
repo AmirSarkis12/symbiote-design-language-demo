@@ -32,6 +32,6 @@
 		background-color: $radio-color;
 		border-radius: 50px;
 		opacity: 0;
-		transition: .2s;
+		@include transition();
 	}
 }

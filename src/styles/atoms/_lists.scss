@@ -7,8 +7,7 @@ ol {
         margin: 0.6em 0 0 0;
         list-style: none;
         line-height: 1.8em;
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
+        @include transition();
     }
 
     li:before {
@@ -26,8 +25,7 @@ ol {
         text-align: center;
         border-radius: 1.2em;
         z-index: 1;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+        @include transition();
     }
 
     li:hover:before {
@@ -54,8 +52,7 @@ ul {
         margin: 1.2em 0 0 0;
         list-style: none;
         line-height: 1em;
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
+        @include transition();
     }
 
     li:before {
@@ -70,8 +67,7 @@ ul {
         text-align: center;
         border-radius: 100%;
         z-index: 1;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+        @include transition();
     }
 
     li:hover:before {

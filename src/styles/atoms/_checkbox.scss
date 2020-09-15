@@ -33,6 +33,6 @@
         border-bottom: 2px solid $checkbox-check-color;
 		opacity: 0;
 		transform: rotate(30deg);
-		transition: .2s;
+		@include transition();
 	}
 }
