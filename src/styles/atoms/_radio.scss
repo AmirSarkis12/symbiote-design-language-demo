@@ -18,7 +18,7 @@
         height: 20px;
 		background-color: transparent;
 		border: 2px solid $radio-color;
-		border-radius: 50px;
+		border-radius: 100%;
 	}
 
 	&-input:checked + &-checked {
@@ -30,7 +30,7 @@
         width: 10px;
         height: 10px;
 		background-color: $radio-color;
-		border-radius: 50px;
+		border-radius: 100%;
 		opacity: 0;
 		@include transition();
 	}

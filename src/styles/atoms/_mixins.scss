@@ -122,6 +122,18 @@
     background-color: Lightens($color, 10%);
 }
 
+@mixin card-shadow() {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@mixin card-shadow-image() {
+    box-shadow: 0 5px 30px 10px rgba($black, 0.3);
+}
+
+@mixin full-image-card-shadow() {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.2), inset 0px -317px 50px -93px rgba(0, 0, 0, 0.33);
+}
+
 
 // Grid specific mixins below
     // Iterates through all 12 columns to calculate the correct amount of left and right padding for each of the classes.

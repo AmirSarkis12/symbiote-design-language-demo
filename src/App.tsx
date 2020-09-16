@@ -1,6 +1,9 @@
 import React from 'react';
 import './styles/main.scss';
-
+import cardImage1 from './assets/images/card-background-mountains.jpeg';
+import cardImage2 from './assets/images/card-background-trees.jpeg';
+import cardImage3 from './assets/images/card-background-lavender.jpeg';
+import cardImage4 from './assets/images/card-background-dessert.jpeg';
 function App() {
     return (
         <div className="App">
@@ -147,22 +150,19 @@ function App() {
                 <br></br>
                 <div className="row">
                     <div className="col-2">
-                        <button className="primary rounded">Button Primary Rounded</button>
+                        <button className="primary">Primary Button</button>
                     </div>
                     <div className="col-2">
-                        <button className="primary rounded cta">Button Primary Rounded<i className="las la-angle-right xs"></i></button>
+                        <button className="secondary">Secondary Button</button>
                     </div>
                     <div className="col-2">
-                        <button className="secondary">Button Secondary</button>
+                        <button className="tertiary">Tertiary Button</button>
                     </div>
                     <div className="col-2">
-                        <button className="tertiary">Button Tertiary</button>
+                        <button className="outline-light">Outline Light Button</button>
                     </div>
                     <div className="col-2">
-                        <button className="outline-light">Button Outline Light</button>
-                    </div>
-                    <div className="col-2">
-                        <button className="outline-dark">Button Outline Dark</button>
+                        <button className="outline-dark">Outline Dark Button</button>
                     </div>
                     <div className="col-2">
                         <button className="primary lg">Button lg</button>
@@ -294,7 +294,7 @@ function App() {
                     <div className="text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
                     </div>
-                    <button className="button outline-light cta sm">Stay Logged In <i className="las la-angle-right xs"></i></button>
+                    <button className="button outline-light cta sm">Stay Logged In</button>
                 </div>
 
                 <div className="row">
@@ -335,6 +335,100 @@ function App() {
                         </select>
                     </div>
                 </div>
+
+                <div className="row">
+                    <div className="col-xs-12 col-sm-6 col-md-4">
+                        <div className="card full-image-card">
+                            <div className="card-wrapper" style={{
+                                backgroundImage: `url(${cardImage1})`
+
+                            }}>
+                                {/* Optional date */}
+                                <div className="date">
+                                    <span className="day">12</span>
+                                    <span className="month">Aug</span>
+                                    <span className="year">2016</span>
+                                </div>
+                                <div className="content">
+                                    <p className="inverted">Topic</p>
+                                    <h3 className="inverted">Mauris tortor turpis, dignissim vel ullam.</h3>
+                                    <p className="inverted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                    <button className="cta inverted">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xs-12 col-sm-6 col-md-4">
+                        <div className="card">
+                            <div className="card-wrapper" style={{
+                                backgroundImage: `url(${cardImage2})`
+
+                            }}>
+                                <div className="content">
+                                    <p>Topic</p>
+                                    <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                    <button className="cta">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xs-12 col-sm-6 col-md-4">
+                        <div className="card full-image-card">
+                            <div className="card-wrapper" style={{
+                                backgroundImage: `url(${cardImage3})`
+
+                            }}>
+                                {/* Optional date */}
+                                <div className="date">
+                                    <span className="day">12</span>
+                                    <span className="month">Aug</span>
+                                    <span className="year">2016</span>
+                                </div>
+                                <div className="content">
+                                    <p className="inverted">Topic</p>
+                                    <h3 className="inverted">Mauris tortor turpis, dignissim vel ullam.</h3>
+                                    <p className="inverted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                    <button className="cta inverted">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+
+                <div className="row">
+                    <div className="col-xs-12 col-sm-6 col-md-8">
+                        <div className="card wide-card">
+
+                            <div className="content">
+                                <p>Topic</p>
+                                <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                <button className="cta">Read more</button>
+                            </div>
+                             <div className="card-image" style={{
+                                backgroundImage: `url(${cardImage4})`
+                            }}></div>
+                        </div>
+                    </div>
+                    <div className="col-xs-12 col-sm-6 col-md-4">
+                        <div className="card no-image">
+                            <div className="card-wrapper">
+                                <div className="content">
+                                    <p>Topic</p>
+                                    <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                    <button className="cta">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+                <br></br>
+
+
             </div>
         </div>
     );

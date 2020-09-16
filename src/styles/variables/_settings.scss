@@ -30,7 +30,8 @@ $link-color: $cyan-aa-small;
 $checkbox-border-color: $cyan-aa-small;
 $checkbox-check-color: $black;
 $radio-color: $cyan-aa-small;
-$toggle-color: $cyan-aa-small;
+$toggle-inactive-color: $gray-aa-large;
+$toggle-active-color: $cyan-aa-small;
 $input-field-border-color: $gray-aa-small;
 $input-field-focus-color: $cyan-aa-small;
 
@@ -78,3 +79,7 @@ $info-color: $cyan-aa-small;
 $warning-color: $orange-aa-small;
 $success-color: $green-aa-small;
 $error-color: $red-aa-small;
+
+// Card settings
+$card-date-background-color: $cyan-aa-small;
+$card-date-foreground-color: $white;

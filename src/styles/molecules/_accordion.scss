@@ -10,6 +10,8 @@
             display: flex;
             justify-content: space-between;
             padding: 1em;
+            border-radius: 0.25rem;
+            margin: 0.25rem 0 0;
             background-color: $accordion-heading-background-color;
             font-family: 'Body', sans-serif;
             cursor: pointer;
