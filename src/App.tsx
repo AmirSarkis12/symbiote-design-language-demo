@@ -337,7 +337,7 @@ function App() {
                 </div>
 
                 <div className="row">
-                    <div className="col-xs-12 col-sm-6 col-md-4">
+                    <div className="col-xs-12 col-sm-4">
                         <div className="card full-image-card">
                             <div className="card-wrapper" style={{
                                 backgroundImage: `url(${cardImage1})`
@@ -345,9 +345,9 @@ function App() {
                             }}>
                                 {/* Optional date */}
                                 <div className="date">
-                                    <span className="day">12</span>
-                                    <span className="month">Aug</span>
-                                    <span className="year">2016</span>
+                                    <span className="day">18</span>
+                                    <span className="month">Sep</span>
+                                    <span className="year">2020</span>
                                 </div>
                                 <div className="content">
                                     <p className="inverted">Topic</p>
@@ -358,7 +358,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xs-12 col-sm-6 col-md-4">
+                    <div className="col-xs-12 col-sm-4">
                         <div className="card">
                             <div className="card-wrapper" style={{
                                 backgroundImage: `url(${cardImage2})`
@@ -373,7 +373,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xs-12 col-sm-6 col-md-4">
+                    <div className="col-xs-12 col-sm-4">
                         <div className="card full-image-card">
                             <div className="card-wrapper" style={{
                                 backgroundImage: `url(${cardImage3})`
@@ -381,9 +381,9 @@ function App() {
                             }}>
                                 {/* Optional date */}
                                 <div className="date">
-                                    <span className="day">12</span>
-                                    <span className="month">Aug</span>
-                                    <span className="year">2016</span>
+                                    <span className="day">22</span>
+                                    <span className="month">Nov</span>
+                                    <span className="year">2020</span>
                                 </div>
                                 <div className="content">
                                     <p className="inverted">Topic</p>
