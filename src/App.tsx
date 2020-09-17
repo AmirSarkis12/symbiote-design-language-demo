@@ -1,5 +1,8 @@
 import React from 'react';
 import './styles/main.scss';
+import './scripts/navigation'
+
+import logo from './assets/images/logo.png';
 import cardImage1 from './assets/images/card-background-mountains.jpeg';
 import cardImage2 from './assets/images/card-background-trees.jpeg';
 import cardImage3 from './assets/images/card-background-lavender.jpeg';
@@ -8,6 +11,46 @@ function App() {
     return (
         <div className="App">
             <header className="App-header"></header>
+
+            <div className="nav-notification-container">
+                <div className="nav">
+                    <div className="nav__logo">
+                        <img src={logo} alt="logo"></img>
+                    </div>
+
+                    <ul className="nav__links">
+                        <li className="nav__link"><a href="a">About</a></li>
+                        <li className="nav__link"><a href="a">Getting Started</a></li>
+
+                        <li className="nav__drop-down-link">Templates
+                            <ul className="nav__drop-down-list">
+                                <li>
+                                    <a href="a">Template 1</a>
+                                </li>
+                                <li>
+                                    <a href="a">Template 2</a>
+                                </li>
+                                <li>
+                                    <a href="a">Template 3</a>
+                                </li>
+                                <li>
+                                    <a href="a">Template 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li className="nav__link"><a href="a">Support</a></li>
+                        <li className="nav__link"><a href="a">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div className="notification warning">
+                    <i className="las la-exclamation-circle"></i>
+                    <div className="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
+                    </div>
+                    <button className="button outline-light cta sm">Stay Logged In</button>
+                </div>
+            </div>
 
             {/* Checkbox, Radio and toggle */}
             <div className="container">
@@ -194,7 +237,7 @@ function App() {
                 <br></br>
                 <div className="row">
                     <div className="col-6">
-                        <ol>
+                        <ol className="styled-list">
                             <li> Make Design Langauge </li>
                             <li> Create own web site:
                                 <ol>
@@ -211,7 +254,7 @@ function App() {
                 <br></br>
                 <div className="row">
                     <div className="col-6">
-                        <ul>
+                        <ul className="styled-list">
                             <li> Make Design Langauge </li>
                             <li> Create own web site:
                                 <ul>
@@ -287,14 +330,6 @@ function App() {
                             </li>
                         </ul>
                     </div>
-                </div>
-
-                <div className="notification success">
-                    <i className="las la-exclamation-circle"></i>
-                    <div className="text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
-                    </div>
-                    <button className="button outline-light cta sm">Stay Logged In</button>
                 </div>
 
                 <div className="row">

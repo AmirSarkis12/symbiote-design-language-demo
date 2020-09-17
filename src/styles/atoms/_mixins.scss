@@ -122,17 +122,64 @@
     background-color: Lightens($color, 10%);
 }
 
-@mixin card-shadow() {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+// Animated underline
+@mixin animated-underline($color) {
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -0.25rem;
+        left: 0; right: 0;
+        height: 2px;
+        background-color: $color
+    }
+
+    &:before {
+        opacity: 0;
+        transform: translateY(0.25rem);
+        transition: transform 0s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s;
+    }
+
+    &:after {
+        opacity: 0;
+        transform: translateY(0.25rem);
+
+    }
+
+    &:hover,
+    &:focus {
+        &:before,
+        &:after {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        &:before {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0.3s;
+        }
+        &:after {
+            transition: transform 0s 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s 0.3s;
+        }
+    }
 }
 
-@mixin card-shadow-image() {
-    box-shadow: 0 5px 30px 10px rgba($black, 0.3);
+
+// General use drop shadow
+@mixin general-shadow() {
+    box-shadow: 0 1px 4px rgba(0,0,0,.15);
 }
 
-@mixin full-image-card-shadow() {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.2), inset 0px -317px 50px -93px rgba(0, 0, 0, 0.33);
-}
+// Card specific shadows
+    @mixin card-shadow() {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    @mixin card-shadow-image() {
+        box-shadow: 0 5px 30px 10px rgba($black, 0.3);
+    }
+
+    @mixin full-image-card-shadow() {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.2), inset 0px -317px 50px -93px rgba(0, 0, 0, 0.33);
+    }
 
 
 // Grid specific mixins below

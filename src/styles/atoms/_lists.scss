@@ -1,86 +1,92 @@
 ol {
-    counter-reset:counter;
+    &.styled-list {
+        counter-reset:counter;
 
-    li {
-        position: relative;
-        padding-left: 2.4em;
-        margin: 0.6em 0 0 0;
-        list-style: none;
-        line-height: 1.8em;
-        @include transition();
+        li {
+            position: relative;
+            padding-left: 2.4em;
+            margin: 0.6em 0 0 0;
+            list-style: none;
+            line-height: 1.8em;
+            @include transition();
+        }
+
+        li:before {
+            content: counter(counter);
+            counter-increment: counter;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1.8em;
+            height: 1.8em;
+            line-height: 1.8em;
+            padding: 0;
+            color: $list-point-foreground-color;
+            background-color: $list-point-background-color;
+            text-align: center;
+            border-radius: 100%;
+            z-index: 1;
+            @include transition();
+        }
+
+        li:hover:before {
+            @include darken-on-hover($list-point-background-color);
+        }
+
+        li:after {
+            position: absolute;
+            top: 2.1em;
+            left: 0.85em;
+            width: 2px;
+            height: calc(100% - 2em);
+            content: '';
+            background-color: $list-association-color;
+            z-index: 0;
+        }
     }
 
-    li:before {
-        content: counter(counter);
-        counter-increment: counter;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 1.8em;
-        height: 1.8em;
-        line-height: 1.8em;
-        padding: 0;
-        color: $list-point-foreground-color;
-        background-color: $list-point-background-color;
-        text-align: center;
-        border-radius: 100%;
-        z-index: 1;
-        @include transition();
-    }
-
-    li:hover:before {
-        @include darken-on-hover($list-point-background-color);
-    }
-
-    li:after {
-        position: absolute;
-        top: 2.1em;
-        left: 0.85em;
-        width: 2px;
-        height: calc(100% - 2em);
-        content: '';
-        background-color: $list-association-color;
-        z-index: 0;
-    }
 }
 
 ul {
-    li {
-        position: relative;
-        padding-left: 1.6em;
-        margin: 1.2em 0 0 0;
-        list-style: none;
-        line-height: 1em;
-        @include transition();
+    &.styled-list {
+        li {
+            position: relative;
+            padding-left: 1.6em;
+            margin: 1.2em 0 0 0;
+            list-style: none;
+            line-height: 1em;
+            @include transition();
+        }
+
+        li:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1em;
+            height: 1em;
+            padding: 0;
+            background-color: $list-point-background-color;
+            text-align: center;
+            border-radius: 100%;
+            z-index: 1;
+            @include transition();
+        }
+
+        li:hover:before {
+            @include darken-on-hover($list-point-background-color);
+        }
+
+        li:after {
+            position: absolute;
+            top: 2.1em;
+            left: 0.4em;
+            width: 2px;
+            height: calc(100% - 2em);
+            content: '';
+            background-color: $list-association-color;
+            z-index: 0;
+        }
     }
 
-    li:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 1em;
-        height: 1em;
-        padding: 0;
-        background-color: $list-point-background-color;
-        text-align: center;
-        border-radius: 100%;
-        z-index: 1;
-        @include transition();
-    }
-
-    li:hover:before {
-        @include darken-on-hover($list-point-background-color);
-    }
-
-    li:after {
-        position: absolute;
-        top: 2.1em;
-        left: 0.4em;
-        width: 2px;
-        height: calc(100% - 2em);
-        content: '';
-        background-color: $list-association-color;
-        z-index: 0;
-    }
 }
