@@ -50,8 +50,6 @@
             }
 
             .nav__link {
-                border-bottom: 1px solid $navigation-mobile-foreground;
-
                 h5 {
                     color: $navigation-foreground-color;
 
@@ -184,10 +182,14 @@
                 opacity: 0;
                 padding: 1.5rem;
 
+                .nav__link {
+                    border-bottom: 1px solid $navigation-mobile-foreground;
+                }
+
+
                 .nav__link, .nav__drop-down-link h5 {
                     padding: 1rem 0;
                     width: 100%;
-                    display: list-item;
                 }
 
                 .nav__drop-down-link {
