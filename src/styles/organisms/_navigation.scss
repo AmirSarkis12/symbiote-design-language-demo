@@ -17,10 +17,6 @@
             padding: 0 2rem 0 2rem;
         }
 
-        @include media-breakpoint-down(sm) {
-            padding: 0 1rem 0 1rem;
-        }
-
         .nav__logo {
             height: 2rem;
 
@@ -37,16 +33,16 @@
                 display: inline-block;
                 margin: 0 3rem 0 0;
                 padding: 0;
+                text-align: left;
                 cursor: pointer;
-
-                &:last-child {
-                    margin: 0;
-                }
 
                 @include media-breakpoint-down(md) {
                     margin: 0 2rem 0 0;
                 }
 
+                &:last-child {
+                    margin: 0;
+                }
 
                 a {
                     text-decoration: none;
@@ -54,15 +50,30 @@
             }
 
             .nav__link {
-                a {
+                border-bottom: 1px solid $navigation-mobile-foreground;
+
+                h5 {
                     color: $navigation-foreground-color;
-                    @include animated-underline($navigation-foreground-color);
+
+                    @include media-breakpoint-up(lg) {
+                        @include animated-underline($navigation-foreground-color);
+                    }
                 }
             }
 
             .nav__drop-down-link {
-                color: $navigation-foreground-color;
-                @include animated-underline($navigation-foreground-color);
+                h5 {
+                    color: $navigation-foreground-color;
+                    @include media-breakpoint-up(lg) {
+                        @include animated-underline($navigation-foreground-color);
+                    }
+                }
+
+                ul {
+                    h5 {
+                        color: $navigation-dropdown-foreground-color;
+                    }
+                }
             }
         }
 
@@ -81,7 +92,7 @@
             z-index: 1;
             cursor: pointer;
 
-            li {
+            .nav__sub-link {
                 display: block;
                 padding: 0;
                 margin: 0 0 1rem 0;
@@ -89,20 +100,147 @@
                 a {
                     position: relative;
                     color: $navigation-dropdown-foreground-color;
-                    text-decoration: none;
-                    @include animated-underline($navigation-dropdown-foreground-color);
+
+                    h5 {
+                        position: relative;
+                        @include media-breakpoint-up(lg) {
+                            @include animated-underline($navigation-dropdown-foreground-color);
+                        }
+                    }
+
 
                 }
             }
         }
 
         .nav__drop-down-list--visible {
-            ul {
+            + ul {
                 display: block;
                 opacity: 1;
             }
         }
+
+        .nav-toggle-checkbox {
+            display: none;
+            &:checked {
+                + {
+                    .nav-open {
+                        transform: rotate(45deg);
+                        i {
+                            background: #fff;
+                            transition: transform 0.4s ease;
+
+                            &:nth-child(1) {
+                                transform: translateY(6px) rotate(180deg);
+                            }
+
+                            &:nth-child(2) {
+                                opacity: 0;
+                            }
+
+                            &:nth-child(3) {
+                                transform: translateY(-6px) rotate(90deg);
+                            }
+                        }
+                    }
+                }
+
+                ~ {
+                    .nav__links {
+                        z-index: 1;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .nav__drop-down-list {
+                display: block;
+                padding: 0 0 0 1rem;
+                border-radius: 0;
+                overflow: hidden;
+                opacity: 1;
+                position: unset;
+                top: unset;
+                left: unset;
+                background-color: unset;
+                box-shadow: none;
+                z-index: 1;
+
+                .nav__sub-link {
+                    margin: 0;
+                }
+            }
+
+            .nav__links {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 60%;
+                z-index: -1;
+                background-color: $navigation-mobile-background;
+                opacity: 0;
+                padding: 1.5rem;
+
+                .nav__link, .nav__drop-down-link h5 {
+                    padding: 1rem 0;
+                    width: 100%;
+                    display: list-item;
+                }
+
+                .nav__drop-down-link {
+                    margin: 0;
+                    width: 100%;
+                    border-bottom: 1px solid $navigation-mobile-foreground;
+
+                    .nav__drop-down-list {
+
+                        h5 {
+                            color: $navigation-mobile-foreground;
+                        }
+                    }
+                }
+            }
+
+            .nav__links .nav__link h5, .nav__drop-down-link {
+                color: $navigation-mobile-foreground;
+            }
+
+            .nav-open {
+                position: fixed;
+                right: 10px;
+                top: 10px;
+                display: block;
+                width: 48px;
+                height: 48px;
+                cursor: pointer;
+                z-index: 9999;
+                border-radius: 50%;
+
+                i {
+                    display: block;
+                    width: 20px;
+                    height: 2px;
+                    background: $navigation-mobile-foreground;
+                    border-radius: 2px;
+                    margin-left: 14px;
+
+                    &:nth-child(1) {
+                        margin-top: 1rem;
+                    }
+
+                    &:nth-child(2) {
+                        margin-top: 0.25rem;
+                        opacity: 1;
+                    }
+
+                    &:nth-child(3) {
+                        margin-top: 0.25rem;
+                    }
+                }
+            }
+        }
     }
-
 }
-

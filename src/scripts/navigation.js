@@ -1,6 +1,6 @@
 // Simple vanilla JS code to get the menu links and click outs holding together
 document.addEventListener('DOMContentLoaded', function () {
-    var dropDown = document.querySelector('.nav__drop-down-link');
+    var dropDown = document.querySelector('.nav__drop-down-link__toggle');
     var dropDownList = document.querySelector('.nav__drop-down-list');
 
     // Listen for all clicks on the document

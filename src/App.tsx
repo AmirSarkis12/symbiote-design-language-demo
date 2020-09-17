@@ -17,29 +17,30 @@ function App() {
                     <div className="nav__logo">
                         <img src={logo} alt="logo"></img>
                     </div>
-
+                    <input type="checkbox" id="nav" className="nav-toggle-checkbox" />
+                    <label htmlFor="nav" className="nav-open"><i></i><i></i><i></i></label>
                     <ul className="nav__links">
-                        <li className="nav__link"><a href="a">About</a></li>
-                        <li className="nav__link"><a href="a">Getting Started</a></li>
+                        <li className="nav__link"><a href="a"><h5>About</h5></a></li>
+                        <li className="nav__link"><a href="a"><h5>Getting Started</h5></a></li>
 
-                        <li className="nav__drop-down-link">Templates
+                        <li className="nav__drop-down-link"><h5 className="nav__drop-down-link__toggle">Templates</h5>
                             <ul className="nav__drop-down-list">
-                                <li>
-                                    <a href="a">Template 1</a>
+                                <li className="nav__sub-link">
+                                    <a href="a"><h5>Template 1</h5></a>
                                 </li>
-                                <li>
-                                    <a href="a">Template 2</a>
+                                <li className="nav__sub-link">
+                                    <a href="a"><h5>Template 2</h5></a>
                                 </li>
-                                <li>
-                                    <a href="a">Template 3</a>
+                                <li className="nav__sub-link">
+                                    <a href="a"><h5>Template 3</h5></a>
                                 </li>
-                                <li>
-                                    <a href="a">Template 4</a>
+                                <li className="nav__sub-link">
+                                    <a href="a"><h5>Template 4</h5></a>
                                 </li>
                             </ul>
                         </li>
-                        <li className="nav__link"><a href="a">Support</a></li>
-                        <li className="nav__link"><a href="a">Contact Us</a></li>
+                        <li className="nav__link"><a href="a"><h5>Support</h5></a></li>
+                        <li className="nav__link"><a href="a"><h5>Contact Us</h5></a></li>
                     </ul>
                 </div>
 
@@ -125,17 +126,24 @@ function App() {
                         {/* Accordion */}
                         <div className="accordion">
                             <div className="tab">
-                                <input type="checkbox" id="chck1"></input>
-                                <label className="tab-label" htmlFor="chck1">Item 1</label>
+                                <input type="checkbox" id="accordion-1"></input>
+                                <label className="tab-label" htmlFor="accordion-1">Item 1</label>
                                 <div className="tab-content">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
                                 </div>
                             </div>
                             <div className="tab">
-                                <input type="checkbox" id="chck2"></input>
-                                <label className="tab-label" htmlFor="chck2">Item 2</label>
+                                <input type="checkbox" id="accordion-2"></input>
+                                <label className="tab-label" htmlFor="accordion-2">Item 2</label>
                                 <div className="tab-content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                </div>
+                            </div>
+                            <div className="tab">
+                                <input type="checkbox" id="accordion-3"></input>
+                                <label className="tab-label" htmlFor="accordion-3">Item 3</label>
+                                <div className="tab-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
                                 </div>
                             </div>
                         </div>
