@@ -29,6 +29,7 @@
 @import 'molecules/slider';
 
 // Import organisms
+@import 'organisms/breadcrumbs';
 @import 'organisms/cards';
 @import 'organisms/carousel';
 @import 'organisms/datepicker';
@@ -36,7 +37,7 @@
 @import 'organisms/modal';
 @import 'organisms/navigation';
 @import 'organisms/notifications';
-@import 'organisms/breadcrumbs';
+
 
 // Import library styles
 @import '../libs/line-awesome/css/line-awesome.min.css';
