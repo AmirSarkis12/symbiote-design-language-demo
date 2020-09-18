@@ -12,13 +12,15 @@ function App() {
         <div className="App">
             <header className="App-header"></header>
 
-            <div className="nav-notification-container">
+            <div className="darken-overlay"></div>
+
+            <div className="nav-container">
                 <div className="nav">
                     <div className="nav__logo">
                         <img src={logo} alt="logo"></img>
                     </div>
                     <input type="checkbox" id="nav" className="nav-toggle-checkbox" />
-                    <label htmlFor="nav" className="nav-open"><i></i><i></i><i></i></label>
+                    <label htmlFor="nav" className="hamburger-toggle"><i></i><i></i><i></i></label>
                     <ul className="nav__links">
                         <li className="nav__link"><a href="a"><h5>About</h5></a></li>
                         <li className="nav__link"><a href="a"><h5>Getting Started</h5></a></li>
@@ -43,14 +45,14 @@ function App() {
                         <li className="nav__link"><a href="a"><h5>Contact Us</h5></a></li>
                     </ul>
                 </div>
+            </div>
 
-                <div className="notification warning">
-                    <i className="las la-exclamation-circle"></i>
-                    <div className="text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
-                    </div>
-                    <button className="button outline-light cta sm">Stay Logged In</button>
+            <div className="notification warning">
+                <i className="las la-exclamation-circle"></i>
+                <div className="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
                 </div>
+                <button className="button outline-light cta sm">Stay Logged In</button>
             </div>
 
             {/* Checkbox, Radio and toggle */}

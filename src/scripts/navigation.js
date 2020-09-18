@@ -1,7 +1,11 @@
+import scrollLock from './scroll-Lock';
+
 // Simple vanilla JS code to get the menu links and click outs holding together
 document.addEventListener('DOMContentLoaded', function () {
-    var dropDown = document.querySelector('.nav__drop-down-link__toggle');
-    var dropDownList = document.querySelector('.nav__drop-down-list');
+    const dropDown = document.querySelector('.nav__drop-down-link__toggle');
+    const dropDownList = document.querySelector('.nav__drop-down-list');
+    const navToggleCheckbox = document.querySelector('.nav-toggle-checkbox');
+    const darkenOverlay = document.querySelector('.darken-overlay');
 
     // Listen for all clicks on the document
     document.addEventListener('click', function (event) {
@@ -16,5 +20,15 @@ document.addEventListener('DOMContentLoaded', function () {
             dropDown.classList.remove('nav__drop-down-list--visible');
         }
     }, false);
+
+    navToggleCheckbox.addEventListener('change', function () {
+        if (this.checked) {
+            darkenOverlay.classList.add('darken-overlay--visible')
+            scrollLock.enable();
+        } else {
+            darkenOverlay.classList.remove('darken-overlay--visible')
+            scrollLock.disable();
+        }
+    });
 }, false);
 
