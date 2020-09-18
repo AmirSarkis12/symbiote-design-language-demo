@@ -23,15 +23,11 @@
     height: 100%;
     background: rgba(0,0,0,0.75);
     z-index: 3;
-    display: none;
 
-    &.darken-overlay--visible {
-        display: block;
-
-        @include media-breakpoint-up(sm) {
-            display: none;
-        }
+    @include media-breakpoint-up(sm) {
+        display: none;
     }
+
 }
 
 .nav-container {
@@ -90,7 +86,7 @@
                 h5 {
                     color: $navigation-foreground-color;
 
-                    @include media-breakpoint-up(lg) {
+                    @include media-breakpoint-up(sm) {
                         @include animated-underline($navigation-foreground-color);
                     }
                 }
@@ -99,7 +95,7 @@
             .nav__drop-down-link {
                 h5 {
                     color: $navigation-foreground-color;
-                    @include media-breakpoint-up(lg) {
+                    @include media-breakpoint-up(sm) {
                         @include animated-underline($navigation-foreground-color);
                     }
                 }
@@ -155,7 +151,7 @@
             }
         }
 
-        .nav-toggle-checkbox {
+        .hamburger-nav-toggle-checkbox {
             display: none;
             ~ {
                 .nav__links {
@@ -168,7 +164,7 @@
 
             &:checked {
                 + {
-                    .hamburger-toggle {
+                    .hamburger-toggle-icon {
                         // Width of navigation menu - (1/2 close icon width + navigation menu padding)
                         left: calc((83% - ((68px / 2) + 2rem)));
                         transform: rotate(45deg);
@@ -267,7 +263,7 @@
                 color: $navigation-mobile-foreground;
             }
 
-            .hamburger-toggle {
+            .hamburger-toggle-icon {
                 position: fixed;
                 right: 10px;
                 top: 10px;

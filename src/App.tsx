@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/main.scss';
-import './scripts/navigation'
+import './scripts/navigation.ts'
 
 import logo from './assets/images/logo.png';
 import cardImage1 from './assets/images/card-background-mountains.jpeg';
@@ -12,15 +12,13 @@ function App() {
         <div className="App">
             <header className="App-header"></header>
 
-            <div className="darken-overlay"></div>
-
             <div className="nav-container">
                 <div className="nav">
                     <div className="nav__logo">
                         <img src={logo} alt="logo"></img>
                     </div>
-                    <input type="checkbox" id="nav" className="nav-toggle-checkbox" />
-                    <label htmlFor="nav" className="hamburger-toggle"><i></i><i></i><i></i></label>
+                    <input type="checkbox" id="nav" className="hamburger-nav-toggle-checkbox" />
+                    <label htmlFor="nav" className="hamburger-toggle-icon"><i></i><i></i><i></i></label>
                     <ul className="nav__links">
                         <li className="nav__link"><a href="a"><h5>About</h5></a></li>
                         <li className="nav__link"><a href="a"><h5>Getting Started</h5></a></li>
@@ -202,34 +200,16 @@ function App() {
 
                 <br></br>
                 <div className="row">
-                    <div className="col-2">
+                    <div className="col-12">
                         <button className="primary">Primary Button</button>
-                    </div>
-                    <div className="col-2">
                         <button className="secondary">Secondary Button</button>
-                    </div>
-                    <div className="col-2">
                         <button className="tertiary">Tertiary Button</button>
-                    </div>
-                    <div className="col-2">
                         <button className="outline-light">Outline Light Button</button>
-                    </div>
-                    <div className="col-2">
-                        <button className="outline-dark">Outline Dark Button</button>
-                    </div>
-                    <div className="col-2">
+                        <button className="outline-dark sm">Outline Dark Button</button>
                         <button className="primary lg">Button lg</button>
-                    </div>
-                    <div className="col-2">
                         <button className="primary">Button md</button>
-                    </div>
-                    <div className="col-2">
                         <button className="primary sm">Button sm</button>
-                    </div>
-                    <div className="col-2">
                         <button className="primary xs">Button xs</button>
-                    </div>
-                    <div className="col-2">
                         <button className="disabled">Button md</button>
                     </div>
                 </div>
@@ -283,7 +263,7 @@ function App() {
                     <div className="col-6">
                         <div className="tooltip">
                             <p>Hover over me</p>
-                            <span className="tooltip-text">Here is some tooltip text</span>
+                            <span className="tooltip-text">Hey, I'm a tooltip!</span>
                         </div>
                     </div>
                 </div>
