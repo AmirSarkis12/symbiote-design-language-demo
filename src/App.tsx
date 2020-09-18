@@ -52,7 +52,7 @@ function App() {
                 <div className="text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
                 </div>
-                <button className="button outline-light cta sm">Stay Logged In</button>
+                <button className="button outline-light cta sm">Read More</button>
             </div>
 
             {/* Checkbox, Radio and toggle */}
@@ -129,21 +129,21 @@ function App() {
                         <div className="accordion">
                             <div className="tab">
                                 <input type="checkbox" id="accordion-1"></input>
-                                <label className="tab-label" htmlFor="accordion-1">Item 1</label>
+                                <label className="tab-label" htmlFor="accordion-1">First accordion tab</label>
                                 <div className="tab-content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
                                 </div>
                             </div>
                             <div className="tab">
                                 <input type="checkbox" id="accordion-2"></input>
-                                <label className="tab-label" htmlFor="accordion-2">Item 2</label>
+                                <label className="tab-label" htmlFor="accordion-2">Second accordion tab</label>
                                 <div className="tab-content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
                                 </div>
                             </div>
                             <div className="tab">
                                 <input type="checkbox" id="accordion-3"></input>
-                                <label className="tab-label" htmlFor="accordion-3">Item 3</label>
+                                <label className="tab-label" htmlFor="accordion-3">Third accordion tab</label>
                                 <div className="tab-content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
                                 </div>
