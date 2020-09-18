@@ -56,13 +56,11 @@ function App() {
                                     <i className="las la-home xxs"></i>Home
                                 </a>
                                 <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
-                                <a href="a" className="breadcrumb">Page 1</a>
-                                <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
                                 <a href="a" className="breadcrumb">Sub-page</a>
                                 <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
                                 <a href="a" className="breadcrumb">Rabbit hole</a>
                                 <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
-                                <span className="breadcrumb">Are you lost?</span>
+                                <span className="breadcrumb">Lost?</span>
                             </span>
                         </div>
                     </div>
