@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/main.scss';
 import './scripts/navigation.ts'
+import './scripts/breadcrumbs.ts'
 
 import logo from './assets/images/logo.png';
 import cardImage1 from './assets/images/card-background-mountains.jpeg';
@@ -12,17 +13,18 @@ function App() {
         <div className="App">
             <header className="App-header"></header>
 
-            <div className="nav-container">
+            <div className="container-fluid nav-container">
                 <div className="nav">
                     <div className="nav__logo">
                         <img src={logo} alt="logo"></img>
                     </div>
-                    <input type="checkbox" id="nav" className="hamburger-nav-toggle-checkbox" />
+
+                    <input type="checkbox" id="nav" className="hamburger-nav-toggle-checkbox"/>
                     <label htmlFor="nav" className="hamburger-toggle-icon"><i></i><i></i><i></i></label>
+
                     <ul className="nav__links">
                         <li className="nav__link"><a href="a"><h5>About</h5></a></li>
                         <li className="nav__link"><a href="a"><h5>Getting Started</h5></a></li>
-
                         <li className="nav__drop-down-link"><h5 className="nav__drop-down-link__toggle">Templates</h5>
                             <ul className="nav__drop-down-list">
                                 <li className="nav__sub-link">
@@ -42,6 +44,28 @@ function App() {
                         <li className="nav__link"><a href="a"><h5>Support</h5></a></li>
                         <li className="nav__link"><a href="a"><h5>Contact Us</h5></a></li>
                     </ul>
+                </div>
+            </div>
+
+            <div className="container-fluid breadcrumbs">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <span className="">
+                                <a href="a" className="breadcrumb">
+                                    <i className="las la-home xxs"></i>Home
+                                </a>
+                                <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
+                                <a href="a" className="breadcrumb">Page 1</a>
+                                <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
+                                <a href="a" className="breadcrumb">Sub-page</a>
+                                <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
+                                <a href="a" className="breadcrumb">Rabbit hole</a>
+                                <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
+                                <span className="breadcrumb">Are you lost?</span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
 

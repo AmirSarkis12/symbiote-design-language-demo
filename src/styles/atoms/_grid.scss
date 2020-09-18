@@ -17,14 +17,21 @@
 }
 
 //create both containers
-.container,
-.container-fluid {
+.container{
     @include clearfix;
     box-sizing: border-box;
     margin-right: auto;
     margin-left: auto;
     padding-left: floor( ( $grid-gutter-width / 2 ) );
     padding-right: ceil( ( $grid-gutter-width / 2 ) );
+}
+
+.container-fluid {
+    @include clearfix;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
 }
 
 //create row and clear floats inside

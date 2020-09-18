@@ -1,3 +1,5 @@
+// Helpful functions to enable and disable scrolling of body. Useful for when hamburger menu or modal pop up occurs.
+
 const body = document.querySelector('body');
 let scrollPosition = 0;
 
