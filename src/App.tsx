@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/main.scss';
 import './scripts/navigation.ts'
-import './scripts/breadcrumbs.ts'
+import './scripts/notification.ts'
 
 import logo from './assets/images/logo.png';
 import cardImage1 from './assets/images/card-background-mountains.jpeg';
