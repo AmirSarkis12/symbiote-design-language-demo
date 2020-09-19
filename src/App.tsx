@@ -13,38 +13,36 @@ function App() {
         <div className="App">
             <header className="App-header"></header>
 
-            <div className="container-fluid nav-container">
-                <div className="nav">
-                    <div className="nav__logo">
-                        <img src={logo} alt="logo"></img>
-                    </div>
-
-                    <input type="checkbox" id="nav" className="hamburger-nav-toggle-checkbox"/>
-                    <label htmlFor="nav" className="hamburger-toggle-icon"><i></i><i></i><i></i></label>
-
-                    <ul className="nav__links">
-                        <li className="nav__link"><a href="a"><h5>About</h5></a></li>
-                        <li className="nav__link"><a href="a"><h5>Getting Started</h5></a></li>
-                        <li className="nav__drop-down-link"><h5 className="nav__drop-down-link__toggle">Templates</h5>
-                            <ul className="nav__drop-down-list">
-                                <li className="nav__sub-link">
-                                    <a href="a"><h5>Template 1</h5></a>
-                                </li>
-                                <li className="nav__sub-link">
-                                    <a href="a"><h5>Template 2</h5></a>
-                                </li>
-                                <li className="nav__sub-link">
-                                    <a href="a"><h5>Template 3</h5></a>
-                                </li>
-                                <li className="nav__sub-link">
-                                    <a href="a"><h5>Template 4</h5></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="nav__link"><a href="a"><h5>Support</h5></a></li>
-                        <li className="nav__link"><a href="a"><h5>Contact Us</h5></a></li>
-                    </ul>
+            <div className="container-fluid navigation">
+                <div className="nav__logo">
+                    <img src={logo} alt="logo"></img>
                 </div>
+
+                <input type="checkbox" id="nav" className="hamburger-nav-toggle-checkbox"/>
+                <label htmlFor="nav" className="hamburger-toggle-icon"><i></i><i></i><i></i></label>
+
+                <ul className="nav__links">
+                    <li className="nav__link"><a href="a"><h5>About</h5></a></li>
+                    <li className="nav__link"><a href="a"><h5>Getting Started</h5></a></li>
+                    <li className="nav__drop-down-link"><h5 className="nav__drop-down-link__toggle">Templates</h5>
+                        <ul className="nav__drop-down-list">
+                            <li className="nav__sub-link">
+                                <a href="a"><h5>Template 1</h5></a>
+                            </li>
+                            <li className="nav__sub-link">
+                                <a href="a"><h5>Template 2</h5></a>
+                            </li>
+                            <li className="nav__sub-link">
+                                <a href="a"><h5>Template 3</h5></a>
+                            </li>
+                            <li className="nav__sub-link">
+                                <a href="a"><h5>Template 4</h5></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li className="nav__link"><a href="a"><h5>Support</h5></a></li>
+                    <li className="nav__link"><a href="a"><h5>Contact Us</h5></a></li>
+                </ul>
             </div>
 
             <div className="container-fluid breadcrumbs">
@@ -67,7 +65,7 @@ function App() {
                 </div>
             </div>
 
-            <div className="notification success">
+            <div className="container-fluid notification success">
                 <i className="las la-exclamation-circle"></i>
                 <div className="text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>

@@ -6,7 +6,7 @@ import viewport from './viewport';
 // Added the following event listeners only once the DOM has loaded
 document.addEventListener('DOMContentLoaded', function () {
     const nav = document.querySelector('.nav');
-    const navContainer = document.querySelector('.nav-container');
+    const navContainer = document.querySelector('.navigation');
     const dropDown = document.querySelector('.nav__drop-down-link__toggle');
     const dropDownList = document.querySelector('.nav__drop-down-list');
     const hamburgerNavToggleCheckbox = document.querySelector('.hamburger-nav-toggle-checkbox') as HTMLInputElement;
