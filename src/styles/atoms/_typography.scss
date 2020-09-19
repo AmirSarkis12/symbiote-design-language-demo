@@ -1,12 +1,12 @@
 // Common rules
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $default-text-color;
 }
 
 // Headings
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Heading', sans-serif;
 }
 

@@ -67,7 +67,7 @@ function App() {
                 </div>
             </div>
 
-            <div className="notification warning">
+            <div className="notification success">
                 <i className="las la-exclamation-circle"></i>
                 <div className="text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
@@ -474,8 +474,65 @@ function App() {
                 </div>
                 <br></br>
                 <br></br>
+            </div>
 
+            <div className="container-fluid footer-container">
+                <div className="container">
+                    <footer>
+                        <div className="container">
+                            <div className="col-xs-6 col-md-3">
+                                <p>Company</p>
+                                <ul>
+                                    <li><a href="a">About</a></li>
+                                    <li><a href="a">Mission</a></li>
+                                    <li><a href="a">Services</a></li>
+                                    <li><a href="a">Social</a></li>
+                                    <li><a href="a">Get in touch</a></li>
+                                </ul>
+                            </div>
+                            <div className="col-xs-6 col-md-3">
+                                <p>Products</p>
+                                <ul>
+                                    <li><a href="a">About</a></li>
+                                    <li><a href="a">Mission</a></li>
+                                    <li><a href="a">Services</a></li>
+                                    <li><a href="a">Social</a></li>
+                                    <li><a href="a">Get in touch</a></li>
+                                </ul>
+                            </div>
+                            <div className="col-xs-6 col-md-3">
+                                <p>Accounts</p>
+                                <ul>
+                                    <li><a href="a">About</a></li>
+                                    <li><a href="a">Mission</a></li>
+                                    <li><a href="a">Services</a></li>
+                                    <li><a href="a">Social</a></li>
+                                    <li><a href="a">Get in touch</a></li>
+                                </ul>
+                            </div>
+                            <div className="col-xs-6 col-md-3">
+                                <p>Social</p>
+                                <div className="social-link">
+                                    <a href="a" target="_blank"><i className="lab la-facebook"></i><p>Facebook</p></a>
+                                </div>
+                                <div className="social-link">
+                                    <a href="a" target="_blank"><i className="lab la-twitter"></i><p>Twitter</p></a>
+                                </div>
+                                <div className="social-link">
+                                    <a href="a" target="_blank"><i className="lab la-instagram"></i><p>Instagram</p></a>
+                                </div>
+                                <div className="social-link">
+                                    <a href="a" target="_blank"><i className="lab la-linkedin-in"></i><p>LinkedIn</p></a>
+                                </div>
+                            </div>
+                        </div>
 
+                    </footer>
+                </div>
+                <div className="copyright">
+                    <p>Copyright &#169; <a href="www.symbiote.com.au" target="_blank">Symbiote</a> Pty Ltd {new Date().getFullYear().toString()}</p>
+
+                </div>
             </div>
         </div>
     );
