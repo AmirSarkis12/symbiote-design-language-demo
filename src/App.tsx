@@ -73,6 +73,10 @@ function App() {
                 <button className="button outline-light cta sm">Read More</button>
             </div>
 
+            <aside className="side-navigation">
+
+            </aside>
+
             {/* Checkbox, Radio and toggle */}
             <div className="container">
                 <div className="row">
@@ -237,10 +241,11 @@ function App() {
                 <br></br>
                 <div className="row">
                     <div className="col-6">
-                        <span className="label label-info">Info</span>
                         <span className="label label-success">Success</span>
                         <span className="label label-warning">Warning</span>
                         <span className="label label-error">Error</span>
+                        <span className="label label-new">New</span>
+                        <span className="label label-info">Info</span>
                     </div>
                 </div>
 
