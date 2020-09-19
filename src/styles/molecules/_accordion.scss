@@ -19,7 +19,7 @@
             /* Icon */
             &:hover {
                 @include transition();
-                @include darken-on-hover($accordion-heading-background-color);
+                @include darken-on-hover-focus($accordion-heading-background-color);
             }
 
             &::after {

@@ -14,8 +14,8 @@ button {
         border: none;
         @include transition();
 
-        &:hover {
-            @include darken-on-hover($primary-background-color);
+        &:hover, &:focus {
+            @include darken-on-hover-focus($primary-background-color);
         }
     }
 
@@ -25,8 +25,8 @@ button {
         border: none;
         @include transition();
 
-        &:hover {
-            @include darken-on-hover($secondary-background-color);
+        &:hover, &:focus {
+            @include darken-on-hover-focus($secondary-background-color);
         }
     }
 
@@ -36,8 +36,8 @@ button {
         border: none;
         @include transition();
 
-        &:hover {
-            @include darken-on-hover($tertiary-background-color);
+        &:hover, &:focus {
+            @include darken-on-hover-focus($tertiary-background-color);
         }
     }
 
@@ -53,7 +53,7 @@ button {
             @include transition();
         }
 
-        &:hover {
+        &:hover, &:focus {
             &::after {
                 transform: translate(5px, -50%);
                 opacity: 1;

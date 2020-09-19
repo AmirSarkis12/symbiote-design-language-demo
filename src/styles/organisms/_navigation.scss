@@ -64,6 +64,17 @@
         justify-content: flex-end;
         flex-direction: row;
 
+        .nav__drop-down-link__toggle {
+            border: none;
+            background: $transparent;
+            padding: 0;
+
+            h5 {
+                z-index: -1;
+            }
+
+        }
+
         .nav__link, .nav__drop-down-link {
             position: relative;
             display: inline-block;

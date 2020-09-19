@@ -9,40 +9,41 @@ ol {
             list-style: none;
             line-height: 1.8em;
             @include transition();
+
+            &:before {
+                content: counter(counter);
+                counter-increment: counter;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 1.8em;
+                height: 1.8em;
+                line-height: 1.8em;
+                padding: 0;
+                color: $list-point-foreground-color;
+                background-color: $list-point-background-color;
+                text-align: center;
+                border-radius: 100%;
+                z-index: 1;
+                @include transition();
+            }
+
+            &:hover:before, &:focus:before {
+                @include darken-on-hover-focus($list-point-background-color);
+            }
+
+            &:after {
+                position: absolute;
+                top: 2.1em;
+                left: 0.85em;
+                width: 2px;
+                height: calc(100% - 2em);
+                content: '';
+                background-color: $list-association-color;
+                z-index: 0;
+            }
         }
 
-        li:before {
-            content: counter(counter);
-            counter-increment: counter;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 1.8em;
-            height: 1.8em;
-            line-height: 1.8em;
-            padding: 0;
-            color: $list-point-foreground-color;
-            background-color: $list-point-background-color;
-            text-align: center;
-            border-radius: 100%;
-            z-index: 1;
-            @include transition();
-        }
-
-        li:hover:before {
-            @include darken-on-hover($list-point-background-color);
-        }
-
-        li:after {
-            position: absolute;
-            top: 2.1em;
-            left: 0.85em;
-            width: 2px;
-            height: calc(100% - 2em);
-            content: '';
-            background-color: $list-association-color;
-            z-index: 0;
-        }
     }
 
 }
@@ -56,37 +57,36 @@ ul {
             list-style: none;
             line-height: 1em;
             @include transition();
-        }
 
-        li:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 1em;
-            height: 1em;
-            padding: 0;
-            background-color: $list-point-background-color;
-            text-align: center;
-            border-radius: 100%;
-            z-index: 1;
-            @include transition();
-        }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 1em;
+                height: 1em;
+                padding: 0;
+                background-color: $list-point-background-color;
+                text-align: center;
+                border-radius: 100%;
+                z-index: 1;
+                @include transition();
+            }
 
-        li:hover:before {
-            @include darken-on-hover($list-point-background-color);
-        }
+            &:hover:before, &:focus:before {
+                @include darken-on-hover-focus($list-point-background-color);
+            }
 
-        li:after {
-            position: absolute;
-            top: 2.1em;
-            left: 0.4em;
-            width: 2px;
-            height: calc(100% - 2em);
-            content: '';
-            background-color: $list-association-color;
-            z-index: 0;
+            :after {
+                position: absolute;
+                top: 2.1em;
+                left: 0.4em;
+                width: 2px;
+                height: calc(100% - 2em);
+                content: '';
+                background-color: $list-association-color;
+                z-index: 0;
+            }
         }
     }
-
 }

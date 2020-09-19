@@ -113,12 +113,12 @@
 }
 
 // Darkens the background color of any element when hovered
-@mixin darken-on-hover($color) {
+@mixin darken-on-hover-focus($color) {
     background-color: darken($color, 10%);
 }
 
 // Lightens the background color of any element when hovered
-@mixin lighten-on-hover($color) {
+@mixin lighten-on-hover-focus($color) {
     background-color: Lightens($color, 10%);
 }
 

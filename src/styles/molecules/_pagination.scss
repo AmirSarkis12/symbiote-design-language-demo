@@ -23,6 +23,11 @@
             background-color: unset;
             cursor: pointer;
             @include transition();
+
+            &:hover, &:focus {
+                color: $active-page-background-color;
+
+            }
         }
 
         &.current {
@@ -34,7 +39,7 @@
                 pointer-events: none;
             }
 
-            &:hover {
+            &:hover, &:focus {
                 button {
                     color: $active-page-foreground-color;
                     background-color: $active-page-background-color;
@@ -42,22 +47,6 @@
             }
         }
 
-        &:hover {
-            button {
-                cursor: pointer;
-                color: $active-page-background-color;
-            }
-        }
-
-        &.previous, &.next {
-            &:hover {
-                button {
-                    background-color: unset;
-                    color: $active-page-background-color;
-                    font-weight: bold;
-                }
-            }
-        }
     }
 }
 
