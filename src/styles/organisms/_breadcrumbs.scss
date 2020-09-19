@@ -9,7 +9,7 @@
     z-index: 4;
     background-color: $breadcumbs-background-color;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         display: grid;
     }
 
