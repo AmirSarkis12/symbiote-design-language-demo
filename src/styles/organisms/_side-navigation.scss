@@ -48,6 +48,10 @@
                         white-space: nowrap;
                         color: $side-navigation-link-color;
 
+                        &:hover, &:focus {
+                            color: $side-navigation-hover-color;
+                        }
+
                         @include media-breakpoint-down(sm) {
                             margin: 0;
                             padding: 0 0.5rem 0;
@@ -63,8 +67,6 @@
                         }
                     }
                 }
-
-
 
             }
         }
