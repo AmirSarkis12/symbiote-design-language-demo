@@ -146,8 +146,7 @@
 
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
         &:before,
         &:after {
             opacity: 1;
