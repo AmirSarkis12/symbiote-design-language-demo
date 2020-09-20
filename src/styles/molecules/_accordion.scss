@@ -16,8 +16,7 @@
             font-family: 'Body', sans-serif;
             cursor: pointer;
 
-            /* Icon */
-            &:hover {
+            &:hover, &:focus {
                 @include transition();
                 @include darken-on-hover-focus($accordion-heading-background-color);
             }
@@ -38,24 +37,19 @@
             @include transition();
             font-family: 'Body', sans-serif;
         }
-
-        &-close {
-            display: flex;
-            justify-content: flex-end;
-            padding: 1em;
-            font-size: 0.75em;
-            background-color: $accordion-heading-background-color;
-            cursor: pointer;
-            &:hover {
-                background-color: darken($accordion-heading-background-color, 10%);
-            }
-        }
     }
 
     input {
         position: absolute;
         opacity: 0;
         z-index: -1;
+
+        &:hover, &:focus {
+            &~label {
+                background-color: darken($accordion-heading-background-color, 10%);
+            }
+
+        }
 
         &:checked {
             + .tab-label {

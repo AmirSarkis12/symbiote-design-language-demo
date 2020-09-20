@@ -35,7 +35,7 @@
             transition: .2s;
 
             @include media-breakpoint-up(md) {
-                &:hover {
+                &:hover, &:focus {
                     margin: 0 0 0 0.5rem
                 }
             }
@@ -77,6 +77,7 @@
             text-decoration: none;
             transition: .2s;
             position: relative;
+
             @include animated-underline($navigation-foreground-color);
         }
     }
