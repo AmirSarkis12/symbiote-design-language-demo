@@ -63,19 +63,66 @@ function App() {
                 </div>
             </div>
 
-            <div className="container-fluid notification success">
+            {/* <div className="container-fluid notification success">
                 <i className="las la-exclamation-circle"></i>
                 <div className="text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
                 </div>
                 <button className="button outline-light cta sm">Read More</button>
-            </div>
+            </div> */}
 
             <div className="container">
                 <div className="row">
 
                     <div className="col-xs-12 col-sm-3 side-navigation">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                            <div className="side-navigation-section">
+                                <div className="side-navigation-content">
+                                    <ul>
+                                        <li className="side-navigation-content-heading">
+                                            <p>Section 1</p>
+                                        </li>
+                                        <li className="side-navigation-content-link no-border">
+                                            <button>Lorum Ipsum</button>
+                                        </li>
+                                        <li className="side-navigation-content-heading">
+                                            <p>Section 2</p>
+                                        </li>
+                                        <li className="side-navigation-content-link">
+                                            <button>Consectetur adipiscing</button>
+                                        </li>
+                                        <li className="side-navigation-content-link no-border">
+                                            <button>Facilisis diam</button>
+                                        </li>
+                                        <li className="side-navigation-content-heading">
+                                            <p>Section 3</p>
+                                        </li>
+                                        <li className="side-navigation-content-link">
+                                            <button>Aenean tincidunt</button>
+                                        </li>
+                                        <li className="side-navigation-content-link">
+                                            <button>Sagittis mapelle</button>
+                                        </li>
+                                        <li className="side-navigation-content-link no-border">
+                                            <button>Adipiscing</button>
+                                        </li>
+                                        <li className="side-navigation-content-heading">
+                                            <p>Section 4</p>
+                                        </li>
+                                        <li className="side-navigation-content-link">
+                                            <button>Ipsum velit</button>
+                                        </li>
+                                        <li className="side-navigation-content-link">
+                                            <button>Curabitur in facilisis</button>
+                                        </li>
+                                        <li className="side-navigation-content-link">
+                                            <button>Erat at nulla</button>
+                                        </li>
+                                        <li className="side-navigation-content-link no-border">
+                                            <button>Diam velit</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                     </div>
 
                     <div className="col-xs-12 col-sm-9">

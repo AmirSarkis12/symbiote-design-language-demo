@@ -1,0 +1,73 @@
+.side-navigation {
+    display: flex;
+    flex-direction: column;
+
+    .side-navigation-section {
+        width: 100%;
+        overflow: hidden;
+
+        .side-navigation-content {
+            @include transition();
+            font-family: 'Body', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 1rem 0 0 0;
+
+            @include media-breakpoint-down(sm) {
+                flex-direction: row;
+            }
+
+            ul {
+                li {
+                    @include media-breakpoint-down(sm) {
+                        float: left;
+                    }
+                    p {
+                        margin: 0.5rem 0 0 0;
+                        color:  $side-navigation-heading-color;
+                        font-weight: 700;
+                        white-space: nowrap;
+
+                        @include media-breakpoint-down(sm) {
+                            margin: 0 0.25rem 0 0.5rem;
+                        }
+                    }
+
+                    button {
+                        border: none;
+                        background-color: $transparent;
+                        width: 100%;
+                        text-align: left;
+                        display: block;
+                        font-family: 'Body', sans-serif;
+                        padding: 0.25rem 0;
+                        border-radius: 0;
+                        margin: 0 0 0 1rem;
+                        white-space: nowrap;
+                        color: $side-navigation-link-color;
+
+                        @include media-breakpoint-down(sm) {
+                            margin: 0;
+                            padding: 0 0.5rem 0;
+                            border-right: 1px solid black;
+
+                            width: auto;
+                        }
+                    }
+
+                    &.no-border {
+                        button {
+                            border: none;
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+
+    }
+}
