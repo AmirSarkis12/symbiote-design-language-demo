@@ -10,13 +10,91 @@ import cardImage1 from './assets/images/card-background-mountains.jpeg';
 import cardImage2 from './assets/images/card-background-trees.jpeg';
 import cardImage3 from './assets/images/card-background-lavender.jpeg';
 import cardImage4 from './assets/images/card-background-dessert.jpeg';
+import cardImage5 from './assets/images/card-background-road.jpeg';
+import cardImage6 from './assets/images/card-background-beach.jpeg';
+import cardImage7 from './assets/images/card-background-canyon.jpeg';
+
 function App() {
     return (
         <div className="App">
-            {/* Temporary code - iuntil tech stack is thought out more, this is best done with a react component to dynamically set content / show and hide */}
-            <div className="modal-cover">
+            {/* Temporary code - until tech stack is thought out more, this is best done with a react component to dynamically set content / show and hide - with local storage feature */}
+            <div className="modal-cover modal-cover-1">
+                <div className="modal full-image-modal">
+                    <button className="close-modal close-modal-1"><i className="las la-times sm"></i></button>
+
+                    <div className="modal-content full-image">
+                        <div className="modal-content-wrapper" style={{
+                            backgroundImage: `url(${cardImage5})`
+                        }}>
+                            <div className="content">
+                                <h3 className="inverted">Mauris tortor turpis, dignissim vel ullam.</h3>
+                                <p className="inverted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                <div className="button-container">
+                                    <button className="cta inverted">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="modal-cover modal-cover-2">
                 <div className="modal">
-                    <button>dsfdsf</button>
+                    <button className="close-modal close-modal-2"><i className="las la-times sm"></i></button>
+
+                    <div className="modal-content">
+                        <div className="modal-content-wrapper" style={{
+                            backgroundImage: `url(${cardImage6})`
+                        }}>
+                            <div className="content">
+                                <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                <div className="button-container">
+                                    <button className="primary">Read more</button>
+                                    <button className="secondary">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="modal-cover modal-cover-3">
+                <div className="modal">
+                    <button className="close-modal close-modal-3"><i className="las la-times sm"></i></button>
+                    <div className="modal-content side-by-side">
+                        <div className="content">
+                            <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                            <div className="button-container">
+                                <button className="primary">Read more</button>
+                                <button className="secondary">Read more</button>
+                            </div>
+                        </div>
+                        <div className="image" style={{
+                            backgroundImage: `url(${cardImage7})`
+                        }}></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div className="modal-cover modal-cover-4">
+                <div className="modal">
+                    <button className="close-modal close-modal-4"><i className="las la-times sm"></i></button>
+
+                    <div className="modal-content no-image">
+                        <div className="modal-content-wrapper">
+                            <div className="content">
+                                <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices.</p>
+                                <div className="button-container">
+                                    <button className="primary">Read more</button>
+                                    <button className="secondary">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="container-fluid navigation">
@@ -420,7 +498,9 @@ function App() {
                                         <p className="inverted">Topic</p>
                                         <h3 className="inverted">Mauris tortor turpis, dignissim vel ullam.</h3>
                                         <p className="inverted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
-                                        <button className="cta inverted">Read more</button>
+                                        <div className="button-container">
+                                            <button className="cta inverted">Read more</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -436,7 +516,9 @@ function App() {
                                         <p>Topic</p>
                                         <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
-                                        <button className="cta">Read more</button>
+                                        <div className="button-container">
+                                            <button className="cta">Read more</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -458,7 +540,11 @@ function App() {
                                         <p className="inverted">Topic</p>
                                         <h3 className="inverted">Mauris tortor turpis, dignissim vel ullam.</h3>
                                         <p className="inverted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
-                                        <button className="cta inverted">Read more</button>
+                                        <div className="button-container">
+                                            <button className="cta inverted">Read more</button>
+                                            <button className="cta inverted">Read more</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -488,14 +574,19 @@ function App() {
                                         <p>Topic</p>
                                         <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
-                                        <button className="cta">Read more</button>
+                                        <div className="button-container">
+                                            <button className="cta">Read more</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-xs-12 col-sm-4">
-                           <button className="modal-trigger">Trigger modal</button>
+                        <div className="col-12">
+                            <button className="primary modal-trigger-1">Trigger full image modal</button>
+                            <button className="primary modal-trigger-2">Trigger regular modal</button>
+                            <button className="primary modal-trigger-3">Trigger side by side modal</button>
+                            <button className="primary modal-trigger-4">Trigger text only modal</button>
                         </div>
 
                     </div>
