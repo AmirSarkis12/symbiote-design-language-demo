@@ -12,17 +12,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalCover3 = document.querySelector(".modal-cover-3");
     const modalCover4 = document.querySelector(".modal-cover-4");
 
+    const modal1 = document.querySelector(".modal-1");
+    const modal2 = document.querySelector(".modal-2");
+    const modal3 = document.querySelector(".modal-3");
+    const modal4 = document.querySelector(".modal-4");
+
     const modalClose1 = document.querySelector(".close-modal-1");
     const modalClose2 = document.querySelector(".close-modal-2");
     const modalClose3 = document.querySelector(".close-modal-3");
     const modalClose4 = document.querySelector(".close-modal-4");
 
-    const modal = document.querySelector('.modal');
-
     // Get the prior focused element before the modal is opened
     const priorFocusedElement = document.activeElement && document.activeElement as HTMLElement;
 
-    if (modal) {
+    if (modal1 && modal2 && modal3 && modal4) {
         if (modalCover1 && modalCover2 && modalCover3 && modalCover4 ) {
             if (modalTrigger1) {
 
@@ -34,9 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     modalCover1.classList.add("cover-displayed");
 
                     // Lock the focus to elements within the modal and focus on first element
-                    focusTrap.enable(modal);
-
-
+                    focusTrap.enable(modal1);
                 });
             }
 
@@ -50,9 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     modalCover2.classList.add("cover-displayed");
 
                     // Lock the focus to elements within the modal and focus on first element
-                    focusTrap.enable(modal);
-
-
+                    focusTrap.enable(modal2);
                 });
             }
 
@@ -66,9 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     modalCover3.classList.add("cover-displayed");
 
                     // Lock the focus to elements within the modal and focus on first element
-                    focusTrap.enable(modal);
-
-
+                    focusTrap.enable(modal3);
                 });
             }
 
@@ -82,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     modalCover4.classList.add("cover-displayed");
 
                     // Lock the focus to elements within the modal and focus on first element
-                    focusTrap.enable(modal);
+                    focusTrap.enable(modal4);
                 });
             }
 

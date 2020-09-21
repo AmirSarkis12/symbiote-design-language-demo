@@ -19,7 +19,7 @@ function App() {
         <div className="App">
             {/* Temporary code - until tech stack is thought out more, this is best done with a react component to dynamically set content / show and hide - with local storage feature */}
             <div className="modal-cover modal-cover-1">
-                <div className="modal full-image-modal">
+                <div className="modal modal-1">
                     <button className="close-modal close-modal-1"><i className="las la-times sm"></i></button>
 
                     <div className="modal-content full-image">
@@ -39,7 +39,7 @@ function App() {
             </div>
 
             <div className="modal-cover modal-cover-2">
-                <div className="modal">
+                <div className="modal modal-2">
                     <button className="close-modal close-modal-2"><i className="las la-times sm"></i></button>
 
                     <div className="modal-content">
@@ -60,7 +60,7 @@ function App() {
             </div>
 
             <div className="modal-cover modal-cover-3">
-                <div className="modal">
+                <div className="modal modal-3">
                     <button className="close-modal close-modal-3"><i className="las la-times sm"></i></button>
                     <div className="modal-content side-by-side">
                         <div className="content">
@@ -80,7 +80,7 @@ function App() {
             </div>
 
             <div className="modal-cover modal-cover-4">
-                <div className="modal">
+                <div className="modal modal-4">
                     <button className="close-modal close-modal-4"><i className="las la-times sm"></i></button>
 
                     <div className="modal-content no-image">
