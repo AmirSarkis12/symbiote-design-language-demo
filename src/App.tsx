@@ -4,15 +4,22 @@ import './scripts/navigation.ts'
 import './scripts/side-navigation.ts'
 import './scripts/notification.ts'
 import './scripts/modal.ts'
+import './scripts/carousel.ts'
 
 import logo from './assets/images/logo.png';
-import cardImage1 from './assets/images/card-background-mountains.jpeg';
-import cardImage2 from './assets/images/card-background-trees.jpeg';
-import cardImage3 from './assets/images/card-background-lavender.jpeg';
-import cardImage4 from './assets/images/card-background-dessert.jpeg';
-import cardImage5 from './assets/images/card-background-road.jpeg';
-import cardImage6 from './assets/images/card-background-beach.jpeg';
-import cardImage7 from './assets/images/card-background-canyon.jpeg';
+import cardImage1 from './assets/images/card-image-mountains.jpeg';
+import cardImage2 from './assets/images/card-image-trees.jpeg';
+import cardImage3 from './assets/images/card-image-lavender.jpeg';
+import cardImage4 from './assets/images/card-image-dessert.jpeg';
+import modalImage1 from './assets/images/modal-image-road.jpeg';
+import modalImage2 from './assets/images/modal-image-beach.jpeg';
+import modalImage3 from './assets/images/modal-image-canyon.jpeg';
+import carouselImage1 from './assets/images/carousel-image-bay.jpeg';
+import carouselImage2 from './assets/images/carousel-image-breakwater.jpeg';
+import carouselImage3 from './assets/images/carousel-image-underwater.jpeg';
+import carouselImage4 from './assets/images/carousel-image-white-water.jpeg';
+import carouselImage5 from './assets/images/carousel-image-path.jpeg';
+import carouselImage6 from './assets/images/carousel-image-peninsula.jpeg';
 
 function App() {
     return (
@@ -24,7 +31,7 @@ function App() {
 
                     <div className="modal-content full-image">
                         <div className="modal-content-wrapper" style={{
-                            backgroundImage: `url(${cardImage5})`
+                            backgroundImage: `url(${modalImage1})`
                         }}>
                             <div className="content">
                                 <h3 className="inverted">Mauris tortor turpis, dignissim vel ullam.</h3>
@@ -44,7 +51,7 @@ function App() {
 
                     <div className="modal-content">
                         <div className="modal-content-wrapper" style={{
-                            backgroundImage: `url(${cardImage6})`
+                            backgroundImage: `url(${modalImage2})`
                         }}>
                             <div className="content">
                                 <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
@@ -72,7 +79,7 @@ function App() {
                             </div>
                         </div>
                         <div className="image" style={{
-                            backgroundImage: `url(${cardImage7})`
+                            backgroundImage: `url(${modalImage3})`
                         }}></div>
                     </div>
 
@@ -587,6 +594,30 @@ function App() {
                             <button className="primary modal-trigger-2">Trigger regular modal</button>
                             <button className="primary modal-trigger-3">Trigger side by side modal</button>
                             <button className="primary modal-trigger-4">Trigger text only modal</button>
+                        </div>
+
+                        <div className="col-12">
+                            <div className="carousel">
+                                <ul>
+                                    <li className="carousel-image"><img alt="Carousel slide 1 - alt text" src={carouselImage1}/></li>
+                                    <li className="carousel-image"><img alt="Carousel slide 2 - alt text" src={carouselImage2}/></li>
+                                    <li className="carousel-image"><img alt="Carousel slide 3 - alt text" src={carouselImage3}/></li>
+                                    <li className="carousel-image"><img alt="Carousel slide 4 - alt text" src={carouselImage4}/></li>
+                                    <li className="carousel-image"><img alt="Carousel slide 5 - alt text" src={carouselImage5}/></li>
+                                    <li className="carousel-image"><img alt="Carousel slide 6 - alt text" src={carouselImage6}/></li>
+                                </ul>
+                                <div className="controls">
+                                    <button className="prevPicture">
+                                        <i className="las la-arrow-circle-left"></i>
+                                    </button>
+                                    <button className="pause">
+                                        <i className="las la-pause-circle"></i>
+                                    </button>
+                                    <button className="nextPicture">
+                                        <i className="las la-arrow-circle-right"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
 
                     </div>

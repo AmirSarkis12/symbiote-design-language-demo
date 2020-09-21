@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const sideNavigation = document.querySelector('.side-navigation');
 
+    //TODO: Check if side nav height is taller than viewport height if so, then dont lock it in position
+
     if (sideNavigation) {
         calculateSetTop(sideNavigation);
     }

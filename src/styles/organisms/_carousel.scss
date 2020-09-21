@@ -1,0 +1,45 @@
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    ul {
+        list-style: none;
+        height: 200px;
+        width: 400px;
+        position: relative;
+        padding-left: 0px;
+
+        li {
+            box-sizing: border-box;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+            z-index: 1;
+            transition: opacity 1s;
+
+            &.visible {
+                opacity: 1;
+                z-index: 2;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .controls {
+        display: flex;
+        justify-content: center;
+
+        button {
+            height: 27px;
+            width: 29px;
+        }
+    }
+}
+
