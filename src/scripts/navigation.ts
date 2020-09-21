@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Listen for all clicks on the document
     document.addEventListener('click', function (event) {
-        console.log(event.target)
         // Toggle drop down list visibility on drop down click
         if (dropDown && event.target === dropDown) {
             dropDown.classList.toggle('nav__drop-down-list--visible');

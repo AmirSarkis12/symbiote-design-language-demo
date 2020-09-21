@@ -6,7 +6,7 @@
     justify-content: flex-start;
     position: sticky;
     top: 4rem;
-    z-index: 2;
+    z-index: 17;
     background-color: $breadcumbs-background-color;
 
     @include media-breakpoint-down(sm) {

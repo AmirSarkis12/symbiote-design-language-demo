@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const breadcrumbs = document.querySelector('.breadcrumbs');
 
     // If notification banner is on the page
-    if (notification && notification.previousSibling) {
-
+    if (notification) {
         // Check if breadcrumbs exist on the page, if so set the top position of notification banner to take that in to account.
         if (breadcrumbs) {
             // 4rem for nav + 2rem for breadcrumbs

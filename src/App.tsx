@@ -1,7 +1,9 @@
 import React from 'react';
 import './styles/main.scss';
 import './scripts/navigation.ts'
+import './scripts/side-navigation.ts'
 import './scripts/notification.ts'
+import './scripts/modal.ts'
 
 import logo from './assets/images/logo.png';
 import cardImage1 from './assets/images/card-background-mountains.jpeg';
@@ -11,6 +13,12 @@ import cardImage4 from './assets/images/card-background-dessert.jpeg';
 function App() {
     return (
         <div className="App">
+            {/* Temporary code - iuntil tech stack is thought out more, this is best done with a react component to dynamically set content / show and hide */}
+            <div className="modal-cover">
+                <div className="modal">
+                    <button>dsfdsf</button>
+                </div>
+            </div>
             <div className="container-fluid navigation">
                 <div className="nav__logo">
                     <img src={logo} alt="logo"></img>
@@ -485,6 +493,11 @@ function App() {
                                 </div>
                             </div>
                         </div>
+
+                        <div className="col-xs-12 col-sm-4">
+                           <button className="modal-trigger">Trigger modal</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
