@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll('.carousel-slide');
     const carouselDotsContainer = document.querySelector('.carousel-dots-container');
 
-
     // Set the interval timer for the first time
     let slideInterval = setInterval(goToNextSlide, INTERVAL);
 

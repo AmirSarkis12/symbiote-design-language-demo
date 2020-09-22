@@ -1,10 +1,13 @@
 import React from 'react';
+
 import './styles/main.scss';
+
 import './scripts/navigation.ts'
 import './scripts/side-navigation.ts'
 import './scripts/notification.ts'
 import './scripts/modal.ts'
 import './scripts/carousel.ts'
+import './scripts/datepicker.ts'
 
 import logo from './assets/images/logo.png';
 import cardImage1 from './assets/images/card-image-mountains.jpeg';
@@ -624,6 +627,22 @@ function App() {
                                 </div>
                             </div>
                         </div>
+                        <div className="col-6">
+                            <form>
+                                <label htmlFor="date">Date</label>
+                                <input type="text" className="date-picker" id="date"></input>
+                            </form>
+                        </div>
+                        <div className="col-6">
+                            <form>
+                                <div className="date-range-picker">
+                                    <label htmlFor="date">Date range</label>
+                                    <input type="text" name="start"></input>
+                                    <span>to</span>
+                                    <input type="text" name="end"></input>
+                                </div>
+                            </form>
+                        </div>
 
                     </div>
                 </div>
@@ -666,16 +685,16 @@ function App() {
                             <div className="col-xs-6 col-md-3">
                                 <p>Social</p>
                                 <div className="social-link">
-                                    <a href="a" target="_blank"><i className="lab la-facebook"></i><p>Facebook</p></a>
+                                    <a href="a" target="_blank"><i className="lab la-facebook inverted"></i><p>Facebook</p></a>
                                 </div>
                                 <div className="social-link">
-                                    <a href="a" target="_blank"><i className="lab la-twitter"></i><p>Twitter</p></a>
+                                    <a href="a" target="_blank"><i className="lab la-twitter inverted"></i><p>Twitter</p></a>
                                 </div>
                                 <div className="social-link">
-                                    <a href="a" target="_blank"><i className="lab la-instagram"></i><p>Instagram</p></a>
+                                    <a href="a" target="_blank"><i className="lab la-instagram inverted"></i><p>Instagram</p></a>
                                 </div>
                                 <div className="social-link">
-                                    <a href="a" target="_blank"><i className="lab la-linkedin-in"></i><p>LinkedIn</p></a>
+                                    <a href="a" target="_blank"><i className="lab la-linkedin-in inverted"></i><p>LinkedIn</p></a>
                                 </div>
                             </div>
                         </div>
