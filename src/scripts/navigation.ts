@@ -1,6 +1,6 @@
 // This script handles the toggling of navigation drop down links, hamburger menu, scroll locking etc.
 
-import scrollLock from './scroll-Lock';
+import scrollLock from './scroll-lock'
 import viewport from './viewport';
 
 // Added the following event listeners only once the DOM has loaded

@@ -1,6 +1,7 @@
 // Sizing for Line Awesome library font icons
 .las, .lab {
     font-size: 2.4em;
+    color: $black;
 
     &.xxs {
         font-size: 1rem;
@@ -20,5 +21,9 @@
 
     &.xl {
         font-size: 3.4rem;
+    }
+
+    &.inverted {
+        color: $white;
     }
 }

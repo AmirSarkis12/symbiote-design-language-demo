@@ -599,23 +599,28 @@ function App() {
                         <div className="col-12">
                             <div className="carousel">
                                 <ul>
-                                    <li className="carousel-image"><img alt="Carousel slide 1 - alt text" src={carouselImage1}/></li>
-                                    <li className="carousel-image"><img alt="Carousel slide 2 - alt text" src={carouselImage2}/></li>
-                                    <li className="carousel-image"><img alt="Carousel slide 3 - alt text" src={carouselImage3}/></li>
-                                    <li className="carousel-image"><img alt="Carousel slide 4 - alt text" src={carouselImage4}/></li>
-                                    <li className="carousel-image"><img alt="Carousel slide 5 - alt text" src={carouselImage5}/></li>
-                                    <li className="carousel-image"><img alt="Carousel slide 6 - alt text" src={carouselImage6}/></li>
+                                    <li className="carousel-slide"><img alt="Carousel slide 1 - alt text" src={carouselImage1}/></li>
+                                    <li className="carousel-slide"><img alt="Carousel slide 2 - alt text" src={carouselImage2}/></li>
+                                    <li className="carousel-slide"><img alt="Carousel slide 3 - alt text" src={carouselImage3}/></li>
+                                    <li className="carousel-slide"><img alt="Carousel slide 4 - alt text" src={carouselImage4}/></li>
+                                    <li className="carousel-slide"><img alt="Carousel slide 5 - alt text" src={carouselImage5}/></li>
+                                    <li className="carousel-slide"><img alt="Carousel slide 6 - alt text" src={carouselImage6}/></li>
                                 </ul>
                                 <div className="controls">
-                                    <button className="prevPicture">
-                                        <i className="las la-arrow-circle-left"></i>
+                                    <button className="previous-slide">
+                                        <i className="las la-arrow-circle-left sm inverted"></i>
+                                        <span className="sr-only">Previous slide</span>
                                     </button>
-                                    <button className="pause">
-                                        <i className="las la-pause-circle"></i>
+                                    <button className="play-pause">
+                                        <i className="las la-pause-circle sm inverted"></i>
+                                        <span className="sr-only">Pause</span>
                                     </button>
-                                    <button className="nextPicture">
-                                        <i className="las la-arrow-circle-right"></i>
+                                    <button className="next-slide">
+                                        <i className="las la-arrow-circle-right sm inverted"></i>
+                                        <span className="sr-only">Next slide</span>
                                     </button>
+                                </div>
+                                <div className="carousel-dots-container">
                                 </div>
                             </div>
                         </div>
