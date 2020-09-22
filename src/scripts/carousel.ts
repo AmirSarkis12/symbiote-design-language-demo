@@ -4,6 +4,7 @@ let visibleSlideIndex = 0;
 // Default set to 5 seconds
 const INTERVAL = 5000
 
+// TODO: Add caption feature to slides
 // TODO: Add swipe functionality to swap between slides
 
 document.addEventListener("DOMContentLoaded", function () {

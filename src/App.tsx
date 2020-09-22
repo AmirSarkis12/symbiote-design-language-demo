@@ -27,7 +27,7 @@ function App() {
             {/* Temporary code - until tech stack is thought out more, this is best done with a react component to dynamically set content / show and hide - with local storage feature */}
             <div className="modal-cover modal-cover-1">
                 <div className="modal modal-1">
-                    <button className="close-modal close-modal-1"><i className="las la-times sm"></i></button>
+                    <button className="close-modal close-modal-1"><i className="las la-times sm inverted"></i></button>
 
                     <div className="modal-content full-image">
                         <div className="modal-content-wrapper" style={{
@@ -47,7 +47,7 @@ function App() {
 
             <div className="modal-cover modal-cover-2">
                 <div className="modal modal-2">
-                    <button className="close-modal close-modal-2"><i className="las la-times sm"></i></button>
+                    <button className="close-modal close-modal-2"><i className="las la-times sm inverted"></i></button>
 
                     <div className="modal-content">
                         <div className="modal-content-wrapper" style={{
@@ -68,7 +68,7 @@ function App() {
 
             <div className="modal-cover modal-cover-3">
                 <div className="modal modal-3">
-                    <button className="close-modal close-modal-3"><i className="las la-times sm"></i></button>
+                    <button className="close-modal close-modal-3"><i className="las la-times sm inverted"></i></button>
                     <div className="modal-content side-by-side">
                         <div className="content">
                             <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
@@ -88,7 +88,7 @@ function App() {
 
             <div className="modal-cover modal-cover-4">
                 <div className="modal modal-4">
-                    <button className="close-modal close-modal-4"><i className="las la-times sm"></i></button>
+                    <button className="close-modal close-modal-4"><i className="las la-times sm inverted"></i></button>
 
                     <div className="modal-content no-image">
                         <div className="modal-content-wrapper">
@@ -474,7 +474,7 @@ function App() {
                                         <span className="description">Step two</span>
                                     </li>
                                     <li className="progress-step">
-                                        <span className="count highlight-index"></span>
+                                        <span className="count current"></span>
                                         <span className="description">Step three</span>
                                     </li>
                                     <li className="progress-step">
@@ -599,12 +599,12 @@ function App() {
                         <div className="col-12">
                             <div className="carousel">
                                 <ul>
-                                    <li className="carousel-slide"><img alt="Carousel slide 1 - alt text" src={carouselImage1}/></li>
-                                    <li className="carousel-slide"><img alt="Carousel slide 2 - alt text" src={carouselImage2}/></li>
-                                    <li className="carousel-slide"><img alt="Carousel slide 3 - alt text" src={carouselImage3}/></li>
-                                    <li className="carousel-slide"><img alt="Carousel slide 4 - alt text" src={carouselImage4}/></li>
-                                    <li className="carousel-slide"><img alt="Carousel slide 5 - alt text" src={carouselImage5}/></li>
-                                    <li className="carousel-slide"><img alt="Carousel slide 6 - alt text" src={carouselImage6}/></li>
+                                    <li className="carousel-slide"><img className="carousel-slide-background" alt="Carousel slide 1 - alt text" src={carouselImage1}/></li>
+                                    <li className="carousel-slide"><img className="carousel-slide-background" alt="Carousel slide 2 - alt text" src={carouselImage2}/></li>
+                                    <li className="carousel-slide"><img className="carousel-slide-background" alt="Carousel slide 3 - alt text" src={carouselImage3}/></li>
+                                    <li className="carousel-slide"><img className="carousel-slide-background" alt="Carousel slide 4 - alt text" src={carouselImage4}/></li>
+                                    <li className="carousel-slide"><img className="carousel-slide-background" alt="Carousel slide 5 - alt text" src={carouselImage5}/></li>
+                                    <li className="carousel-slide"><img className="carousel-slide-background" alt="Carousel slide 6 - alt text" src={carouselImage6}/></li>
                                 </ul>
                                 <div className="controls">
                                     <button className="previous-slide">

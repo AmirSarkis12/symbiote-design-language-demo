@@ -90,10 +90,14 @@ $active-page-background-color: $cyan-aa-small;
 $active-page-foreground-color: $white;
 
 // Progress bar settings
-$progress-background-color: $cyan-aa-small;
-$progress-foreground-color: $white;
+$progress-completed-background-color: $cyan-aa-small;
+$progress-completed-foreground-color: $white;
+$progress-current-step-background-color: $white;
+$progress-current-step-foreground-color: $black;
+$progress-current-step-border-color: $cyan-aa-small;
 $remaining-steps-background-color: $gray-aa-small;
 $remaining-steps-foreground-color: $white;
+
 
 // Notification settings
 $new-color: $cyan-aa-small;
@@ -109,7 +113,6 @@ $card-date-foreground-color: $white;
 // Carousel settings
 $carousel-inactive-dot-color: $gray-aa-small;
 $carousel-active-dot-color: $cyan-aa-small;
-
 
 // Footer settings
 $footer-background-color: $cyan-aa-small;

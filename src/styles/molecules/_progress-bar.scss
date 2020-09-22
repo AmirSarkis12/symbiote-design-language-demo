@@ -49,14 +49,24 @@
             }
 
             .highlight-index {
-                background-color: $progress-background-color;
+                background-color: $progress-completed-background-color;
                 display: block;
                 height: 100%;
                 border-radius: 0.25rem;
 
                 &:before {
-                    background-color: $progress-background-color;
-                    color: $progress-foreground-color;
+                    background-color: $progress-completed-background-color;
+                    color: $progress-completed-foreground-color;
+                    content:'\2714';
+                }
+            }
+
+            .current {
+                &:before {
+                    background-color: $progress-current-step-background-color;
+                    color: $progress-current-step-foreground-color;
+                    border: 2px solid $progress-current-step-border-color;
+                    box-sizing: border-box;
                 }
             }
         }
