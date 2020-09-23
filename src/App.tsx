@@ -552,7 +552,6 @@ function App() {
                                         <p className="inverted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
                                         <div className="button-container">
                                             <button className="cta inverted">Read more</button>
-                                            <button className="cta inverted">Read more</button>
                                         </div>
 
                                     </div>

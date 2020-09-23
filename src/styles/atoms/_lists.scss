@@ -36,7 +36,7 @@ ol {
                 position: absolute;
                 top: 2.1em;
                 left: 0.85em;
-                width: 2px;
+                width: 0.125rem;
                 height: calc(100% - 2em);
                 content: '';
                 background-color: $list-association-color;
@@ -81,7 +81,7 @@ ul {
                 position: absolute;
                 top: 2.1em;
                 left: 0.4em;
-                width: 2px;
+                width: 0.125rem;
                 height: calc(100% - 2em);
                 content: '';
                 background-color: $list-association-color;

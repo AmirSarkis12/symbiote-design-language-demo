@@ -6,7 +6,7 @@
 
     @include media-breakpoint-down(sm) {
         padding: 1rem 0;
-        border-bottom: 1px solid $side-navigation-mobile-border-color;
+        border-bottom: 0.0625rem solid $side-navigation-mobile-border-color;
     }
 
     .side-navigation-section {
@@ -61,7 +61,7 @@
                         @include media-breakpoint-down(sm) {
                             margin: 0;
                             padding: 0 0.5rem 0;
-                            border-right: 1px solid black;
+                            border-right: 0.0625rem solid black;
 
                             width: auto;
                         }

@@ -65,7 +65,7 @@
                 &:before {
                     background-color: $progress-current-step-background-color;
                     color: $progress-current-step-foreground-color;
-                    border: 2px solid $progress-current-step-border-color;
+                    border: 0.125rem solid $progress-current-step-border-color;
                     box-sizing: border-box;
                 }
             }

@@ -4,7 +4,7 @@
     justify-content: left;
 
 	&-label {
-		margin: 0 5px;
+		margin: 0 0.3rem;
 		cursor: pointer;
 	}
 
@@ -13,10 +13,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 20px;
-        height: 20px;
+		width: 1.25rem;
+        height: 1.25rem;
 		background-color: transparent;
-		border: 2px solid $checkbox-border-color;
+		border: 0.125rem solid $checkbox-border-color;
 		border-radius: 0.25rem;
 	}
 
@@ -26,11 +26,11 @@
 
 	&-checked {
 		content: "";
-        width: 4px;
-        height: 10px;
-		margin-top: -2px;
-        border-right: 2px solid $checkbox-check-color;
-        border-bottom: 2px solid $checkbox-check-color;
+        width: 0.25rem;
+        height: 0.625rem;
+		margin-top: -0.125rem;
+        border-right: 0.125rem solid $checkbox-check-color;
+        border-bottom: 0.125rem solid $checkbox-check-color;
 		opacity: 0;
 		transform: rotate(30deg);
 		@include transition();

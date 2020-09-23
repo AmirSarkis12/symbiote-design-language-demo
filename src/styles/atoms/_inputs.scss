@@ -5,18 +5,18 @@ form {
         width: 100%;
         height: 2.5rem;
         border-radius: 0.25rem;
-        border: 1px solid $input-field-border-color;
+        border: 0.0625rem solid $input-field-border-color;
         margin: 0.33rem 0 1.125rem;
         padding: 0.55rem;
         box-sizing: border-box;
         @include transition();
 
         &:focus, &:hover {
-            border: 1px solid $input-field-focus-color;
+            border: 0.0625rem solid $input-field-focus-color;
         }
 
         &.error {
-            border: 1px solid $error-color;
+            border: 0.0625rem solid $error-color;
         }
     }
 }

@@ -4,14 +4,14 @@
     justify-content: left;
 
 	&-label {
-		margin: 0 5px;
+		margin: 0 0.3rem;
 		cursor: pointer;
 	}
 
 	&-group {
 		position: relative;
-		width: 50px;
-        height: 25px;
+		width: 3.125rem;
+        height: 1.5rem;
 		background-color: $toggle-inactive-color;
 		border-radius: 3rem;
         @include transition();
@@ -21,14 +21,14 @@
 		background-color: $toggle-active-color;
 
 		.toggle-checked {
-			right: 5px;
+			right: 0.3rem;
 		}
 	}
 
 	&-checked {
         position: absolute;
         top: 50%;
-        right: calc(100% - 20px);
+        right: calc(100% - 1.25rem);
         content: "";
         width: 1rem;
         height: 1rem;
