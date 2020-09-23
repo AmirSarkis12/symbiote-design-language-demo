@@ -24,7 +24,7 @@ import carouselImage2 from './assets/images/carousel-image-breakwater.jpeg';
 import carouselImage3 from './assets/images/carousel-image-underwater.jpeg';
 import carouselImage4 from './assets/images/carousel-image-white-water.jpeg';
 import carouselImage5 from './assets/images/carousel-image-path.jpeg';
-import carouselImage6 from './assets/images/carousel-image-peninsula.jpeg';
+import carouselImage6 from './assets/images/carousel-image-point.jpeg';
 import heroImage1 from './assets/images/hero-image-glacier.jpeg';
 import heroImage2 from './assets/images/hero-image-pathway.jpeg';
 
@@ -650,9 +650,10 @@ function App() {
                         <div className="col-12">
                             <div className="hero">
                                 <img className="hero-background" alt="Hero alt text" src={heroImage1}/>
-                                <div className="col-xs-10 col-sm-8 col-lg-4 content center">
+                                <div className="col-xs-10 col-sm-8 col-lg-4 content right">
                                     <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                    <button className="cta">Read more</button>
                                 </div>
                             </div>
                         </div>
@@ -669,6 +670,7 @@ function App() {
                             <div className="content">
                                 <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                <button className="cta">Read more</button>
                             </div>
                         </div>
                     </div>
