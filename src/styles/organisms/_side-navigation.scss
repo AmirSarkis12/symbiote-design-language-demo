@@ -41,36 +41,35 @@
                         }
                     }
 
-                    button {
-                        border: none;
-                        background-color: $transparent;
+                    a {
                         width: 100%;
                         text-align: left;
                         display: block;
-                        font-family: 'Body', sans-serif;
                         padding: 0.25rem 0;
-                        border-radius: 0;
                         margin: 0 0 0 1rem;
                         white-space: nowrap;
-                        color: $side-navigation-link-color;
 
-                        &:hover, &:focus {
+                        &:hover {
                             color: $side-navigation-hover-color;
+                        }
+
+                        &.active {
+                            font-weight: bold;
                         }
 
                         @include media-breakpoint-down(sm) {
                             margin: 0;
                             padding: 0 0.5rem 0;
                             border-right: 0.0625rem solid black;
-
                             width: auto;
                         }
                     }
 
                     &.no-border {
-                        button {
+                        a {
                             border: none;
                         }
+
                     }
                 }
 
