@@ -32,7 +32,7 @@
             color: $footer-foreground-color;
             cursor: pointer;
             text-decoration: none;
-            transition: .2s;
+            @include transition();
 
             @include media-breakpoint-up(md) {
                 &:hover, &:focus {
@@ -75,7 +75,7 @@
         a {
             font-weight: 700;
             text-decoration: none;
-            transition: .2s;
+            @include transition();
             position: relative;
 
             @include animated-underline($navigation-foreground-color);

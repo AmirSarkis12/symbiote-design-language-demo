@@ -164,7 +164,7 @@
 
 // General use drop shadow
 @mixin general-shadow() {
-    box-shadow: 0 0.0625rem 0.25rem rgba(0,0,0,.15);
+    box-shadow: 0 0.625rem 1.785rem 0.35rem rgba(0,0,0,0.3);
 }
 
 // Card specific shadows

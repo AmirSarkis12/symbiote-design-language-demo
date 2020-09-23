@@ -10,6 +10,8 @@ import './scripts/carousel.ts'
 import './scripts/datepicker.ts'
 
 import logo from './assets/images/logo.png';
+
+// All images are royalty free and sourced from Unsplash - https://unsplash.com/
 import cardImage1 from './assets/images/card-image-mountains.jpeg';
 import cardImage2 from './assets/images/card-image-trees.jpeg';
 import cardImage3 from './assets/images/card-image-lavender.jpeg';
@@ -23,6 +25,8 @@ import carouselImage3 from './assets/images/carousel-image-underwater.jpeg';
 import carouselImage4 from './assets/images/carousel-image-white-water.jpeg';
 import carouselImage5 from './assets/images/carousel-image-path.jpeg';
 import carouselImage6 from './assets/images/carousel-image-peninsula.jpeg';
+import heroImage1 from './assets/images/hero-image-glacier.jpeg';
+import heroImage2 from './assets/images/hero-image-pathway.jpeg';
 
 function App() {
     return (
@@ -643,8 +647,36 @@ function App() {
                             </form>
                         </div>
 
+                        <div className="col-12">
+                            <div className="hero">
+                                <img className="hero-background" alt="Hero alt text" src={heroImage1}/>
+                                <div className="col-xs-10 col-sm-8 col-lg-4 content center">
+                                    <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+            </div>
+
+            <div className="container-fluid">
+                <div className="hero">
+                    <img className="hero-background" alt="Hero alt text" src={heroImage2} />
+                    <div className="container hero-fluid right">
+                        <div className="col-xs-12 col-sm-8 col-lg-4">
+                            <div className="content">
+                                <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
             </div>
 
             <div className="container-fluid footer-container">
