@@ -637,9 +637,9 @@ function App() {
                             <form>
                                 <div className="date-range-picker">
                                     <label htmlFor="date">Date range</label>
-                                    <input type="text" name="start"></input>
+                                    <input className="from-date" type="text" name="start"></input>
                                     <span>to</span>
-                                    <input type="text" name="end"></input>
+                                    <input className="to-date" type="text" name="end"></input>
                                 </div>
                             </form>
                         </div>

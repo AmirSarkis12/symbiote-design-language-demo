@@ -1,5 +1,5 @@
-import Datepicker from '../libs/vanilla-datepicker/js/Datepicker';
-import DateRangePicker from '../libs/vanilla-datepicker/js/DateRangePicker';
+import Datepicker from '../libs/vanillajs-datepicker/js/Datepicker';
+import DateRangePicker from '../libs/vanillajs-datepicker/js/DateRangePicker';
 
 document.addEventListener("DOMContentLoaded", function () {
     const datePickerField = document.querySelector('.date-picker');
