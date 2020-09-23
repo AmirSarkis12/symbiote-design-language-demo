@@ -17,12 +17,12 @@
             top: 0;
             left: 0;
             background-color: $card-date-background-color;
-            color: $card-date-foreground-color;
             padding: 0.8em;
 
             span {
                 display: block;
                 text-align: center;
+                color: $card-date-foreground-color;
             }
 
             .month {

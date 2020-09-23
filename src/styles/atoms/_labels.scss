@@ -1,35 +1,35 @@
 span {
     &.label {
-        padding: 1px 5px;
+        padding:  0 0.25rem;
         border-radius: 0.25rem;
         background-color: $white;
         text-transform: uppercase;
         display: inline-block;
-        font-weight: bold;
-        margin: 0px 2px;
+        font-weight: 700;
+        margin: 0px 0.125rem;
 
         &.label-success {
-            border: 2px solid $success-color;
+            border: 0.125rem solid $success-color;
             color: $success-color;
         }
 
         &.label-warning {
-            border: 2px solid $warning-color;
+            border: 0.125rem solid $warning-color;
             color: $warning-color;
         }
 
         &.label-error {
-            border: 2px solid $error-color;
+            border: 0.125rem solid $error-color;
             color: $error-color;
         }
 
         &.label-new {
-            border: 2px solid $new-color;
+            border: 0.125rem solid $new-color;
             color: $new-color;
         }
 
         &.label-info {
-            border: 2px solid $info-color;
+            border: 0.125rem solid $info-color;
             color: $info-color;
         }
     }

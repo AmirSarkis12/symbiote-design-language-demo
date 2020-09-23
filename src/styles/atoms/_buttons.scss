@@ -44,6 +44,9 @@ button {
     &.cta {
         border: none;
         background-color: $transparent;
+        padding: 12px 15px 12px 0;
+        font-weight: 700;
+
         &::after {
             height: 0.125rem;
             padding: 0.125rem 0 0;
@@ -79,7 +82,7 @@ button {
         background-color: $disabled-background-color;
         color: $disabled-foreground-color;
         border: none;
-        cursor: default;
+        cursor: not-allowed;
     }
 
     &.xs {

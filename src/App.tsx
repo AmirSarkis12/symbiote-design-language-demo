@@ -159,13 +159,13 @@ function App() {
                 </div>
             </div>
 
-            {/* <div className="container-fluid notification success">
+            <div className="container-fluid notification success">
                 <i className="las la-exclamation-circle"></i>
                 <div className="text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient. Quam temere in vitiis, legem sancimus haerentia</p>
                 </div>
                 <button className="button outline-light cta sm">Read More</button>
-            </div> */}
+            </div>
 
             <div className="container">
                 <div className="row">
@@ -365,7 +365,7 @@ function App() {
                             <button className="primary">Button md</button>
                             <button className="primary sm">Button sm</button>
                             <button className="primary xs">Button xs</button>
-                            <button className="disabled">Button md</button>
+                            <button className="disabled" tabIndex={-1}>Button md</button>
                         </div>
 
                         <div className="col-12">

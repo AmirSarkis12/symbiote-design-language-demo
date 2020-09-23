@@ -47,8 +47,8 @@ table {
 	box-sizing: border-box;
 }
 
-input:focus, textarea:focus, select:focus {
-	outline: 0;
+button:focus {
+	outline-offset: 0.125rem;
 }
 
 input::-webkit-input-placeholder,
