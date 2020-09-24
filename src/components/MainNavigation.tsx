@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Prism from 'prismjs'
 
 function MainNavigation() {
-    Prism.highlightAll();
+    // React hook to get syntax highlighing. Similar to componentDidMount()
+    useEffect(() => {
+        Prism.highlightAll();
+    });
 
     const code =
     `<div className="container-fluid navigation">
@@ -39,21 +42,20 @@ function MainNavigation() {
 
     return (
         <div>
-        <h2>Main Navigation</h2>
+        <h1>Main Navigation</h1>
 
-        Component Demo
+        <h2>When to use this component</h2>
 
-        <h4>When to use this component</h4>
-        <h4>When not to use this component</h4>
-        <h4>Options</h4>
+        <h2>When not to use this component</h2>
 
-        <h4>Code</h4>
+        <h2>Snippet</h2>
         <pre>
             <code className="language-javascript">
                 {code}
             </code>
         </pre>
 
+        <h2>Options</h2>
         </div>
         )
     }
