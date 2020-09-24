@@ -8,17 +8,17 @@
         margin: 0 0 0.8rem 0;
     }
 
-    // Lists
-    ol li{
-        margin: 0.5em 0 0 0;
-    }
 
-    ul li{
-        margin: 1.2em 0 0 0;
-    }
+// List layout
+ol li{
+    margin: 1em 0 0 0;
+}
 
-// Buttons
+ul li{
+    margin: 1.2em 0 0 0;
+}
 
+// Button layout
 button {
     margin: 0 0.2rem;
 }

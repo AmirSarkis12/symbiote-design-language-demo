@@ -15,10 +15,11 @@ function Home() {
 
                     <p>Use this design system to provide a human centered, consistent and trustworthy online experience for everyone who accesses your website. It's a living, breathing, pull-request loving, store of how we, as an organisation wish to help you build and craft your web experiences.</p>
 
-                    <p>It's released under a MIT license, apart from the use of our logo, it's free and open software. <Link to='/getting-started'>Here</Link> is how you can get started. If you find this useful, we'd love to hear about it at <a href="mailto:hello@symbiote.com.au ">hello@symbiote.com.au</a>
+                    <p>It's released under a MIT license, apart from the use of our logo, it's free and open software. <Link to='/getting-started'>Here</Link> is how you can get started. If you find this useful, we'd love to hear about it at <a href="mailto:hello@symbiote.com.au?subject=Symbiote%20Human%20Centred%20Design%20System&body=Hi%20Symbiote,">hello@symbiote.com.au</a>
                     </p>
 
                     <p>If you find a bug or have an improvement, please do fork this project on github.</p>
+
                     <p>The Symbiote Team</p>
                 </div>
             </div>

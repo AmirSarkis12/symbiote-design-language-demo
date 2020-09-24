@@ -6,7 +6,6 @@ ol {
             position: relative;
             padding-left: 2.4rem;
             list-style: none;
-            line-height: 1.8em;
             @include transition();
 
             &:before {
@@ -33,18 +32,22 @@ ol {
 
             &:after {
                 position: absolute;
-                top: 2.1em;
+                top: 2.3rem;
                 left: 0.85em;
                 width: 0.125rem;
-                height: calc(100% - 2em);
+                height: calc(100% - 1.8em);
                 content: '';
                 background-color: $list-association-color;
                 z-index: 15;
             }
+
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
         }
-
     }
-
 }
 
 ul {
@@ -53,13 +56,12 @@ ul {
             position: relative;
             padding-left: 1.4rem;
             list-style: none;
-            line-height: 0.9rem;
             @include transition();
 
             &:before {
                 content: '';
                 position: absolute;
-                top: 0;
+                top: 0.3125rem;
                 left: 0;
                 width: 0.8rem;
                 height: 0.8rem;
@@ -77,13 +79,22 @@ ul {
 
             :after {
                 position: absolute;
-                top: 2.1em;
+                top: 1.8rem;
                 left: 0.4em;
                 width: 0.125rem;
-                height: calc(100% - 2em);
+                height: calc(100% - 1rem);
                 content: '';
                 background-color: $list-association-color;
                 z-index: 15;
+            }
+
+            &:last-child {
+                p, b {
+                    &:after {
+                        display: none;
+                    }
+                }
+
             }
         }
     }

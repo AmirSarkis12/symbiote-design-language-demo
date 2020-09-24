@@ -43,11 +43,11 @@ function Buttons() {
             <p>Use the Button component to help users carry out an action on a page like starting an application or moving to the next question in a form.</p>
             <p>Write Button text in sentence case, describing the action it performs. For example:</p>
             <ul className="styled-list">
-                <li>‘Start now’ at the start of process</li>
-                <li>‘Log in’ to an account the user has already created</li>
-                <li>Send your application’ to submit the user’s application form</li>
-                <li>‘Pay’ to make a payment</li>
-                <li>‘Log out’ when a user is logged into an account</li>
+                <li><p>‘Start now’ at the start of process</p></li>
+                <li><p>‘Log in’ to an account the user has already created</p></li>
+                <li><p>Send your application’ to submit the user’s application form</p></li>
+                <li><p>‘Pay’ to make a payment</p></li>
+                <li><p>‘Log out’ when a user is logged into an account</p></li>
             </ul>
 
             <h2>When not to use this component</h2>
@@ -64,10 +64,10 @@ function Buttons() {
             <p>The following options can be applied and combined within the Button component.</p>
 
             <ul className="styled-list">
-                <li>Size - large, medium (default), small, extra small</li>
-                <li>Hierarchy - Primary, Secondary, Tertiary</li>
-                <li>Style - Outline Light, Outline Dark, Call to action</li>
-                <li>Status - Disabled</li>
+                <li><b>Size</b> - large, medium (default), small, extra small. Use this to match the context, for example, a small button makes sense next to a paragrah.</li>
+                <li><b>Hierarchy</b> - Primary, Secondary, Tertiary. Use this when more than one button is presented at the same time, for example, proceed should be 'Primary' and going back should be 'Secondary'</li>
+                <li><b>Style</b> - Outline Light, Outline Dark, Call to action. This is purely stylistic and is recommended for use when another component should draw as much attention as possible for example,Buttons on full image card components.</li>
+                <li><b>Status</b> - Disabled. This is important for indicating to user when they are not able to proceed for example, when completing a form and certain items have not been completed appropriately.</li>
             </ul>
 
             <h3>Size</h3>
