@@ -25,8 +25,8 @@ export default function App() {
                             <li className="nav__link"> <Link to='/'><h4>Home</h4></Link></li>
                             <li className="nav__link"> <Link to='/philosophy'><h4>Philosophy</h4></Link></li>
                             <li className="nav__link"> <Link to='/components'><h4>Components</h4></Link></li>
-                            <li className="nav__link"> <Link to='/getting-started'><h4>Getting Started</h4></Link></li>
                             <li className="nav__link"> <Link to='/styles'><h4>Styles</h4></Link></li>
+                            <li className="nav__link"> <Link to='/getting-started'><h4>Getting Started</h4></Link></li>
                         </ul>
                 </div>
 
