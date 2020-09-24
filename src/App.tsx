@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import logo from './assets/images/logo.png';
 
@@ -7,9 +7,9 @@ import Home from './components/Home'
 import Components from './components/Components'
 import Philosophy from './components/Philosophy'
 import GettingStarted from './components/GettingStarted'
+import Styles from './components/Styles';
 
 import './styles/main.scss';
-
 
 export default function App() {
     return (
@@ -22,10 +22,11 @@ export default function App() {
                         <input type="checkbox" id="nav" className="hamburger-nav-toggle-checkbox" />
                         <label htmlFor="nav" className="hamburger-toggle-icon"><i></i><i></i><i></i></label>
                         <ul className="nav__links">
-                            <li className="nav__link"> <NavLink to='/'><h5>Home</h5></NavLink></li>
-                            <li className="nav__link"> <NavLink to='/philosophy'><h5>Philosophy</h5></NavLink></li>
-                            <li className="nav__link"> <NavLink to='/components'><h5>Components</h5></NavLink></li>
-                            <li className="nav__link"> <NavLink to='/getting-started'><h5>Getting Started</h5></NavLink></li>
+                            <li className="nav__link"> <Link to='/'><h4>Home</h4></Link></li>
+                            <li className="nav__link"> <Link to='/philosophy'><h4>Philosophy</h4></Link></li>
+                            <li className="nav__link"> <Link to='/components'><h4>Components</h4></Link></li>
+                            <li className="nav__link"> <Link to='/getting-started'><h4>Getting Started</h4></Link></li>
+                            <li className="nav__link"> <Link to='/styles'><h4>Styles</h4></Link></li>
                         </ul>
                 </div>
 
@@ -41,7 +42,11 @@ export default function App() {
                     <Route path="/getting-started">
                         <GettingStarted />
                     </Route>
+                    <Route path="/styles">
+                        <Styles />
+                    </Route>
                 </Switch>
+
             </div>
         </Router>
 

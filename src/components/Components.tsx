@@ -5,6 +5,7 @@ import { Route, NavLink, useRouteMatch, Switch} from "react-router-dom";
 import '../styles/main.scss';
 import '../demo/demo.scss';
 
+
 import Color from './Color';
 import Typography from './Typography';
 import Grid from './Grid';
@@ -35,6 +36,7 @@ import Notifications from './Notifications';
 import PageAlerts from './PageAlerts';
 import Carousel from './Carousel';
 import Modal from './Modal';
+import ComponentsContent from './ComponentsContent';
 
 export default function Components() {
     let { url } = useRouteMatch();
@@ -54,6 +56,9 @@ export default function Components() {
                                         </li>
                                         <li className="side-navigation-content-link no-border">
                                             <NavLink activeClassName='active' to={`${url}/typography`}>Typography</NavLink>
+                                        </li>
+                                        <li className="side-navigation-content-link">
+                                            <NavLink activeClassName='active' to={`${url}/icons`}>Icons</NavLink>
                                         </li>
 
                                         <li className="side-navigation-content-heading">
@@ -111,6 +116,16 @@ export default function Components() {
                                         </li>
 
                                         <li className="side-navigation-content-heading">
+                                            <p>Alerts</p>
+                                        </li>
+                                        <li className="side-navigation-content-link">
+                                            <NavLink activeClassName='active' to={`${url}/notifications`}>Notifications</NavLink>
+                                        </li>
+                                        <li className="side-navigation-content-link">
+                                            <NavLink activeClassName='active' to={`${url}/page-alerts`}>Page alerts</NavLink>
+                                        </li>
+
+                                        <li className="side-navigation-content-heading">
                                             <p>Content</p>
                                         </li>
                                         <li className="side-navigation-content-link">
@@ -129,25 +144,10 @@ export default function Components() {
                                             <NavLink activeClassName='active' to={`${url}/cards`}>Cards</NavLink>
                                         </li>
                                         <li className="side-navigation-content-link">
-                                            <NavLink activeClassName='active' to={`${url}/pagination`}>Pagination</NavLink>
-                                        </li>
-                                        <li className="side-navigation-content-link">
                                             <NavLink activeClassName='active' to={`${url}/tooltip`}>Tooltip</NavLink>
                                         </li>
                                         <li className="side-navigation-content-link">
                                             <NavLink activeClassName='active' to={`${url}/label`}>Label</NavLink>
-                                        </li>
-                                        <li className="side-navigation-content-link">
-                                            <NavLink activeClassName='active' to={`${url}/progress-bar`}>Progress bar</NavLink>
-                                        </li>
-                                        <li className="side-navigation-content-link">
-                                            <NavLink activeClassName='active' to={`${url}/icons`}>Icons</NavLink>
-                                        </li>
-                                        <li className="side-navigation-content-link">
-                                            <NavLink activeClassName='active' to={`${url}/notifications`}>Notifications</NavLink>
-                                        </li>
-                                        <li className="side-navigation-content-link">
-                                            <NavLink activeClassName='active' to={`${url}/page-alerts`}>Page alerts</NavLink>
                                         </li>
                                         <li className="side-navigation-content-link">
                                             <NavLink activeClassName='active' to={`${url}/carousel`}>Carousel</NavLink>
@@ -155,12 +155,23 @@ export default function Components() {
                                         <li className="side-navigation-content-link no-border">
                                             <NavLink activeClassName='active' to={`${url}/modal`}>Modal</NavLink>
                                         </li>
+
+                                        <li className="side-navigation-content-heading">
+                                            <p>Page elements</p>
+                                        </li>
+                                        <li className="side-navigation-content-link">
+                                            <NavLink activeClassName='active' to={`${url}/progress-bar`}>Progress bar</NavLink>
+                                        </li>
+                                        <li className="side-navigation-content-link">
+                                            <NavLink activeClassName='active' to={`${url}/pagination`}>Pagination</NavLink>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xs-12 col-sm-9">
                             <Switch>
+                                <Route exact path="/components" component={ComponentsContent} />
                                 <Route exact path="/components/color" component={Color} />
                                 <Route exact path="/components/typography" component={Typography} />
                                 <Route exact path="/components/grid" component={Grid} />

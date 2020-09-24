@@ -27,6 +27,7 @@
 
             ul {
                 li {
+                    margin: 0.1rem 0;
                     @include media-breakpoint-down(sm) {
                         float: left;
                     }

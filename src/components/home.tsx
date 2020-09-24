@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 import CardImagePhilosophy from '../assets/images/card-image-philosophy.jpeg';
 import CardImageComponents from '../assets/images/card-image-components.jpeg';
 import CardImageGettingStarted from '../assets/images/card-image-getting-started.jpeg';
+import CardImageStyles from '../assets/images/card-image-styles.jpeg';
 
 function Home() {
     return (
         <div className="container">
             <div className="row">
                 <div className="col-12">
-                    <h2>Symbiote's Human Centred Design System</h2>
+                    <h2>Symbiote Human Centred Design System</h2>
                     <br></br>
                     <p>Use this design system to provide a human centered, consistent and trustworthy online experience for everyone who accesses your website. It's a living, breathing, pull-request loving, store of how we, as an organisation wish to help you build and craft your web experiences.</p>
                     <br></br>
@@ -26,7 +27,7 @@ function Home() {
                 </div>
             </div>
             <div className="row">
-                <div className="col-xs-12 col-md-6 col-lg-4">
+                <div className="col-xs-12 col-md-6 col-lg-3">
                     <div className="card">
                         <div className="card-wrapper" style={{
                             backgroundImage: `url(${CardImagePhilosophy})`
@@ -36,13 +37,13 @@ function Home() {
                                 <h3>Philosophy</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
                                 <div className="button-container">
-                                    <button className="cta">Read more</button>
+                                    <button className="cta"><Link to='/philosophy'>Read more</Link></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="col-xs-12 col-md-6 col-lg-4">
+                <div className="col-xs-12 col-md-6 col-lg-3">
                     <div className="card">
                         <div className="card-wrapper" style={{
                             backgroundImage: `url(${CardImageComponents})`
@@ -51,13 +52,14 @@ function Home() {
                                 <h3>Components</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
                                 <div className="button-container">
-                                    <button className="cta">Read more</button>
+                                    <button className="cta"><Link to='/components'>Read more</Link></button>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="col-xs-12 col-md-6 col-lg-4">
+                <div className="col-xs-12 col-md-6 col-lg-3">
                     <div className="card">
                         <div className="card-wrapper" style={{
                             backgroundImage: `url(${CardImageGettingStarted})`
@@ -67,7 +69,23 @@ function Home() {
                                 <h3>Getting Started</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
                                 <div className="button-container">
-                                    <button className="cta">Read more</button>
+                                    <button className="cta"> <Link to='/getting-started'>Read more</Link></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-xs-12 col-md-6 col-lg-3">
+                    <div className="card">
+                        <div className="card-wrapper" style={{
+                            backgroundImage: `url(${CardImageStyles})`
+
+                        }}>
+                            <div className="content">
+                                <h3>Styles</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                <div className="button-container">
+                                    <button className="cta"> <Link to='/styles'>Read more</Link></button>
                                 </div>
                             </div>
                         </div>

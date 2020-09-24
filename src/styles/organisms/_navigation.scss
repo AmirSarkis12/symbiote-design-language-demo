@@ -74,8 +74,9 @@
                 @include animated-underline($navigation-foreground-color);
             }
 
-            h5 {
+            h4 {
                 z-index: -1;
+                margin: 0;
             }
         }
 
@@ -101,8 +102,9 @@
         }
 
         .nav__link {
-            h5 {
+            h4 {
                 color: $navigation-foreground-color;
+                margin: 0;
 
                 @include media-breakpoint-up(sm) {
                     @include animated-underline($navigation-foreground-color);
@@ -112,12 +114,12 @@
 
         .nav__drop-down-link {
 
-            h5 {
+            h4 {
                 color: $navigation-foreground-color;
             }
 
             ul {
-                h5 {
+                h4 {
                     color: $navigation-dropdown-foreground-color;
                 }
             }
@@ -148,7 +150,7 @@
                 position: relative;
                 color: $navigation-dropdown-foreground-color;
 
-                h5 {
+                h4 {
                     position: relative;
                     @include media-breakpoint-up(lg) {
                         @include animated-underline($navigation-dropdown-foreground-color);
@@ -271,14 +273,14 @@
 
                 .nav__drop-down-list {
 
-                    h5 {
+                    h4 {
                         color: $navigation-mobile-foreground;
                     }
                 }
             }
         }
 
-        .nav__links .nav__link h5, .nav__drop-down-link {
+        .nav__links .nav__link h4, .nav__drop-down-link {
             color: $navigation-mobile-foreground;
         }
 
