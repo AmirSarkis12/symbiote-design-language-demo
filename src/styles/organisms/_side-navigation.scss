@@ -41,7 +41,7 @@
                         }
                     }
 
-                    a {
+                    a, button {
                         width: 100%;
                         text-align: left;
                         display: block;
@@ -65,11 +65,21 @@
                         }
                     }
 
+                    button {
+                        border: none;
+                        background-color: $transparent;
+                        border-radius: 0;
+                        color: $side-navigation-link-color;
+
+                        &:focus {
+                            color: $side-navigation-hover-color;
+                        }
+                    }
+
                     &.no-border {
-                        a {
+                        a, button {
                             border: none;
                         }
-
                     }
                 }
 
