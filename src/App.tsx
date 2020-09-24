@@ -42,7 +42,6 @@ export default function App() {
                         <GettingStarted />
                     </Route>
                 </Switch>
-
             </div>
         </Router>
 

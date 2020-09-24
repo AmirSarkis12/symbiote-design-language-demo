@@ -1,12 +1,12 @@
 // Layout settings
     // Gutter sise
-    $grid-gutter-width: 24px !default;
+    $grid-gutter-width: 30px;
 
     // media query breakpoints
-    $xs-breakpoint: 576px !default;
-    $sm-breakpoint: 768px !default;
-    $md-breakpoint: 992px !default;
-    $lg-breakpoint: 1366px !default;
+    $xs-breakpoint: 576px;
+    $sm-breakpoint: 768px;
+    $md-breakpoint: 992px;
+    $lg-breakpoint: 1366px;
 
 // Body setting
 $body-background-color: $gray-non-aa-lightest;
