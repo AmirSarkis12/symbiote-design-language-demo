@@ -2,7 +2,75 @@ import React from 'react';
 
 function Color() {
     return (
-        <h2>Color</h2>
+        <div>
+            <h1>Color</h1>
+            <p>Color contrast is an important aspect of accessibility. Good contrast makes it easier for people with visual impairments to read and discern content and helps in imperfect conditions like low-light environments or older screens. With this in mind, we designed our color palette to be as accessible as possbile. Text and icon colors are reliably legible with contrast ratios that are in line with WCAG (Web Content Accessibility Guidelines) 2.1 AA values.</p>
+
+            <h2>Palette</h2>
+            <div className="color-palette">
+                <div className="color red-1"></div>
+                <div className="color red-2"></div>
+                <div className="color orange-1"></div>
+                <div className="color orange-2"></div>
+                <div className="color green-1"></div>
+                <div className="color green-2"></div>
+                <div className="color cyan-1"></div>
+                <div className="color cyan-2"></div>
+                <div className="color blue-1"></div>
+                <div className="color blue-2"></div>
+                <div className="color purple-1"></div>
+                <div className="color purple-2"></div>
+                <div className="color violet-1"></div>
+                <div className="color violet-2"></div>
+                <div className="color black"></div>
+                <div className="color gray-1"></div>
+                <div className="color gray-2"></div>
+                <div className="color gray-3"></div>
+                <div className="color gray-4"></div>
+                <div className="color gray-5"></div>
+                <div className="color gray-6"></div>
+            </div>
+
+            <p>After a lot of iterations and tests with real components and interfaces, we arrived at a palette of colors that achieved our goals: our colors predictably passed accessibility guidelines, kept their clear vibrant hues and maintained a consistent visual weight across hues.</p>
+
+            <h2>Contrast</h2>
+
+            <p>Achieving the right contrast with color was challenging, especially because color is incredibly subjective and has a big effect on the aesthetics of a product. We wanted to create a color system with hand - picked, vibrant colors that also met standards for accessibility and contrast.</p>
+
+            <p>Assuredly, our default colors for text and icons now pass the accessibility contrast thresholds defined in the WCAG 2.1 guidelines. You can read morw about WCAG guidelines <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer">here</a></p>
+
+            <p>We created pairs of hues that have specifc roles, one of which achieves a contrast ratio of at least 4.5:1 when used with small text and one which achieves a contrast ratio of at least 3:1 for large text or iconography. For example, use small white text on the small version of cyan to achieve a contrast ratio of &lt;= 4.5:1 or use a white icon with the large version of green to achieve a contrast ratio of &gt;= 3:1</p>
+
+            <div className="color-typography">
+                <div className="small-colors">
+                    <h2>For small text</h2>
+                    <h2 className="red-small">Red <b>4.63</b></h2>
+                    <h2 className="orange-small">Orange <b>4.53</b></h2>
+                    <h2 className="green-small">Green <b>4.51</b></h2>
+                    <h2 className="cyan-small">Cyan <b>4.53</b></h2>
+                    <h2 className="blue-small">Blue <b>4.55</b></h2>
+                    <h2 className="purple-small">Purple <b>4.60</b></h2>
+                    <h2 className="violet-small">Violet <b>4.56</b></h2>
+                    <h2 className="gray-small">Gray <b>4.54</b></h2>
+                </div>
+
+                <div className="large-colors">
+                    <h2>For large text and icons</h2>
+                    <h2 className="red-large">Red <b>3.71</b></h2>
+                    <h2 className="orange-large">Orange <b>3.36</b></h2>
+                    <h2 className="green-large">Green <b>3.10</b></h2>
+                    <h2 className="cyan-large">Cyan <b>3.22</b></h2>
+                    <h2 className="blue-large">Blue <b>3.47</b></h2>
+                    <h2 className="purple-large">Purple <b>3.41</b></h2>
+                    <h2 className="violet-large">Violet <b>3.29</b></h2>
+                    <h2 className="gray-large">Gray <b>3.03</b></h2>
+                </div>
+            </div>
+
+            <h2>Conslusion</h2>
+
+            <p>Our color palette can be used right out fo the box but is built in such a way that overwriting specific hues is easily achievable through Sass variables. If you plan on changing the color plaette we recommend having a read of WCAG guidlines and using contrast as a guide to choosing colors that best serve all of your users as well as your brand.</p>
+        </div>
         )
     }
 
