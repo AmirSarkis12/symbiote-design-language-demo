@@ -2,6 +2,7 @@
 //create container that snaps to breakpoints
 .container {
     box-sizing: border-box;
+    width: 100%;
 
     @include media-breakpoint-up(sm) {
         max-width: ( $sm-breakpoint - $grid-gutter-width );

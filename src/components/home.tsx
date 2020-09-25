@@ -92,34 +92,32 @@ function Home() {
                 </div>
             </div>
             <div className="container-fluid footer-container">
-                <div className="container">
-                    <footer>
-                        <div className="container">
-                            <div className="col-xs-6 col-md-3">
-                                <p>More</p>
-                                <ul>
-                                    <li><a href="a">Philosphy</a></li>
-                                    <li><a href="a">Components</a></li>
-                                    <li><a href="a">Styles</a></li>
-                                    <li><a href="a">Getting Started</a></li>
-                                </ul>
+                <footer>
+                    <div className="container">
+                        <div className="col-xs-6 col-md-3">
+                            <p>More</p>
+                            <ul>
+                                <li><a href="a">Philosphy</a></li>
+                                <li><a href="a">Components</a></li>
+                                <li><a href="a">Styles</a></li>
+                                <li><a href="a">Getting Started</a></li>
+                            </ul>
+                        </div>
+                        <div className="col-xs-6 col-md-3">
+                            <p>Social</p>
+                            <div className="social-link">
+                                <a href="a" target="_blank"><i className="lab la-facebook inverted"></i><p>Facebook</p></a>
                             </div>
-                            <div className="col-xs-6 col-md-3">
-                                <p>Social</p>
-                                <div className="social-link">
-                                    <a href="a" target="_blank"><i className="lab la-facebook inverted"></i><p>Facebook</p></a>
-                                </div>
-                                <div className="social-link">
-                                    <a href="a" target="_blank"><i className="lab la-twitter inverted"></i><p>Twitter</p></a>
-                                </div>
-                                <div className="social-link">
-                                    <a href="a" target="_blank"><i className="lab la-linkedin-in inverted"></i><p>LinkedIn</p></a>
-                                </div>
+                            <div className="social-link">
+                                <a href="a" target="_blank"><i className="lab la-twitter inverted"></i><p>Twitter</p></a>
+                            </div>
+                            <div className="social-link">
+                                <a href="a" target="_blank"><i className="lab la-linkedin-in inverted"></i><p>LinkedIn</p></a>
                             </div>
                         </div>
+                    </div>
+                </footer>
 
-                    </footer>
-                </div>
                 <div className="copyright">
                     <p>Copyright &#169; <a href="www.symbiote.com.au" target="_blank">Symbiote</a> Pty Ltd {new Date().getFullYear().toString()}</p>
 
