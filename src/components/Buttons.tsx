@@ -39,7 +39,7 @@ function Buttons() {
             <button className="outline-dark">Click me</button>
             <button className="cta">Click me</button>
 
-            <h2>When to use this component</h2>
+            <h3>When to use this component</h3>
             <p>Use the Button component to help users carry out an action on a page like starting an application or moving to the next question in a form.</p>
             <p>Write Button text in sentence case, describing the action it performs. For example:</p>
             <ul className="styled-list">
@@ -50,17 +50,17 @@ function Buttons() {
                 <li><p>‘Log out’ when a user is logged into an account</p></li>
             </ul>
 
-            <h2>When not to use this component</h2>
+            <h3>When not to use this component</h3>
             <p>The Button must never be used to draw attention to any other type of link, for example, an anchor link. They are only to be used for call to action.</p>
 
-            <h2>Snippet</h2>
+            <h3>Snippet</h3>
             <pre>
                 <code className="language-javascript">
                     {code1}
                 </code>
             </pre>
 
-            <h2>Options</h2>
+            <h3>Options</h3>
             <p>The following options can be applied and combined within the Button component.</p>
 
             <ul className="styled-list">
