@@ -25,7 +25,7 @@ function Icons() {
     return (
         <div>
             <h1>Icons</h1>
-            <p>We have used an open-source icon library from <a href="https://icons8.com/">Icon8</a> called Line Awesome. It is an extensive, free and most importantly beautifully curated set of icons.</p>
+            <p>We have used an open-source icon library from <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer">Icon8</a> called Line Awesome. It is an extensive, free and most importantly beautifully curated set of icons.</p>
 
             <p>Line awesome provides all the features of the popular Font Awesome font library but at no cost, while maintaing a 1:1 swap of all icons within the library. If you are familar with how to use Font Awesome then there is no learning curve when using the icons that we have packaged in this design system.</p>
 

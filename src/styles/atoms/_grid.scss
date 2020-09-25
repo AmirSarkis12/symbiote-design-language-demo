@@ -4,15 +4,15 @@
     box-sizing: border-box;
 
     @include media-breakpoint-up(sm) {
-        width: ( $sm-breakpoint - $grid-gutter-width );
+        max-width: ( $sm-breakpoint - $grid-gutter-width );
     }
 
     @include media-breakpoint-up(md) {
-        width: ( $md-breakpoint - $grid-gutter-width );
+        max-width: ( $md-breakpoint - $grid-gutter-width );
     }
 
     @include media-breakpoint-up(lg) {
-        width: ( $lg-breakpoint - $grid-gutter-width );
+        max-width: ( $lg-breakpoint - $grid-gutter-width );
     }
 }
 
