@@ -67,7 +67,7 @@ function Color() {
                 </div>
             </div>
 
-            <h3>Conslusion</h3>
+            <h3>Conclusion</h3>
 
             <p>Our color palette can be used right out fo the box but is built in such a way that overwriting specific hues is easily achievable through Sass variables. If you plan on changing the color plaette we recommend having a read of WCAG guidlines and using contrast as a guide to choosing colors that best serve all of your users as well as your brand.</p>
         </div>
