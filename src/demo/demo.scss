@@ -207,5 +207,46 @@ pre[class*="language-"], code[class*="language-"] {color: #d4d4d4;font-size: 13p
     h1, h2, h3, h4, h5, p {
         margin: 1rem 0;
     }
-
 }
+
+.icons-examples {
+    i {
+        margin: 1rem 0.4rem;
+    }
+}
+
+.icons-size {
+    i {
+        margin: 0 1.4rem 0 0;
+    }
+}
+
+.icons-color {
+    .dark {
+        background-color: #444444;
+        display: inline-block;
+        padding: 1rem;
+        border-radius: 0.25rem;
+
+        i {
+            margin: 0 1.4rem 0 0;
+
+            &:last-child {
+                margin: 0 ;
+            }
+        }
+    }
+
+    .light {
+        display: inline-block;
+
+        i {
+            margin: 0 1.4rem 0 0;
+
+            &:last-child {
+                margin: 0 ;
+            }
+        }
+    }
+}
+
