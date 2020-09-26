@@ -9,24 +9,24 @@ function Breadcrumbs() {
 
     const code1 =
         `<div className="container-fluid breadcrumbs">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <span className="">
-                                <a href="a" className="breadcrumb">
-                                    <i className="las la-home xxs"></i>Home
-                                </a>
-                                <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
-                                <a href="a" className="breadcrumb">Sub-page</a>
-                                <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
-                                <a href="a" className="breadcrumb">Rabbit hole</a>
-                                <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
-                                <span className="breadcrumb">Lost?</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>`;
+    <div className="container">
+        <div className="row">
+            <div className="col-12">
+                <span className="">
+                    <a href="a" className="breadcrumb">
+                        <i className="las la-home xxs"></i>Home
+                    </a>
+                    <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
+                    <a href="a" className="breadcrumb">Sub-page</a>
+                    <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
+                    <a href="a" className="breadcrumb">Rabbit hole</a>
+                    <span className="breadcrumb__spacer"><i className="las la-angle-right xxs"></i></span>
+                    <span className="breadcrumb">Lost?</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>`;
 
     return (
         <div>

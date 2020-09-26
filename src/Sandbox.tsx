@@ -682,61 +682,58 @@ function Sandbox() {
             </div>
 
             <div className="container-fluid footer-container">
-                <div className="container">
-                    <footer>
-                        <div className="container">
-                            <div className="col-xs-6 col-md-3">
-                                <p>Company</p>
-                                <ul>
-                                    <li><a href="a">About</a></li>
-                                    <li><a href="a">Mission</a></li>
-                                    <li><a href="a">Services</a></li>
-                                    <li><a href="a">Social</a></li>
-                                    <li><a href="a">Get in touch</a></li>
-                                </ul>
+                <footer>
+                    <div className="container">
+                        <div className="col-xs-6 col-md-3">
+                            <p>Company</p>
+                            <ul>
+                                <li><a href="a">About</a></li>
+                                <li><a href="a">Mission</a></li>
+                                <li><a href="a">Services</a></li>
+                                <li><a href="a">Social</a></li>
+                                <li><a href="a">Get in touch</a></li>
+                            </ul>
+                        </div>
+                        <div className="col-xs-6 col-md-3">
+                            <p>Products</p>
+                            <ul>
+                                <li><a href="a">About</a></li>
+                                <li><a href="a">Mission</a></li>
+                                <li><a href="a">Services</a></li>
+                                <li><a href="a">Social</a></li>
+                                <li><a href="a">Get in touch</a></li>
+                            </ul>
+                        </div>
+                        <div className="col-xs-6 col-md-3">
+                            <p>Accounts</p>
+                            <ul>
+                                <li><a href="a">About</a></li>
+                                <li><a href="a">Mission</a></li>
+                                <li><a href="a">Services</a></li>
+                                <li><a href="a">Social</a></li>
+                                <li><a href="a">Get in touch</a></li>
+                            </ul>
+                        </div>
+                        <div className="col-xs-6 col-md-3">
+                            <p>Social</p>
+                            <div className="social-link">
+                                <a href="a" target="_blank"><i className="lab la-facebook inverted"></i><p>Facebook</p></a>
                             </div>
-                            <div className="col-xs-6 col-md-3">
-                                <p>Products</p>
-                                <ul>
-                                    <li><a href="a">About</a></li>
-                                    <li><a href="a">Mission</a></li>
-                                    <li><a href="a">Services</a></li>
-                                    <li><a href="a">Social</a></li>
-                                    <li><a href="a">Get in touch</a></li>
-                                </ul>
+                            <div className="social-link">
+                                <a href="a" target="_blank"><i className="lab la-twitter inverted"></i><p>Twitter</p></a>
                             </div>
-                            <div className="col-xs-6 col-md-3">
-                                <p>Accounts</p>
-                                <ul>
-                                    <li><a href="a">About</a></li>
-                                    <li><a href="a">Mission</a></li>
-                                    <li><a href="a">Services</a></li>
-                                    <li><a href="a">Social</a></li>
-                                    <li><a href="a">Get in touch</a></li>
-                                </ul>
+                            <div className="social-link">
+                                <a href="a" target="_blank"><i className="lab la-instagram inverted"></i><p>Instagram</p></a>
                             </div>
-                            <div className="col-xs-6 col-md-3">
-                                <p>Social</p>
-                                <div className="social-link">
-                                    <a href="a" target="_blank"><i className="lab la-facebook inverted"></i><p>Facebook</p></a>
-                                </div>
-                                <div className="social-link">
-                                    <a href="a" target="_blank"><i className="lab la-twitter inverted"></i><p>Twitter</p></a>
-                                </div>
-                                <div className="social-link">
-                                    <a href="a" target="_blank"><i className="lab la-instagram inverted"></i><p>Instagram</p></a>
-                                </div>
-                                <div className="social-link">
-                                    <a href="a" target="_blank"><i className="lab la-linkedin-in inverted"></i><p>LinkedIn</p></a>
-                                </div>
+                            <div className="social-link">
+                                <a href="a" target="_blank"><i className="lab la-linkedin-in inverted"></i><p>LinkedIn</p></a>
                             </div>
                         </div>
+                    </div>
 
-                    </footer>
-                </div>
+                </footer>
                 <div className="copyright">
                     <p>Copyright &#169; <a href="www.symbiote.com.au" target="_blank">Symbiote</a> Pty Ltd {new Date().getFullYear().toString()}</p>
-
                 </div>
             </div>
         </div>
