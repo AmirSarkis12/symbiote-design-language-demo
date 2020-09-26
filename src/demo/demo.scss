@@ -252,7 +252,6 @@ pre[class*="language-"], code[class*="language-"] {color: #d4d4d4;font-size: 13p
 }
 
 // Grid
-
 .grid-demo {
     border: 1px solid $gray-aa-small;
     border-radius: 0.25rem;
@@ -268,7 +267,14 @@ pre[class*="language-"], code[class*="language-"] {color: #d4d4d4;font-size: 13p
             border: 1px solid $gray-aa-small;
         }
     }
+}
 
+// Main Navigation
+.navigation-demo {
+    .navigation {
+        position: unset;
+        top: unset;
 
+    }
 }
 

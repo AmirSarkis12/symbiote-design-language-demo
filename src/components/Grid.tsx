@@ -98,7 +98,7 @@ function Grid() {
             <h3>Structure</h3>
             <p>Containers are  used to contain, pad, and align the content within them.</p>
 
-            <p>Rows are wrappers for columns. Columns have horizontal padding (gutter) for controlling the space between them. This padding is counteracted in the rows with negative margins to ensure that the content in your columns are visually aligned down the left side.</p>
+            <p>Rows are wrappers for columns. Columns have horizontal padding (gutter - default 30px) for controlling the space between them. This padding is counteracted in the rows with negative margins to ensure that the content in your columns are visually aligned down the left side.</p>
 
             <p>Columns dictate the number of columns you’d like to use out of the possible 12 per row. So, if you want three equal-width columns across, you can use .col-4.</p>
 

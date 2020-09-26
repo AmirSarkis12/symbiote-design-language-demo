@@ -35,7 +35,7 @@
             @include transition();
 
             @include media-breakpoint-up(md) {
-                &:hover, &:focus {
+                &:hover {
                     margin: 0 0 0 0.5rem
                 }
             }

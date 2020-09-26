@@ -35,11 +35,11 @@ function Color() {
 
             <h3>Contrast</h3>
 
-            <p>Achieving the right contrast with color was challenging, especially because color is incredibly subjective and has a big effect on the aesthetics of a product. We wanted to create a color system with hand - picked, vibrant colors that also met standards for accessibility and contrast.</p>
+            <p>Achieving the right contrast with color was challenging, especially because color is incredibly subjective and has a big effect on the aesthetics of a product. We wanted to create a color system with hand-picked, vibrant colors that also met standards for accessibility and contrast.</p>
 
-            <p>Assuredly, our default colors for text and icons now pass the accessibility contrast thresholds defined in the WCAG 2.1 guidelines. You can read morw about WCAG guidelines <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer">here</a></p>
+            <p>Assuredly, our default colors for text and icons now pass the accessibility contrast thresholds defined in the WCAG 2.1 guidelines. You can read more about WCAG guidelines <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer">here</a>.</p>
 
-            <p>We created pairs of hues that have specifc roles, one of which achieves a contrast ratio of at least 4.5:1 when used with small text and one which achieves a contrast ratio of at least 3:1 for large text or iconography. For example, use small white text on the small version of cyan to achieve a contrast ratio of &lt;= 4.5:1 or use a white icon with the large version of green to achieve a contrast ratio of &gt;= 3:1</p>
+            <p>We created pairs of hues that have specifc roles, one of which achieves a contrast ratio of at least 4.5:1 when used with small text and one which achieves a contrast ratio of at least 3:1 for large text or iconography. For example, use small white text on the small version of cyan to achieve a contrast ratio of &lt;= 4.5:1 or use a white icon with the large version of green to achieve a contrast ratio of &gt;= 3:1.</p>
 
             <div className="color-typography">
                 <div className="small-colors">

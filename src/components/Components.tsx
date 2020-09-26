@@ -5,7 +5,6 @@ import { Route, NavLink, useRouteMatch, Switch} from "react-router-dom";
 import '../styles/main.scss';
 import '../demo/demo.scss';
 
-
 import Color from './Color';
 import Typography from './Typography';
 import Grid from './Grid';
@@ -29,7 +28,7 @@ import Cards from './Cards';
 import Icons from './Icons';
 import ProgressBar from './ProgressBar';
 import Tooltip from './Tooltip';
-import Pagination from './Pagination\'';
+import Pagination from './Pagination';
 import Label from './Label';
 import SideNavigation from './SideNavigation';
 import Notifications from './Notifications';
