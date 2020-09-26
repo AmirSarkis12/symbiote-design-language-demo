@@ -13,13 +13,13 @@ function DatePicker() {
     return (
         <div>
             <h1>Date Picker</h1>
-            <p>The Select component allows users to choose an option from a long list.</p>
+            <p></p>
 
             <h3>When to use this component</h3>
-            <p>This component should only be used when a long list of options is being presented.</p>
+            <p></p>
 
             <h3>When not to use this component</h3>
-            <p>It is not recommended to use this component when only a short list of options are presented. Some users may have difficulty with Select components and as such a group of radio buttons may suffice in order to reduce overall complexity.</p>
+            <p></p>
 
             <h3>Snippet</h3>
 
@@ -28,9 +28,9 @@ function DatePicker() {
                     {code1}
                 </code>
             </pre>
-
         </div>
     )
 }
 
 export default DatePicker
+

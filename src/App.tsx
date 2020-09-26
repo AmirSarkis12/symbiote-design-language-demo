@@ -29,23 +29,24 @@ export default function App() {
                             <li className="nav__link"><Link to='/getting-started'><h4>Getting Started</h4></Link></li>
                         </ul>
                 </div>
-
-                <Switch>
-                    <Route exact path="/">
-                        <Home />
-                    </Route>
-                    <Route path="/philosophy">
-                        <Philosophy />
-                    </Route>
-                        <Route path="/components" component={Components}>
-                    </Route>
-                    <Route path="/getting-started">
-                        <GettingStarted />
-                    </Route>
-                    <Route path="/styles">
-                        <Styles />
-                    </Route>
-                </Switch>
+                <main>
+                    <Switch>
+                        <Route exact path="/">
+                            <Home />
+                        </Route>
+                        <Route path="/philosophy">
+                            <Philosophy />
+                        </Route>
+                            <Route path="/components" component={Components}>
+                        </Route>
+                        <Route path="/getting-started">
+                            <GettingStarted />
+                        </Route>
+                        <Route path="/styles">
+                            <Styles />
+                        </Route>
+                    </Switch>
+                </main>
 
                 <div className="container-fluid footer-container">
                     <footer>

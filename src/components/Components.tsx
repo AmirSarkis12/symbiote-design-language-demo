@@ -111,7 +111,7 @@ export default function Components() {
                                             <NavLink activeClassName='active' to={`${url}/date-picker`}>Date picker</NavLink>
                                         </li>
                                         <li className="side-navigation-content-link no-border">
-                                            <NavLink activeClassName='active' to={`${url}/slider`}>Slider</NavLink>
+                                            <NavLink activeClassName='active' to={`${url}/slider`}>Slider (TBD)</NavLink>
                                         </li>
 
                                         <li className="side-navigation-content-heading">
@@ -121,7 +121,7 @@ export default function Components() {
                                             <NavLink activeClassName='active' to={`${url}/notifications`}>Notifications</NavLink>
                                         </li>
                                         <li className="side-navigation-content-link">
-                                            <NavLink activeClassName='active' to={`${url}/page-alerts`}>Page alerts</NavLink>
+                                            <NavLink activeClassName='active' to={`${url}/page-alerts`}>Page alerts (TBD)</NavLink>
                                         </li>
 
                                         <li className="side-navigation-content-heading">

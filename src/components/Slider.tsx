@@ -3,7 +3,7 @@ import React from 'react';
 function Slider() {
     return (
         <div>
-            <h1>Slider</h1>
+            <h1>Slider (TBD)</h1>
 
             <h3>TBD</h3>
             <p></p>

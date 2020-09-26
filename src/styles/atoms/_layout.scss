@@ -1,8 +1,18 @@
+// Content layout
+main {
+    margin: 1.5rem 0 3rem 0;
+}
+
 // Text layout
     // Headings
-    h1, h2, h3, h4, h5, h6 {
-        margin: 1.8rem 0 0.6rem 0
+    h1, h2 {
+        margin: 0 0 1rem 0;
     }
+
+    h3, h4, h5, h6 {
+        margin: 1.5rem 0 0.5rem 0;
+    }
+
     // Body
     p {
         margin: 1rem 0;
