@@ -2,10 +2,9 @@
     display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: left;
-	margin: 1.25rem 0;
 
 	&-label {
-		margin: 0 0.3rem;
+		margin: 1rem 0.8rem 0 0;
 		cursor: pointer;
 	}
 
@@ -19,6 +18,7 @@
 		background-color: transparent;
 		border: 0.125rem solid $radio-color;
 		border-radius: 100%;
+		margin: 0rem 0.5rem;
 	}
 
 	&-input:checked + &-checked {
