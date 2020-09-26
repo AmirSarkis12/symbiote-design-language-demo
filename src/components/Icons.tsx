@@ -125,6 +125,9 @@ function Icons() {
                     {code2}
                 </code>
             </pre>
+
+            <h3>More Information</h3>
+            <p>For more information on the available set of icons, please visit Icon8's Line Awesome page <a href="https://icons8.com/line-awesome" target="_blank" rel="noopener noreferrer">here</a>.</p>
         </div>
     )
 }

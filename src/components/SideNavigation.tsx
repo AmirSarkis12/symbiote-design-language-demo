@@ -2,7 +2,16 @@ import React from 'react';
 
 function SideNavigation() {
     return (
-        <h2>Side Navigation</h2>
+        <div>
+            <h1>Side Navigation</h1>
+            <p></p>
+
+            <h3>When to use this component</h3>
+            <p></p>
+
+            <h3>When not to use this component</h3>
+            <p></p>
+        </div>
         )
     }
 

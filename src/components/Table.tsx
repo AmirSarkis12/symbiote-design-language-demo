@@ -1,7 +1,18 @@
 import React from 'react';
 
 function Table() {
-    return <h2>Table</h2>;
+    return (
+        <div>
+            <h1>Table</h1>
+            <p></p>
+
+            <h3>When to use this component</h3>
+            <p></p>
+
+            <h3>When not to use this component</h3>
+            <p></p>
+        </div>
+    )
 }
 
 export default Table
