@@ -75,7 +75,7 @@ export default function App() {
                     </footer>
 
                     <div className="copyright">
-                        <p>Copyright &#169; <a href="www.symbiote.com.au" target="_blank">Symbiote</a> Pty Ltd {new Date().getFullYear().toString()}</p>
+                        <p>Copyright &#169; <a href="https://www.symbiote.com.au" target="_blank" rel="noopener noreferrer">Symbiote</a> Pty Ltd {new Date().getFullYear().toString()}</p>
 
                     </div>
                 </div>

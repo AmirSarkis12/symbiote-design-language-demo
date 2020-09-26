@@ -8,7 +8,7 @@ function Buttons() {
     });
 
     const code1 =
-        `<button>Click me</button>`
+        `<button className="primary">Click me</button>`
 
     const code2 =
         `<button className="primary lg">Large button</button>
@@ -54,6 +54,7 @@ function Buttons() {
             <p>The Button must never be used to draw attention to any other type of link, for example, an anchor link. They are only to be used for call to action.</p>
 
             <h3>Snippet</h3>
+            <button className="primary">Click me</button>
             <pre>
                 <code className="language-javascript">
                     {code1}

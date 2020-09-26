@@ -4,8 +4,8 @@
     justify-content: left;
 
 	&-label {
-		margin: 0 0.3rem;
 		cursor: pointer;
+		margin: 1rem 0rem;
 	}
 
 	&-group {
@@ -14,6 +14,7 @@
         height: 1.5rem;
 		background-color: $toggle-inactive-color;
 		border-radius: 3rem;
+		margin: 0rem 0.5rem;
         @include transition();
 	}
 
