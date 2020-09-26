@@ -20,10 +20,10 @@ function MainNavigation() {
     <label htmlFor="nav" className="hamburger-toggle-icon"><i></i><i></i><i></i></label>
 
     <ul className="nav__links">
-        <li className="nav__link"><a href="..."><h4>Link 1</h4></a></li>
-        <li className="nav__link"><a href="..."><h4>Link 2</h4></a></li>
-        <li className="nav__link"><a href="..."><h4>Link 3</h4></a></li>
-        <li className="nav__link"><a href="..."><h4>Link 4</h4></a></li>
+        <li className="nav__link"><a href="###"><h4>Link 1</h4></a></li>
+        <li className="nav__link"><a href="###"><h4>Link 2</h4></a></li>
+        <li className="nav__link"><a href="###"><h4>Link 3</h4></a></li>
+        <li className="nav__link"><a href="###"><h4>Link 4</h4></a></li>
     </ul>
 </div>`;
 
@@ -37,26 +37,26 @@ function MainNavigation() {
     <label htmlFor="nav" className="hamburger-toggle-icon"><i></i><i></i><i></i></label>
 
     <ul className="nav__links">
-        <li className="nav__link"><a href="a"><h4>Link 1</h4></a></li>
-        <li className="nav__link"><a href="a"><h4>Link 2</h4></a></li>
+        <li className="nav__link"><a href="###"><h4>Link 1</h4></a></li>
+        <li className="nav__link"><a href="###"><h4>Link 2</h4></a></li>
         <li className="nav__drop-down-link"><button className="nav__drop-down-link__toggle"><h4>Link 3(Dropdown)</h4></button>
             <ul className="nav__drop-down-list">
                 <li className="nav__sub-link">
-                    <a href="a"><h4>Dropdown link 1</h4></a>
+                    <a href="###"><h4>Dropdown link 1</h4></a>
                 </li>
                 <li className="nav__sub-link">
-                    <a href="a"><h4>Dropdown link 2</h4></a>
+                    <a href="###"><h4>Dropdown link 2</h4></a>
                 </li>
                 <li className="nav__sub-link">
-                    <a href="a"><h4>Dropdown link 3</h4></a>
+                    <a href="###"><h4>Dropdown link 3</h4></a>
                 </li>
                 <li className="nav__sub-link">
-                    <a href="a"><h4>Dropdown link 4</h4></a>
+                    <a href="###"><h4>Dropdown link 4</h4></a>
                 </li>
             </ul>
         </li>
-        <li className="nav__link"><a href="a"><h4>Link 4</h4></a></li>
-        <li className="nav__link"><a href="a"><h4>Link 5 Us</h4></a></li>
+        <li className="nav__link"><a href="###"><h4>Link 4</h4></a></li>
+        <li className="nav__link"><a href="###"><h4>Link 5 Us</h4></a></li>
     </ul>
 </div>`;
 
@@ -81,10 +81,10 @@ function MainNavigation() {
                     <label htmlFor="nav" className="hamburger-toggle-icon"><i></i><i></i><i></i></label>
 
                     <ul className="nav__links">
-                        <li className="nav__link"><a href="..."><h4>Link 1</h4></a></li>
-                        <li className="nav__link"><a href="..."><h4>Link 2</h4></a></li>
-                        <li className="nav__link"><a href="..."><h4>Link 3</h4></a></li>
-                        <li className="nav__link"><a href="..."><h4>Link 4</h4></a></li>
+                        <li className="nav__link"><a href="###"><h4>Link 1</h4></a></li>
+                        <li className="nav__link"><a href="###"><h4>Link 2</h4></a></li>
+                        <li className="nav__link"><a href="###"><h4>Link 3</h4></a></li>
+                        <li className="nav__link"><a href="###"><h4>Link 4</h4></a></li>
                     </ul>
                 </div>
             </div>
@@ -111,26 +111,26 @@ function MainNavigation() {
                 <label htmlFor="nav" className="hamburger-toggle-icon"><i></i><i></i><i></i></label>
 
                 <ul className="nav__links">
-                    <li className="nav__link"><a href="a"><h4>Link 1</h4></a></li>
-                    <li className="nav__link"><a href="a"><h4>Link 2</h4></a></li>
+                    <li className="nav__link"><a href="###"><h4>Link 1</h4></a></li>
+                    <li className="nav__link"><a href="###"><h4>Link 2</h4></a></li>
                     <li className="nav__drop-down-link"><button className="nav__drop-down-link__toggle"><h4>Link 3 (Dropdown)</h4></button>
                         <ul className="nav__drop-down-list">
                             <li className="nav__sub-link">
-                                <a href="a"><h4>Dropdown link 1</h4></a>
+                                <a href="###"><h4>Dropdown link 1</h4></a>
                             </li>
                             <li className="nav__sub-link">
-                                <a href="a"><h4>Dropdown link 2</h4></a>
+                                <a href="###"><h4>Dropdown link 2</h4></a>
                             </li>
                             <li className="nav__sub-link">
-                                <a href="a"><h4>Dropdown link 3</h4></a>
+                                <a href="###"><h4>Dropdown link 3</h4></a>
                             </li>
                             <li className="nav__sub-link">
-                                <a href="a"><h4>Dropdown link 4</h4></a>
+                                <a href="###"><h4>Dropdown link 4</h4></a>
                             </li>
                         </ul>
                     </li>
-                    <li className="nav__link"><a href="a"><h4>Link 4</h4></a></li>
-                    <li className="nav__link"><a href="a"><h4>Link 5</h4></a></li>
+                    <li className="nav__link"><a href="###"><h4>Link 4</h4></a></li>
+                    <li className="nav__link"><a href="###"><h4>Link 5</h4></a></li>
                 </ul>
             </div>
 
