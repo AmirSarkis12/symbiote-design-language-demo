@@ -129,7 +129,7 @@
     .nav__drop-down-list {
         display: none;
         width: max-content;
-        padding: 1.2em 2em;
+        padding: 0rem 1.5rem;
         border-radius: 0.25rem;
         overflow: hidden;
         opacity: 0;
@@ -143,8 +143,8 @@
 
         .nav__sub-link {
             display: block;
-            padding: 0.5rem 0;
-
+            padding: 1rem 0;
+            margin: 0;
 
             a {
                 position: relative;
@@ -152,12 +152,12 @@
 
                 h4 {
                     position: relative;
+                    margin: 0;
+
                     @include media-breakpoint-up(lg) {
                         @include animated-underline($navigation-dropdown-foreground-color);
                     }
                 }
-
-
             }
         }
     }

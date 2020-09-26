@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs'
 import '../scripts/navigation.ts'
+import initMainNav from '../scripts/navigation';
 
 function MainNavigation() {
-    // React hook to get syntax highlighing. Similar to componentDidMount()
+    // React hook to get syntax highlighing as well as Main Navigation dropdown working. Similar to componentDidMount()
     useEffect(() => {
         Prism.highlightAll();
+        initMainNav();
     });
 
     const code1 =
@@ -61,6 +63,7 @@ function MainNavigation() {
     return (
         <div>
             <h1>Main Navigation</h1>
+            <p>The primary means of navigation around your website. It should accommodate the top level links to the most important aspects of your website.</p>
 
             <h2>When to use this component</h2>
             <p>This component should be used as the main source of inital navigation on your webpages. It should be placed at the begining of your document to ensure that screen readers read through its navigation links first. It should allow for a user to navigate to each major page within your site. To avoid overcrowding it should not be used to contain every possible sub-page or link on your site.</p>

@@ -4,7 +4,7 @@ import scrollLock from './scroll-lock'
 import viewport from './viewport';
 
 // Added the following event listeners only once the DOM has loaded
-document.addEventListener('DOMContentLoaded', function () {
+function initMainNav() {
     const nav = document.querySelector('.nav');
     const navContainer = document.querySelector('.navigation');
     const dropDown = document.querySelector('.nav__drop-down-link__toggle');
@@ -79,4 +79,6 @@ document.addEventListener('DOMContentLoaded', function () {
             hamburgerNavToggleCheckbox.checked = false;
         }
     });
-}, false);
+}
+
+export default initMainNav;
