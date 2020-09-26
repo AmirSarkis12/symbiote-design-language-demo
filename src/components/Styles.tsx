@@ -5,6 +5,9 @@ function Styles() {
         <div className="container">
             <div className="col-12">
                 <h1>Styles</h1>
+
+                <h4>Similar to the Philosphy page, this page should explain how we have styled our components and how a user can extend it with their own code or modify some of the variables such as color palettes, typography, layout, breakpoints etc.</h4>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum neque eget nunc ornare aliquam. Nunc eget egestas enim. Vestibulum pulvinar sit amet nisl eu dictum. Aenean suscipit eros sapien, vel tristique mauris imperdiet non. Nulla finibus leo eget vehicula efficitur. Integer scelerisque purus dui, vitae molestie eros pharetra at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse non bibendum urna, ut rutrum arcu.</p>
 
                 <p>Mauris tempor blandit fringilla. Fusce ornare semper justo nec bibendum. Praesent congue diam eu libero imperdiet dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut volutpat efficitur laoreet. Integer faucibus ex et odio vestibulum pulvinar. Nullam convallis ultricies diam, in luctus est semper et. Integer gravida, neque in bibendum congue, nisi lacus consectetur metus, eu elementum enim erat in dolor. Donec aliquam commodo eros vitae semper. Duis et orci sed nulla egestas facilisis vel ut leo. Vivamus sollicitudin efficitur interdum.</p>
