@@ -41,7 +41,7 @@ function Pagination() {
             <p>This component is useful for indicating and traversing multi-page content on a webpage.</p>
 
             <h3>When to use this component</h3>
-            <p>The Paginatin component is recommended for use search results spread accross multiple pages or if a Table component has overflow and cam be traversed.</p>
+            <p>The Pagination component is recommended for use search results spread accross multiple pages or if a Table component has overflow and cam be traversed.</p>
 
             <h3>When not to use this component</h3>
             <p>Do not use this component if there is only one page of content.</p>
