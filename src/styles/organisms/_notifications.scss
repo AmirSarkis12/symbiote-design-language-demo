@@ -8,7 +8,7 @@
     top: 4rem;
     z-index: 17;
 
-    &.info {
+    &.information {
         background-color: $info-color;
     }
 
@@ -38,6 +38,7 @@
 
         p {
             color: $white;
+            margin: 0;
         }
     }
 
