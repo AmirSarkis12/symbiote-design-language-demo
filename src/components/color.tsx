@@ -4,7 +4,7 @@ function Color() {
     return (
         <div>
             <h1>Color</h1>
-            <p>Color contrast is an important aspect of accessibility. Good contrast makes it easier for people with visual impairments to read and discern content and helps in imperfect conditions like low-light environments or older screens. With this in mind, we designed our color palette to be as accessible as possbile. Text and icon colors are reliably legible with contrast ratios that are in line with WCAG (Web Content Accessibility Guidelines) 2.1 AA values.</p>
+            <p>Color contrast is an important aspect of accessibility. Good contrast makes it easier for people with visual impairments to read and discern content and helps in imperfect conditions like low-light environments or older screens. With this in mind, we designed our color palette to be as accessible as possible. Text and icon colors are reliably legible with contrast ratios that are in line with WCAG (Web Content Accessibility Guidelines) 2.1 AA values.</p>
 
             <h3>Palette</h3>
             <div className="color-palette">

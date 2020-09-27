@@ -10,6 +10,7 @@ import GettingStarted from './components/GettingStarted'
 import Styles from './components/Styles';
 
 import './styles/main.scss';
+import HeroDemo from './demo/HeroDemo';
 
 export default function App() {
     return (
@@ -44,6 +45,9 @@ export default function App() {
                         </Route>
                         <Route path="/styles">
                             <Styles />
+                        </Route>
+                        <Route path="/hero-demo">
+                            <HeroDemo />
                         </Route>
                     </Switch>
                 </main>
