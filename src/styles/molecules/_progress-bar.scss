@@ -1,5 +1,5 @@
 .progress-bar {
-    padding: 2rem;
+    padding: 2rem 0;
 
     .progress-steps {
         height: 0.5rem;
@@ -48,7 +48,7 @@
                 bottom: 1.25rem;
             }
 
-            .highlight-index {
+            .completed {
                 background-color: $progress-completed-background-color;
                 display: block;
                 height: 100%;
