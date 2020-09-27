@@ -19,7 +19,7 @@ function Home() {
                         <p>It's released under a MIT license, apart from the use of our logo, it's free and open software. <Link to='/getting-started'>Here</Link> is how you can get started. If you find this design system useful, we'd love to hear about it at <a href="mailto:hello@symbiote.com.au?subject=Symbiote%20Human%20Centred%20Design%20System&body=Hi%20Symbiote,">hello@symbiote.com.au</a>
                         .</p>
 
-                        <p>If you find a bug or have an improvement, please do fork this project on github.</p>
+                        <p>If you find a bug or have an improvement, please do fork this project on GitHub.</p>
 
                         <p>The Symbiote Team</p>
                     </div>

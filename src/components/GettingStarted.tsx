@@ -6,7 +6,7 @@ function GettingStarted() {
             <div className="col-12">
                 <h1>Getting Started</h1>
 
-                <h4>This page should point to the GitHub page and explain a little about the file structure of the Design System. The minimum required files per feature etc.</h4>
+                <p><b>This page should point to the GitHub page and explain a little about the file structure of the Design System. The minimum required files per feature etc.</b></p>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum neque eget nunc ornare aliquam. Nunc eget egestas enim. Vestibulum pulvinar sit amet nisl eu dictum. Aenean suscipit eros sapien, vel tristique mauris imperdiet non. Nulla finibus leo eget vehicula efficitur. Integer scelerisque purus dui, vitae molestie eros pharetra at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse non bibendum urna, ut rutrum arcu.</p>
 

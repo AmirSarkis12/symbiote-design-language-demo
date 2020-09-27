@@ -5,7 +5,7 @@ function Philosophy() {
         <div className="container">
             <div className="col-12">
                 <h1>Philosophy</h1>
-                <h4>Ideally this page will cover why we made the choices that we did. Some of the things we liked and didn't like about other design systems and how we have improved upon them. If we have made any controversial decisions they should be discussed here.</h4>
+                <p><b>Ideally this page will cover why we made the choices that we did. Some of the things we liked and didn't like about other design systems and how we have improved upon them. If we have made any controversial decisions they should be discussed here</b>.</p>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum neque eget nunc ornare aliquam. Nunc eget egestas enim. Vestibulum pulvinar sit amet nisl eu dictum. Aenean suscipit eros sapien, vel tristique mauris imperdiet non. Nulla finibus leo eget vehicula efficitur. Integer scelerisque purus dui, vitae molestie eros pharetra at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse non bibendum urna, ut rutrum arcu.</p>
 
