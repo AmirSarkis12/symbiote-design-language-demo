@@ -12,7 +12,7 @@ main {
 
         // Body directly below a heading should not have any extra margin on top to better indicate association.
         & + p {
-            margin: 0 0 1rem 0;
+            margin: 0 0 1.2rem 0;
         }
     }
 
@@ -22,7 +22,7 @@ main {
 
         // Body directly below a heading should not have any extra margin on top to better indicate association.
         & + p {
-            margin: 0 0 1rem 0;
+            margin: 0 0 1.2rem 0;
         }
     }
 
@@ -30,7 +30,7 @@ main {
 
     // All remaining body elements should have margins on top and on the bottom to provide clear spacing between paragraphs.
     p {
-        margin: 1rem 0;
+        margin: 1.2rem 0;
     }
 
 

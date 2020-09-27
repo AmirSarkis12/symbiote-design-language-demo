@@ -19,16 +19,38 @@ function Typography() {
 
             <div className="visual-hierarchy">
                 <h1>Heading 1</h1>
-                <h3>Heading 2</h3>
+                <h2>Heading 2</h2>
                 <h3>Heading 3</h3>
                 <h4>Heading 4</h4>
                 <h5>Heading 5</h5>
-                <p>Body</p>
             </div>
 
             <h3>Heading levels</h3>
 
-            <p>When presenting content choose heading levels that naturally promote hierarchy, never choose solely based on the what heading size may look the most appealing. For example, if a larger heading size looks nicer when sitting below a smaller heading size it may confuse screen readers as they read in order of heading sizes. </p>
+            <p>When presenting content choose heading levels that naturally promote hierarchy, never choose solely based on the what heading size may look the most appealing. For example, if a larger heading size looks nicer when sitting below a smaller heading size it may confuse screen readers as they read in order of heading sizes.</p>
+
+            <h3>Use Cases</h3>
+            <p>It is recommended that H1 and H2 elements be used as the first text elements on a page. H3, H4, and H5 elements should only be used as sub headings. As a visual aid, inspect the above headings and see how there are no margins above H1 and H2 tags but margins are in place for H3, H4, H5 and P elements. This promotes clear association between heading and body elements as well as ensuring no extra spacing above the first elements on a page. This is taken care of by the main tag.</p>
+
+            <h1>Heading 1</h1>
+            <p>Heading 1 body text.</p>
+
+            <h2>Heading 2</h2>
+            <p>Heading 2 body text.</p>
+
+            <h3>Heading 3</h3>
+            <p>Heading 3 body text.</p>
+
+            <h4>Heading 4</h4>
+            <p>Heading 4 body text.</p>
+
+            <h4>Heading 5</h4>
+            <p>Heading 5 body text.</p>
+
+            <p>Body text in long paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum neque eget nunc ornare aliquam. Nunc eget egestas enim. Vestibulum pulvinar sit amet nisl eu dictum. Aenean suscipit eros sapien.</p>
+            <p>Body text in long paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum neque eget nunc ornare aliquam. Nunc eget egestas enim. Vestibulum pulvinar sit amet nisl eu dictum. Aenean suscipit eros sapien.</p>
+            <p>Body text in long paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum neque eget nunc ornare aliquam. Nunc eget egestas enim. Vestibulum pulvinar sit amet nisl eu dictum. Aenean suscipit eros sapien.</p>
+            <p>Body text in long paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum neque eget nunc ornare aliquam. Nunc eget egestas enim. Vestibulum pulvinar sit amet nisl eu dictum. Aenean suscipit eros sapien.</p>
         </div>
 
     )
