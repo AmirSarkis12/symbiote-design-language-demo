@@ -13,7 +13,7 @@ function Hero() {
 
     const code1 =
         `<div className="hero">
-    <img className="hero-background" alt="Hero alt text" src={heroImage1} />
+    <img className="hero-background" alt="Hero alt text" src={/your/image/path/image.jpg} />
     <div className="col-xs-10 col-sm-8 col-lg-4 content">
         <h3>Mauris tortor turpis, dignissim vel ullam.</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
@@ -24,7 +24,7 @@ function Hero() {
     const code2 =
         `<div className="container-fluid">
     <div className="hero">
-        <img className="hero-background" alt="Hero alt text" src={heroImage2} />
+        <img className="hero-background" alt="Hero alt text"  src={/your/image/path/image.jpg} />
         <div className="container hero-fluid right">
             <div className="col-xs-12 col-sm-8 col-lg-4">
                 <div className="content">

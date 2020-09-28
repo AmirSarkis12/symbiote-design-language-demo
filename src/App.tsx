@@ -8,9 +8,11 @@ import Components from './demo/Components'
 import Philosophy from './demo/Philosophy'
 import GettingStarted from './demo/GettingStarted'
 import Styles from './demo/Styles';
+import HeroDemo from './demo/HeroDemo';
+import CardDemo from './demo/CardDemo';
 
 import './styles/main.scss';
-import HeroDemo from './demo/HeroDemo';
+
 
 export default function App() {
     return (
@@ -48,6 +50,9 @@ export default function App() {
                         </Route>
                         <Route path="/hero-demo">
                             <HeroDemo />
+                        </Route>
+                        <Route path="/card-demo">
+                            <CardDemo />
                         </Route>
                     </Switch>
                 </main>

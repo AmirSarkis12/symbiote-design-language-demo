@@ -13,7 +13,7 @@ function HeroDemo() {
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <h3>Hero - Full width (Left)</h3>
+                        <h1>Hero - Full width (Left)</h1>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@ function HeroDemo() {
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <h3>Hero - Full width (Centre)</h3>
+                        <h1>Hero - Full width (Centre)</h1>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@ function HeroDemo() {
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <h3>Hero - Full width (Right)</h3>
+                        <h1>Hero - Full width (Right)</h1>
                     </div>
                 </div>
             </div>
