@@ -7,7 +7,7 @@ const INTERVAL = 5000
 // TODO: Add caption feature to slides
 // TODO: Add swipe functionality to swap between slides
 
-document.addEventListener("DOMContentLoaded", function () {
+function initCarousel() {
     const nextSlide = document.querySelector('.next-slide');
     const previousSlide = document.querySelector('.previous-slide');
     const playPause = document.querySelector('.play-pause');
@@ -166,6 +166,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-});
+}
 
-export default {};
+export default initCarousel;
