@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import logo from './assets/images/logo.png';
 
-import Home from './components/Home'
-import Components from './components/Components'
-import Philosophy from './components/Philosophy'
-import GettingStarted from './components/GettingStarted'
-import Styles from './components/Styles';
+import Home from './demo//Home'
+import Components from './demo/Components'
+import Philosophy from './demo/Philosophy'
+import GettingStarted from './demo/GettingStarted'
+import Styles from './demo/Styles';
 
 import './styles/main.scss';
 import HeroDemo from './demo/HeroDemo';
