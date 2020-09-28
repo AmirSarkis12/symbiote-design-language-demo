@@ -13,10 +13,10 @@ function Modal() {
     return (
         <div>
             <h1>Modal</h1>
-            <p></p>
+            <p>The Modal component is used when interaction is required by the user. It used to display some sort of interactive item such as a button or a link - with the user requiring to action an item.</p>
 
             <h3>When to use this component</h3>
-            <p></p>
+            <p>This component should be used when an imperitive option is required by the user.</p>
 
             <h3>When not to use this component</h3>
             <p></p>
