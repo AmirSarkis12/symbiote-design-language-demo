@@ -2,6 +2,11 @@
     position: relative;
     display: inline-block;
     border-bottom: 0.0625rem dotted $tooltip-indicator-color;
+    margin: 1.2rem 0;
+
+    p {
+        margin: 0;
+    }
 
     &:hover {
         visibility: visible;
