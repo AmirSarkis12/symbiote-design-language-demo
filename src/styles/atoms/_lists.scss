@@ -1,6 +1,7 @@
 ol {
     &.styled-list {
         counter-reset:counter;
+        margin: 0.6rem 0;
 
         li {
             position: relative;
@@ -12,7 +13,7 @@ ol {
                 content: counter(counter);
                 counter-increment: counter;
                 position: absolute;
-                top: 0;
+                top: -0.2rem;
                 left: 0;
                 width: 1.8rem;
                 height: 1.8rem;
