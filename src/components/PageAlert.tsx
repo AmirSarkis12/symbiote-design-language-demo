@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs'
 
-function PageAlerts() {
+function PageAlert() {
     // React hook to get syntax highlighing. Similar to componentDidMount()
     useEffect(() => {
         Prism.highlightAll();
@@ -32,5 +32,5 @@ function PageAlerts() {
     )
 }
 
-export default PageAlerts
+export default PageAlert
 

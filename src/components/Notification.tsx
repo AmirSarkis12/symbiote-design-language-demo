@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs'
 
-function Notifications() {
+function Notification() {
     // React hook to get syntax highlighing. Similar to componentDidMount()
     useEffect(() => {
         Prism.highlightAll();
@@ -45,7 +45,7 @@ function Notifications() {
 
     return (
         <div>
-            <h1>Notifications</h1>
+            <h1>Notification</h1>
             <p>The Notification component is used to relay important information or changes on a page to the user in a way that attracts their attention without interrupting their current task. They appear at the top of the page and are dismissable.</p>
 
             <h3>When to use this component</h3>
@@ -127,5 +127,5 @@ function Notifications() {
     )
 }
 
-export default Notifications
+export default Notification
 

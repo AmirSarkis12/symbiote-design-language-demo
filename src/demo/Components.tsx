@@ -31,8 +31,8 @@ import Tooltip from '../components/Tooltip';
 import Pagination from '../components/Pagination';
 import Label from '../components/Label';
 import SideNavigation from '../components/SideNavigation';
-import Notifications from '../components/Notifications';
-import PageAlerts from '../components/PageAlerts';
+import Notification from '../components/Notification';
+import PageAlert from '../components/PageAlert';
 import Carousel from '../components/Carousel';
 import Modal from '../components/Modal';
 import ComponentsContent from './ComponentsContent';
@@ -118,10 +118,10 @@ export default function Components() {
                                             <p>Alerts</p>
                                         </li>
                                         <li className="side-navigation-content-link">
-                                            <NavLink activeClassName='active' to={`${url}/notifications`}>Notifications</NavLink>
+                                            <NavLink activeClassName='active' to={`${url}/notification`}>Notification</NavLink>
                                         </li>
                                         <li className="side-navigation-content-link">
-                                            <NavLink activeClassName='active' to={`${url}/page-alerts`}>Page alerts (TBD)</NavLink>
+                                            <NavLink activeClassName='active' to={`${url}/page-alert`}>Page alert (TBD)</NavLink>
                                         </li>
 
                                         <li className="side-navigation-content-heading">
@@ -197,8 +197,8 @@ export default function Components() {
                                 <Route exact path="/components/Label" component={Label} />
                                 <Route exact path="/components/progress-bar" component={ProgressBar} />
                                 <Route exact path="/components/icons" component={Icons} />
-                                <Route exact path="/components/notifications" component={Notifications} />
-                                <Route exact path="/components/page-alerts" component={PageAlerts} />
+                                <Route exact path="/components/notification" component={Notification} />
+                                <Route exact path="/components/page-alert" component={PageAlert} />
                                 <Route exact path="/components/carousel" component={Carousel} />
                                 <Route exact path="/components/modal" component={Modal} />
                             </Switch>

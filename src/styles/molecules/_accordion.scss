@@ -37,6 +37,10 @@
             background-color: $accordion-heading-foreground-color;
             @include transition();
             font-family: 'Body', sans-serif;
+
+            p {
+                margin: 0;
+            }
         }
     }
 
