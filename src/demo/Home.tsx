@@ -33,7 +33,7 @@ function Home() {
                             }}>
                                 <div className="content">
                                     <h3>Philosophy</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                    <p>Learn about our approach to design and how it as well as our experience can help you to build elegant and accessable web experiences.</p>
                                     <div className="button-container">
                                         <button className="cta"><Link to='/philosophy'>Read more</Link></button>
                                     </div>
@@ -48,7 +48,7 @@ function Home() {
                             }}>
                                 <div className="content">
                                     <h3>Components</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                    <p>We have documented all aspects of our design components along with realistic examples and snippets to get you up and running quickly.</p>
                                     <div className="button-container">
                                         <button className="cta"><Link to='/components'>Read more</Link></button>
 
@@ -65,7 +65,7 @@ function Home() {
                             }}>
                                 <div className="content">
                                     <h3>Styles</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                    <p>Our design system is extremely flexible and can be easily modified and offers a flat file structure to help you easily curate it.</p>
                                     <div className="button-container">
                                         <button className="cta"> <Link to='/styles'>Read more</Link></button>
                                     </div>
@@ -81,7 +81,7 @@ function Home() {
                             }}>
                                 <div className="content">
                                     <h3>Getting Started</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in facilisis diam. Aenean tincidunt erat at nulla sagittis ultrices. Suspendisse id molestie velit.</p>
+                                    <p>Whether you're a designer or developer or maybe even both, this guide will help you to quickly get started with our design system.</p>
                                     <div className="button-container">
                                         <button className="cta"> <Link to='/getting-started'>Read more</Link></button>
                                     </div>

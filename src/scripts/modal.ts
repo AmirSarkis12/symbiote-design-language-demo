@@ -2,7 +2,7 @@ import scrollLock from './scroll-lock';
 import focusTrap from './focus-trap';
 
 // !!! TODO: Clean up this file - This file is very hacky - it has a lot of repeated code for all the demo modals (but the bones are good). This will be distilled down when it moves to a more production ready state !!!
-document.addEventListener("DOMContentLoaded", function () {
+function initModals() {
     const modalTrigger1 = document.querySelector(".modal-trigger-1");
     const modalTrigger2 = document.querySelector(".modal-trigger-2");
     const modalTrigger3 = document.querySelector(".modal-trigger-3");
@@ -131,6 +131,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
-});
+}
 
-export default {};
+export default initModals;
