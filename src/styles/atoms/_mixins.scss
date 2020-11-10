@@ -1,74 +1,64 @@
 // Media query breakpoints
     // Propigates up breakpoints e.g.: media-breakpoint-up(sm) -> sm breakpoint (inclusive) and up
-    @mixin media-breakpoint-up($breakpoint) {
-        @if($breakpoint == "xs") {
-            @media (min-width: $xs-breakpoint) {
+    @mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+        $min: breakpoint-min($name, $breakpoints);
+        @if $min {
+            @media (min-width: $min) {
                 @content;
             }
+        } @else {
+            @content;
         }
+    }
 
-        @if( $breakpoint == "sm" ) {
-            @media (min-width: $sm-breakpoint) {
+    // Propigates down breakpoints e.g.: media-breakpoint-down(sm) -> sm breakpoint (inclusive) and down
+    @mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+        $max: breakpoint-max($name, $breakpoints);
+        @if $max {
+            @media (max-width: $max) {
                 @content;
             }
+        } @else {
+            @content;
         }
+    }
 
-        @if( $breakpoint == "md" ) {
-            @media (min-width: $md-breakpoint) {
+    // Non-propigating breakpoint e.g.: media-breakpoint-only(sm) -> only within the bounds of the sm breakpoint
+    @mixin media-breakpoint-only($name, $breakpoints: $grid-breakpoints) {
+        $min:  breakpoint-min($name, $breakpoints);
+        $next: breakpoint-next($name, $breakpoints);
+        $max:  breakpoint-max($next);
+
+        @if $min != null and $max != null {
+            @media (min-width: $min) and (max-width: $max) {
                 @content;
             }
-        }
-
-        @if( $breakpoint == "lg" ) {
-            @media (min-width: $lg-breakpoint) {
+        } @else if $max == null {
+            @include media-breakpoint-up($name, $breakpoints) {
+                @content;
+            }
+        } @else if $min == null {
+            @include media-breakpoint-down($next, $breakpoints) {
                 @content;
             }
         }
     }
 
-    // Propigates down breakpoints e.g.: media-breakpoint-down(sm) -> sm breakpoint (exclusive) and down
-    @mixin media-breakpoint-down($breakpoint) {
-        @if( $breakpoint == "sm" ) {
-            @media (max-width: $sm-breakpoint - 1) {
+    // Propigating between the bounds of to breakpoints e.g.: media-breakpoint-between(sm,md) -> only within the bounds of the sm and md breakpoints
+    @mixin media-breakpoint-between($lower, $upper, $breakpoints: $grid-breakpoints) {
+        $min: breakpoint-min($lower, $breakpoints);
+        $max: breakpoint-max($upper, $breakpoints);
+
+        @if $min != null and $max != null {
+            @media (min-width: $min) and (max-width: $max) {
                 @content;
             }
-        }
-
-        @if( $breakpoint == "md" ) {
-            @media (max-width: $md-breakpoint - 1) {
+        } @else if $max == null {
+            @include media-breakpoint-up($lower, $breakpoints) {
                 @content;
             }
-        }
-
-        @if( $breakpoint == "lg" ) {
-            @media (max-width: $lg-breakpoint - 1) {
-                @content;
-            }
-        }
-    }
-
-    // Non-propigating breakpoint e.g.: media-breakpoint(sm) -> only within the bounds of the sm breakpoint
-    @mixin media-breakpoint-only($breakpoint) {
-        @if($breakpoint == "xs") {
-            @media (max-width: $xs-breakpoint - 1) {
-                @content;
-            }
-        }
-
-        @if( $breakpoint == "sm" ) {
-            @media (min-width: $sm-breakpoint) and (max-width: $md-breakpoint - 1) {
-                @content;
-            }
-        }
-
-        @if( $breakpoint == "md" ) {
-            @media (min-width: $md-breakpoint) and (max-width: $lg-breakpoint - 1) {
-                @content;
-            }
-        }
-
-        @if( $breakpoint == "lg" ) {
-            @media (min-width: $lg-breakpoint) {
+        } @else if $min == null {
+            @include media-breakpoint-down($upper, $breakpoints) {
                 @content;
             }
         }
@@ -182,88 +172,136 @@
 
 
 // Grid specific mixins below
-    // Iterates through all 12 columns to calculate the correct amount of left and right padding for each of the classes.
-    @mixin make-grid-columns( $i: 1, $list: ".col-#{ $i }, .col-xs-#{ $i }, .col-sm-#{ $i }, .col-md-#{ $i }, .col-lg-#{ $i }" ) {
-        @for $i from ( 1 + 1 ) through 12 {
-            $list: "#{ $list }, .col-#{ $i }, .col-xs-#{ $i }, .col-sm-#{ $i }, .col-md-#{ $i }, .col-lg-#{ $i }";
-        }
 
-        #{ $list } {
-            box-sizing: border-box;
-            position: relative;
-            min-height: 0.0625rem;
-            padding-left:  ceil( ( $grid-gutter-width / 2 ) );
-            padding-right: floor( ( $grid-gutter-width / 2 ) );
+    // Used to evaluate Sass maps like our grid breakpoints.
+    @mixin _assert-ascending($map, $map-name) {
+        $prev-key: null;
+        $prev-num: null;
+        @each $key, $num in $map {
+            @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+                // Do nothing
+            } @else if not comparable($prev-num, $num) {
+                @warn "Potentially invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} whose unit makes it incomparable to #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+            } @else if $prev-num >= $num {
+                @warn "Invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} which isn't greater than #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+            }
+            $prev-key: $key;
+            $prev-num: $num;
         }
     }
 
-    // Iterates through the columns to create a new list and then sets the float.
-    @mixin float-grid-columns( $class, $i: 1, $list: ".col-#{ $i }, .col-#{ $class }-#{ $i }" ) {
-        @for $i from ( 1 + 1 ) through 12 {
-            $list: "#{ $list }, .col-#{ $i }, .col-#{ $class }-#{ $i }";
-
-        }
-
-        #{ $list } {
-            float: left;
-        }
-    }
-
-    // Calculates the correct widths as a percentage based on the column count, column breakpoint class, and type (pull or offset).
-    @mixin grid-calc-grid-column( $index, $class, $type ) {
-        @if ( $type == width ) and ( $index > 0 ) {
-            .col-#{ $class }-#{ $index } {
-                width: percentage( ( $index / 12 ) );
-			}
-
-			.col-#{ $index } {
-                width: percentage( ( $index / 12 ) );
-            }
-        }
-
-        @if ( $type == push ) and ( $index > 0 ) {
-            .col-#{ $class }-push-#{ $index } {
-                left: percentage( ( $index / 12 ) );
-            }
-        }
-
-        @if ( $type == push ) and ( $index == 0 ) {
-            .col-#{ $class }-push-0 {
-                left: auto;
-            }
-        }
-
-        @if ($type == pull) and ( $index > 0 ) {
-            .col-#{ $class }-pull-#{ $index } {
-                right: percentage( ( $index / 12 ) );
-            }
-        }
-
-        @if ($type == pull) and ( $index == 0 ) {
-            .col-#{ $class }-pull-0 {
-                right: auto;
-            }
-        }
-
-        @if ($type == offset) {
-            .col-#{ $class }-offset-#{ $index } {
-                margin-left: percentage( ( $index / 12 ) );
+    // Used to ensure the min-width of the lowest breakpoint starts at 0.
+    @mixin _assert-starts-at-zero($map, $map-name: "$grid-breakpoints") {
+        @if length($map) > 0 {
+            $values: map-values($map);
+            $first-value: nth($values, 1);
+            @if $first-value != 0 {
+                @warn "First breakpoint in #{$map-name} must start at 0, but starts at #{$first-value}.";
             }
         }
     }
 
-    // Calls the above mixins and combines them.
-    @mixin loop-grid-columns( $columns, $class, $type ) {
-        @for $i from 0 through $columns {
-            @include grid-calc-grid-column( $i, $class, $type );
+    // Container mixins
+    @mixin make-container($gutter: $grid-gutter-width) {
+        --bs-gutter-x: #{$gutter};
+
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) / 2); // stylelint-disable-line function-disallowed-list
+        padding-left: calc(var(--bs-gutter-x) / 2); // stylelint-disable-line function-disallowed-list
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    // Generate semantic grid columns with these mixins.
+    @mixin make-row($gutter: $grid-gutter-width) {
+        --bs-gutter-x: #{$gutter};
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(var(--bs-gutter-y) * -1); // stylelint-disable-line function-disallowed-list
+        margin-right: calc(var(--bs-gutter-x) / -2); // stylelint-disable-line function-disallowed-list
+        margin-left: calc(var(--bs-gutter-x) / -2); // stylelint-disable-line function-disallowed-list
+    }
+
+    @mixin make-col-ready($gutter: $grid-gutter-width) {
+        // Add box sizing if only the grid is loaded
+        box-sizing: if(variable-exists(include-column-box-sizing), border-box, null);
+        // Prevent columns from becoming too narrow when at smaller grid tiers by
+        // always setting `width: 100%;`. This works because we set the width
+        // later on to override this initial width.
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%; // Prevent `.col-auto`, `.col` (& responsive variants) from breaking out the grid
+        padding-right: calc(var(--bs-gutter-x) / 2); // stylelint-disable-line function-disallowed-list
+        padding-left: calc(var(--bs-gutter-x) / 2); // stylelint-disable-line function-disallowed-list
+        margin-top: var(--bs-gutter-y);
+    }
+
+    @mixin make-col($size, $columns: 12) {
+        flex: 0 0 auto;
+        width: percentage($size / $columns);
+    }
+
+    @mixin make-col-auto() {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    @mixin make-col-offset($size, $columns: 12) {
+        $num: $size / $columns;
+        margin-left: if($num == 0, 0, percentage($num));
+    }
+
+    // Row columns
+    @mixin row-cols($count) {
+        > * {
+            flex: 0 0 auto;
+            width: 100% / $count;
         }
     }
 
-    // Finally, we create the grid and all the necessary classes.
-    @mixin make-grid( $class ) {
-        @include float-grid-columns( $class );
-        @include loop-grid-columns( 12, $class, width );
-        @include loop-grid-columns( 12, $class, pull );
-        @include loop-grid-columns( 12, $class, push );
-        @include loop-grid-columns( 12, $class, offset );
+    // Used to generate the correct number of grid classes
+    @mixin make-grid-columns($columns: 12, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+        @each $breakpoint in map-keys($breakpoints) {
+            $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+            @include media-breakpoint-up($breakpoint, $breakpoints) {
+                // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+                .col#{$infix} {
+                    flex: 1 0 0%; // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
+                }
+
+                .row-cols#{$infix}-auto > * {
+                    @include make-col-auto();
+                }
+
+                @for $i from 1 through 6 {
+                    .row-cols#{$infix}-#{$i} {
+                        @include row-cols($i);
+                    }
+                }
+
+                .col#{$infix}-auto {
+                    @include make-col-auto();
+                }
+
+                @if $columns > 0 {
+                    @for $i from 1 through $columns {
+                        .col#{$infix}-#{$i} {
+                            @include make-col($i, $columns);
+                        }
+                    }
+
+                    // `$columns - 1` because offsetting by the width of an entire row isn't possible
+                    @for $i from 0 through ($columns - 1) {
+                        @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
+                            .offset#{$infix}-#{$i} {
+                                @include make-col-offset($i, $columns);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }

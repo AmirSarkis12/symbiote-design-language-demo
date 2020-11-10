@@ -36,7 +36,7 @@ table {
     }
 }
 
-@media all and (max-width: $xs-breakpoint) {
+@media all and (max-width: $grid-breakpoints(xs)) {
     table, thead, tbody, th, td, tr {
         display: block;
     }

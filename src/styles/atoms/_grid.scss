@@ -1,64 +1,72 @@
+@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+  $n: index($breakpoint-names, $name);
+  @if not $n {
+    @error "breakpoint `#{$name}` not found in `#{$breakpoints}`";
+  }
+  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
 
-//create container that snaps to breakpoints
-.container {
-    box-sizing: border-box;
-    width: 100%;
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
 
-    @include media-breakpoint-up(sm) {
-        max-width: ( $sm-breakpoint - $grid-gutter-width );
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+  $max: map-get($breakpoints, $name);
+  @return if($max and $max > 0, $max - .02, null);
+}
+
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+
+// Containers
+  // Single container class with breakpoint max-widths
+  .container,
+  // 100% wide container at all breakpoints
+  .container-fluid {
+    @include make-container();
+  }
+
+  // Responsive containers that are 100% wide until a breakpoint
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    .container-#{$breakpoint} {
+      @extend .container-fluid;
     }
 
-    @include media-breakpoint-up(md) {
-        max-width: ( $md-breakpoint - $grid-gutter-width );
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      %responsive-container-#{$breakpoint} {
+        max-width: $container-max-width;
+      }
+
+      @each $name, $width in $grid-breakpoints {
+        .container#{breakpoint-infix($name, $grid-breakpoints)} {
+        @extend %responsive-container-#{$breakpoint};
+        }
+
+        // Once the current breakpoint is reached, stop extending
+        @if ($breakpoint == $name) {
+        $extend-breakpoint: false;
+        }
+      }
+    }
+  }
+
+// Rows
+    .row {
+        @include make-row();
+
+        > * {
+            @include make-col-ready();
+        }
     }
 
-    @include media-breakpoint-up(lg) {
-        max-width: ( $lg-breakpoint - $grid-gutter-width );
-    }
+// Loop over each breakpoint
+@each $breakpoint in map-keys($grid-breakpoints) {
+  // Generate media query if needed
+  @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  }
 }
 
-//create both containers
-.container{
-    @include clearfix;
-    box-sizing: border-box;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: floor( ( $grid-gutter-width / 2 ) );
-    padding-right: ceil( ( $grid-gutter-width / 2 ) );
-}
-
-.container-fluid {
-    @include clearfix;
-    box-sizing: border-box;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-}
-
-//create row and clear floats inside
-.row {
-    @include clearfix;
-    margin-left: ceil( ( $grid-gutter-width / -2 ) );
-    margin-right: floor( ( $grid-gutter-width / -2 ) );
-}
-
-//create all classes
-@include make-grid-columns;
-
-//create xs classes
-@include make-grid( xs );
-
-//create sm classes
-@include media-breakpoint-up( sm ) {
-    @include make-grid( sm );
-}
-
-//create md classes
-@include media-breakpoint-up( md ) {
-    @include make-grid( md );
-}
-
-//create lg classes
-@include media-breakpoint-up( lg ) {
-    @include make-grid( lg );
-}
+@include make-grid-columns();

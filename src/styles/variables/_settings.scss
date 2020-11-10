@@ -2,11 +2,24 @@
     // Gutter sise
     $grid-gutter-width: 30px;
 
-    // media query breakpoints
-    $xs-breakpoint: 576px;
-    $sm-breakpoint: 768px;
-    $md-breakpoint: 992px;
-    $lg-breakpoint: 1366px;
+    // grid breakpoints
+    $grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+    ) !default;
+
+    // Container sizes
+    $container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+    ) !default;
 
 // Body settings
 $body-background-color: $gray-non-aa-lightest;
@@ -16,7 +29,7 @@ $button-font: 'Body', sans-serif;
 $primary-background-color: $cyan-aa-small;
 $primary-foreground-color: $white;
 
-$secondary-background-color: $purple-aa-small;
+$secondary-background-color: $cyan-aa-small;
 $secondary-foreground-color: $white;
 
 $tertiary-background-color: $red-aa-small;
