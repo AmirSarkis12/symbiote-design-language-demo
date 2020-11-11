@@ -5,36 +5,36 @@ import { Route, NavLink, useRouteMatch, Switch} from "react-router-dom";
 import '../styles/main.scss';
 import './styles/demo.scss';
 
-import Color from '../components/Color';
-import Typography from '../components/Typography';
-import Grid from '../components/Grid';
-import Spacing from '../components/Spacing';
-import MainNavigation from '../components/MainNavigation';
-import Breadcrumbs from '../components/Breadcrumbs';
-import Footer from '../components/Footer';
-import Buttons from '../components/Buttons';
-import Toggle from '../components/Toggle';
-import Checkbox from '../components/Checkbox';
-import Inputs from '../components/Inputs';
-import Radio from '../components/Radio';
-import Select from '../components/Select';
-import DatePicker from '../components/DatePicker';
-import Slider from '../components/Slider';
-import Hero from '../components/Hero';
-import Table from '../components/Table';
-import List from '../components/List';
-import Accordion from '../components/Accordion';
-import Cards from '../components/Cards';
-import Icons from '../components/Icons';
-import ProgressBar from '../components/ProgressBar';
-import Tooltip from '../components/Tooltip';
-import Pagination from '../components/Pagination';
-import Label from '../components/Label';
-import SideNavigation from '../components/SideNavigation';
-import Notification from '../components/Notification';
-import PageAlert from '../components/PageAlert';
-import Carousel from '../components/Carousel';
-import Modal from '../components/Modal';
+import Color from './components/Color';
+import Typography from './components/Typography';
+import Grid from './components/Grid';
+import Spacing from './components/Spacing';
+import MainNavigation from './components/MainNavigation';
+import Breadcrumbs from './components/Breadcrumbs';
+import Footer from './components/Footer';
+import Buttons from './components/Buttons';
+import Toggle from './components/Toggle';
+import Checkbox from './components/Checkbox';
+import Inputs from './components/Inputs';
+import Radio from './components/Radio';
+import Select from './components/Select';
+import DatePicker from './components/DatePicker';
+import Slider from './components/Slider';
+import Hero from './components/Hero';
+import Table from './components/Table';
+import List from './components/List';
+import AccordionDemo from './components/AccordionDemo';
+import Cards from './components/Cards';
+import Icons from './components/Icons';
+import ProgressBar from './components/ProgressBar';
+import Tooltip from './components/Tooltip';
+import Pagination from './components/Pagination';
+import Label from './components/Label';
+import SideNavigation from './components/SideNavigation';
+import Notification from './components/Notification';
+import PageAlert from './components/PageAlert';
+import Carousel from './components/Carousel';
+import Modal from './components/Modal';
 import ComponentsContent from './ComponentsContent';
 
 export default function Components() {
@@ -190,7 +190,7 @@ export default function Components() {
                                 <Route exact path="/components/hero" component={Hero} />
                                 <Route exact path="/components/table" component={Table} />
                                 <Route exact path="/components/list" component={List} />
-                                <Route exact path="/components/accordion" component={Accordion} />
+                                <Route exact path="/components/accordion" component={AccordionDemo} />
                                 <Route exact path="/components/cards" component={Cards} />
                                 <Route exact path="/components/pagination" component={Pagination} />
                                 <Route exact path="/components/tooltip" component={Tooltip} />

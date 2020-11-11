@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs'
-import '../scripts/navigation.ts'
-import initMainNav from '../scripts/navigation';
+import '../../scripts/navigation.ts'
+import initMainNav from '../../scripts/navigation';
 
 function MainNavigation() {
     // React hook to get syntax highlighing as well as Main Navigation dropdown working. Similar to componentDidMount()

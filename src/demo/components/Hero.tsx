@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs'
 
-import heroImage1 from '../assets/images/hero-image-glacier.jpeg';
-import heroImage2 from '../assets/images/hero-image-pathway.jpeg';
+import heroImage1 from '../../assets/images/hero-image-glacier.jpeg';
+import heroImage2 from '../../assets/images/hero-image-pathway.jpeg';
 import { Link } from 'react-router-dom';
 
 function Hero() {

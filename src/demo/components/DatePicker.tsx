@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs'
-import Datepicker from '../libs/vanillajs-datepicker/js/Datepicker';
-import DateRangePicker from '../libs/vanillajs-datepicker/js/DateRangePicker';
+import Datepicker from '../../libs/vanillajs-datepicker/js/Datepicker';
+import DateRangePicker from '../../libs/vanillajs-datepicker/js/DateRangePicker';
 
 
 function DatePicker() {

@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs'
-import initCarousel from '../scripts/carousel'
+import initCarousel from '../../scripts/carousel'
 
-import carouselImage1 from '../assets/images/carousel-image-bay.jpeg';
-import carouselImage2 from '../assets/images/carousel-image-breakwater.jpeg';
-import carouselImage3 from '../assets/images/carousel-image-underwater.jpeg';
-import carouselImage4 from '../assets/images/carousel-image-white-water.jpeg';
-import carouselImage5 from '../assets/images/carousel-image-path.jpeg';
-import carouselImage6 from '../assets/images/carousel-image-point.jpeg';
+import carouselImage1 from '../../assets/images/carousel-image-bay.jpeg';
+import carouselImage2 from '../../assets/images/carousel-image-breakwater.jpeg';
+import carouselImage3 from '../../assets/images/carousel-image-underwater.jpeg';
+import carouselImage4 from '../../assets/images/carousel-image-white-water.jpeg';
+import carouselImage5 from '../../assets/images/carousel-image-path.jpeg';
+import carouselImage6 from '../../assets/images/carousel-image-point.jpeg';
 
 function Carousel() {
     // React hook to get syntax highlighing. Similar to componentDidMount()

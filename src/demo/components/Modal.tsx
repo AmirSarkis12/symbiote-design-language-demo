@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs';
 
-import initModals from '../scripts/modal'
+import initModals from '../../scripts/modal'
 
-import modalImage1 from '../assets/images/modal-image-road.jpeg';
-import modalImage2 from '../assets/images/modal-image-beach.jpeg';
-import modalImage3 from '../assets/images/modal-image-canyon.jpeg';
+import modalImage1 from '../../assets/images/modal-image-road.jpeg';
+import modalImage2 from '../../assets/images/modal-image-beach.jpeg';
+import modalImage3 from '../../assets/images/modal-image-canyon.jpeg';
 
 function Modal() {
     // React hook to get syntax highlighing. Similar to componentDidMount()

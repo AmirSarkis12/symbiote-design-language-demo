@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs'
 
-import cardImage1 from '../assets/images/card-image-mountains.jpeg';
-import cardImage2 from '../assets/images/card-image-trees.jpeg';
-import cardImage3 from '../assets/images/card-image-lavender.jpeg';
-import cardImage4 from '../assets/images/card-image-dessert.jpeg';
+import cardImage1 from '../../assets/images/card-image-mountains.jpeg';
+import cardImage2 from '../../assets/images/card-image-trees.jpeg';
+import cardImage3 from '../../assets/images/card-image-lavender.jpeg';
+import cardImage4 from '../../assets/images/card-image-dessert.jpeg';
 import { Link } from 'react-router-dom';
 
 function Cards() {
