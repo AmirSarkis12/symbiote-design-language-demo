@@ -11,7 +11,7 @@ import Styles from './demo/Styles';
 import HeroDemo from './demo/HeroDemo';
 import CardDemo from './demo/CardDemo';
 
-import './styles/main.scss';
+import '../node_modules/symbiote-design-language-library/src/styles/main.scss';
 
 
 export default function App() {

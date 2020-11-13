@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs'
-import {Accordion} from '../../react/components/Accordion'
+import {Accordion} from '../../../node_modules/symbiote-design-language-library/src/react/components/Accordion'
 
 function AccordionDemo() {
     // React hook to get syntax highlighing. Similar to componentDidMount()
